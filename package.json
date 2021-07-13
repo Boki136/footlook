@@ -1,0 +1,23 @@
+{
+  "name": "footlook",
+  "version": "1.0.0",
+  "description": "Footlook ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass footlook/static/sass/main.scss footlook/static/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boki136/footlook.git"
+  },
+  "author": "BOris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boki136/footlook/issues"
+  },
+  "homepage": "https://github.com/Boki136/footlook#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
