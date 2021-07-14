@@ -4,7 +4,7 @@
   "description": "Footlook ecommerce",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass footlook/static/sass/main.scss footlook/static/css/main.css -w"
+    "compile:sass": "node-sass static/sass/base.scss static/css/base.css -w"
   },
   "repository": {
     "type": "git",
