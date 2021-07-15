@@ -5,9 +5,19 @@ $secondary-black: #3A4750;
 $red: #D72323;
 $paper-white: #EEE;
 
+body {
+    font-family: "Montserrat";
+}
+
 .navbar {
     background: $secondary-black;
     height: 110px;
+}
+
+.navbar-brand {
+    width: 250px;
+    position: relative;
+    top: 3px;
 }
 
 .navbar-collapse {
@@ -23,9 +33,10 @@ $paper-white: #EEE;
 
     a {
         color: $paper-white;
-        font-size: 23px;
+        font-size: 22px;
         position: relative;
         padding: 0 !important;
+        font-weight: 500;
 
         &::before {
             content: "";
@@ -46,9 +57,13 @@ $paper-white: #EEE;
     }
 
     li {
-        padding: 0 10px;
+        padding: 0 15px;
 
     }
+}
+
+.nav-link {
+    padding: 0;
 }
 
 .nav-link:focus,
@@ -57,24 +72,39 @@ $paper-white: #EEE;
 }
 
 .nav-icons {
+
     i {
         color: $paper-white;
-        padding: 0 10px;
+        background: transparent;
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
 
         &:hover {
             color: #fff;
+            transition: .3s ease-in-out;
+            background: rgba(255, 255, 255, .25);
+            padding: 15px;
+            border-radius: 50%;
         }
     }
 }
 
-.search-function {
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 
+.navbar-toggler-icon i {
+    color: $paper-white;
+}
+
+.search-function {
     position: relative;
 
     input {
-        padding: 10px 50px;
+        padding: 15px 95px 15px 50px;
         background-image: url(/media/search-icon.png);
-        background-position: 15px 7px;
+        background-position: 15px 12px;
         background-repeat: no-repeat;
         font-size: 14px;
         width: 300px;
@@ -83,7 +113,7 @@ $paper-white: #EEE;
     button {
         position: absolute;
         right: 18px;
-        top: 11px;
+        top: 17px;
         padding: 2px 20px;
         background: $primary-black;
         color: #fff;
@@ -104,5 +134,132 @@ $paper-white: #EEE;
             bottom: -7px;
             font-weight: 100;
         }
+    }
+}
+
+.mobile_nav {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: $secondary-black;
+    display: none;
+}
+
+.nav-content_wrapper {
+    width: 90%;
+    padding: 3% 6%;
+}
+
+.fa-times {
+    color: #fff;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.nav-content_navigate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile_nav_links {
+
+    padding-left: 30px;
+    margin-top: 70px;
+
+    li {
+        list-style: none;
+
+        a {
+            color: $paper-white;
+            font-size: 1.5em;
+            position: relative;
+
+            &::after {
+                content: url('/media/arrow-right.png');
+                position: absolute;
+                right: 0;
+                max-width: 100%;
+                transition: .2s ease-in-out;
+            }
+
+            &:hover::after {
+                right: -10px;
+
+            }
+        }
+    }
+
+}
+
+.support-links {
+    margin-top: 50px;
+
+    li {
+        list-style: none;
+        padding: 5px 0;
+    }
+
+    a {
+        color: $paper-white;
+    }
+}
+
+.mt2 {
+    margin-top: 100px;
+}
+
+.hr-lg {
+    color: #fff;
+}
+
+.social-icons_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    i {
+        font-size: 25px;
+        color: $paper-white;
+        margin-right: 10px;
+        background: rgba(255, 255, 255, .25);
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        line-height: 29px;
+        transition: .3s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(215, 35, 35, .25)
+        }
+    }
+
+}
+
+/******** MEDIA QUERIES **/
+
+
+@media only screen and (min-width: 1600px) {
+    .search-function input {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-icons {
+        display: none;
+    }
+
+    .navbar {
+        flex-wrap: unset;
     }
 }

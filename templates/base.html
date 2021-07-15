@@ -26,6 +26,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/88ddfd17d7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -36,14 +38,14 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg d-flex">
+    <nav class="navbar navbar-expand-xl d-flex">
         <div class="container-fluid nav-content-wrapper">
-            <img class="navbar-brand" src="media/logo.png" />
+            <a href="/"><img class="navbar-brand" src="media/logo.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav nav-links_wrapper">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">MEN</a>
@@ -65,12 +67,51 @@
                     <button type="submit">GO</button>
                 </form>
             </div>
+
             <div class="nav-icons">
                 <i class="fas fa-shopping-bag fa-2x"></i>
                 <i class="fas fa-user fa-2x"></i>
             </div>
         </div>
     </nav>
+    <div class="mobile_nav">
+        <div class="nav-content_wrapper">
+            <div class="nav-content_navigate">
+                <img class="navbar-brand mobile_logo" src="media/logo.png" />
+                <i class="fas fa-times fa-3x"></i>
+            </div>
+            <ul class="mobile_nav_links">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">KIDS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BRANDS</a>
+                </li>
+            </ul>
+            <ul class="support-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+            </ul>
+            <hr class='hr-lg mt2'>
+            <div class="social-icons_wrapper">
+                <a href="https://www.facebook.com/" target='_blank'><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
+
+            </div>
+        </div>
+
+    </div>
 
 
 

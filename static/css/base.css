@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  font-family: "Montserrat"; }
+
 .navbar {
   background: #3A4750;
   height: 110px; }
+
+.navbar-brand {
+  width: 250px;
+  position: relative;
+  top: 3px; }
 
 .navbar-collapse {
   justify-content: space-around; }
@@ -12,9 +20,10 @@
 
 .nav-links_wrapper a {
   color: #EEE;
-  font-size: 23px;
+  font-size: 22px;
   position: relative;
-  padding: 0 !important; }
+  padding: 0 !important;
+  font-weight: 500; }
   .nav-links_wrapper a::before {
     content: "";
     position: absolute;
@@ -30,7 +39,10 @@
     width: 20px; }
 
 .nav-links_wrapper li {
-  padding: 0 10px; }
+  padding: 0 15px; }
+
+.nav-link {
+  padding: 0; }
 
 .nav-link:focus,
 .nav-link:hover {
@@ -38,23 +50,36 @@
 
 .nav-icons i {
   color: #EEE;
-  padding: 0 10px; }
+  background: transparent;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer; }
   .nav-icons i:hover {
-    color: #fff; }
+    color: #fff;
+    transition: .3s ease-in-out;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 50%; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+.navbar-toggler-icon i {
+  color: #EEE; }
 
 .search-function {
   position: relative; }
   .search-function input {
-    padding: 10px 50px;
+    padding: 15px 95px 15px 50px;
     background-image: url(/media/search-icon.png);
-    background-position: 15px 7px;
+    background-position: 15px 12px;
     background-repeat: no-repeat;
     font-size: 14px;
     width: 300px; }
   .search-function button {
     position: absolute;
     right: 18px;
-    top: 11px;
+    top: 17px;
     padding: 2px 20px;
     background: #303841;
     color: #fff;
@@ -71,3 +96,91 @@
       font-size: 30px;
       bottom: -7px;
       font-weight: 100; }
+
+.mobile_nav {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: #3A4750;
+  display: none; }
+
+.nav-content_wrapper {
+  width: 90%;
+  padding: 3% 6%; }
+
+.fa-times {
+  color: #fff;
+  transition: .2s ease-out;
+  cursor: pointer; }
+  .fa-times:hover {
+    transform: scale(1.1); }
+
+.nav-content_navigate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.mobile_nav_links {
+  padding-left: 30px;
+  margin-top: 70px; }
+  .mobile_nav_links li {
+    list-style: none; }
+    .mobile_nav_links li a {
+      color: #EEE;
+      font-size: 1.5em;
+      position: relative; }
+      .mobile_nav_links li a::after {
+        content: url("/media/arrow-right.png");
+        position: absolute;
+        right: 0;
+        max-width: 100%;
+        transition: .2s ease-in-out; }
+      .mobile_nav_links li a:hover::after {
+        right: -10px; }
+
+.support-links {
+  margin-top: 50px; }
+  .support-links li {
+    list-style: none;
+    padding: 5px 0; }
+  .support-links a {
+    color: #EEE; }
+
+.mt2 {
+  margin-top: 100px; }
+
+.hr-lg {
+  color: #fff; }
+
+.social-icons_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .social-icons_wrapper i {
+    font-size: 25px;
+    color: #EEE;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 29px;
+    transition: .3s ease-out;
+    cursor: pointer; }
+    .social-icons_wrapper i:hover {
+      background: rgba(215, 35, 35, 0.25); }
+
+/******** MEDIA QUERIES **/
+@media only screen and (min-width: 1600px) {
+  .search-function input {
+    width: 500px; } }
+
+@media only screen and (max-width: 1200px) {
+  .nav-icons {
+    display: none; }
+  .navbar {
+    flex-wrap: unset; } }
