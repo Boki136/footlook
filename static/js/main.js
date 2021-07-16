@@ -17,4 +17,13 @@ $(document).ready(function () {
     $('.mobile_nav_links li').each(function () {
         $(this).append(`<hr class="hr-lg">`);
     });
+
+    $('.social-sidebar').mouseover(function () {
+        $('.social-sidebar').removeClass('rotate_back');
+        $('.rotate-selector i').css('transform', 'rotateZ(0deg)')
+    }).mouseleave(function () {
+        $('.social-sidebar').addClass('rotate_back');
+    });
+
+
 });

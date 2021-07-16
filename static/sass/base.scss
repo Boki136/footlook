@@ -6,7 +6,11 @@ $red: #D72323;
 $paper-white: #EEE;
 
 body {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
 }
 
 .navbar {
@@ -144,6 +148,7 @@ body {
     width: 100%;
     background: $secondary-black;
     display: none;
+    z-index: 1000;
 }
 
 .nav-content_wrapper {
@@ -245,7 +250,132 @@ body {
 
 }
 
-/******** MEDIA QUERIES **/
+/************************ HERO SECTION **/
+
+.hero-container {
+    background: url('/media/hero-img.png') no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 1000px;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 250px 125px;
+    color: $paper-white;
+    align-self: flex-start;
+
+    p {
+        font-size: 30px;
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.hero-title {
+    font-size: 5em
+}
+
+.button-element {
+    margin-top: 30px;
+}
+
+.shop-button {
+    background: $secondary-black;
+    color: $paper-white;
+    padding: 10px 50px;
+    border-radius: 0;
+    z-index: 5;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+    &:hover {
+        color: $paper-white;
+        background: lighten($secondary-black, 5%);
+    }
+}
+
+.red-cover {
+    border: 1px solid $red;
+    width: 221px;
+    height: 57px;
+    position: relative;
+    top: 60px;
+    left: 7px;
+    z-index: 0;
+    background: transparent;
+}
+
+.product-price_wrapper {
+    align-self: flex-end;
+    margin-bottom: 200px;
+    width: 30%;
+}
+
+.product-price_bubble {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    background: linear-gradient(130.4deg, rgba(215, 35, 35, .6) 0%, rgba(48, 56, 65, .6) 100%);
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: $paper-white;
+        font-size: 70px;
+    }
+
+    span {
+        font-size: 50px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+.social-sidebar {
+    transform: rotate(-90deg);
+
+    hr {
+        color: $paper-white;
+    }
+
+}
+
+.social-title {
+    text-align: center;
+    font-size: 20px;
+    color: $paper-white;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: $paper-white;
+    }
+}
+
+
+.hr-align {
+    margin-left: 150px;
+}
+
+.rotate-selector {
+
+    justify-content: space-evenly;
+
+    i {
+        transform: rotateZ(90deg);
+        margin: 20px 0;
+        padding: 10px;
+    }
+}
+
+/************************ MEDIA QUERIES **/
 
 
 @media only screen and (min-width: 1600px) {
@@ -261,5 +391,44 @@ body {
 
     .navbar {
         flex-wrap: unset;
+    }
+
+    .hero-content {
+        padding: 200px 125px;
+    }
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .hero-content p {
+        font-size: 25px;
+    }
+}
+
+.rotate_back {
+    transform: rotateZ(-90deg) !important;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .hero-content-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .hero-content {
+        padding: 200px 50px 100px 50px;
+        ;
+    }
+
+
+    .product-price_wrapper {
+        width: 80%;
+        margin: 0 0 0 auto;
+    }
+
+    .social-sidebar,
+    .hr-align {
+        display: none;
     }
 }
