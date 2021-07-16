@@ -1,0 +1,35 @@
+    <!-- navigation large -->
+
+    <nav class="navbar navbar-expand-xl d-flex">
+        <div class="container-fluid nav-content-wrapper">
+            <a href="/"><img class="navbar-brand" src="{{ MEDIA_URL }}logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav-links_wrapper">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BRANDS</a>
+                    </li>
+                </ul>
+                <form class="search-function" action="">
+                    <label class='sr-only' for="search_box"></label>
+                    <input class="form-control me-2 rounded-0" name="search_box" id="search_box" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button type="submit">GO</button>
+                </form>
+            </div>
+
+            <div class="nav-icons">
+                <img src="{{ MEDIA_URL }}bag-icon.png" alt="bag icon">
+                <img src="{{ MEDIA_URL }}profile-icon.png" alt="profile icon">
+            </div>
+        </div>
+    </nav>

@@ -51,18 +51,21 @@ h1 {
 .nav-link:hover {
   color: #fff; }
 
-.nav-icons i {
-  color: #EEE;
-  background: transparent;
-  border-radius: 50%;
-  padding: 15px;
-  cursor: pointer; }
-  .nav-icons i:hover {
-    color: #fff;
-    transition: .3s ease-in-out;
-    background: rgba(255, 255, 255, 0.25);
-    padding: 15px;
-    border-radius: 50%; }
+.nav-icons {
+  justify-content: center;
+  align-items: center; }
+  .nav-icons img {
+    color: #EEE;
+    background: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer; }
+    .nav-icons img:hover {
+      color: #fff;
+      transition: .3s ease-in-out;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 5px;
+      border-radius: 50%; }
 
 .navbar-toggler:focus {
   box-shadow: none; }

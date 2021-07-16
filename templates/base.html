@@ -1,4 +1,5 @@
 {% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -37,86 +38,8 @@
 </head>
 
 <body>
-
-    <!-- navigation large -->
-
-    <nav class="navbar navbar-expand-xl d-flex">
-        <div class="container-fluid nav-content-wrapper">
-            <a href="/"><img class="navbar-brand" src="media/logo.png" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
-            </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav nav-links_wrapper">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">MEN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">WOMEN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">KIDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BRANDS</a>
-                    </li>
-                </ul>
-                <form class="search-function" action="">
-                    <label class='sr-only' for="search_box"></label>
-                    <input class="form-control me-2 rounded-0" name="search_box" id="search_box" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button type="submit">GO</button>
-                </form>
-            </div>
-
-            <div class="nav-icons">
-                <i class="fas fa-shopping-bag fa-2x"></i>
-                <i class="fas fa-user fa-2x"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- navigation medium/small -->
-
-    <div class="mobile_nav">
-        <div class="nav-content_wrapper">
-            <div class="nav-content_navigate">
-                <img class="navbar-brand mobile_logo" src="media/logo.png" />
-                <i class="fas fa-times fa-3x"></i>
-            </div>
-            <ul class="mobile_nav_links">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">MEN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">WOMEN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">KIDS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BRANDS</a>
-                </li>
-            </ul>
-            <ul class="support-links">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
-                </li>
-            </ul>
-            <hr class='hr-lg mt2'>
-            <div class="social-icons_wrapper">
-                <a href="https://www.facebook.com/" target='_blank'><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
-
-            </div>
-        </div>
-
-    </div>
+    {% include 'includes/nav-lg.html' %}
+    {% include 'includes/nav-mobile.html' %}
 
     <!-- hero section -->
 
