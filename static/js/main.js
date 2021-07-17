@@ -25,5 +25,15 @@ $(document).ready(function () {
         $('.social-sidebar').addClass('rotate_back');
     });
 
+    // Show log-in modal when hovering profile icon
 
+    $('.profile-icon').mouseover(function () {
+        $('.login_modal').fadeIn();
+    }).mouseleave(function () {
+        $('.login_modal').fadeIn();
+    })
+
+    $('.hero-container').mouseover(function () {
+        $('.login_modal').fadeOut();
+    })
 });

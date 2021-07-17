@@ -181,6 +181,44 @@ h1 {
     .social-icons_wrapper i:hover {
       background: rgba(215, 35, 35, 0.25); }
 
+/* Profile hover modal */
+.login_modal {
+  position: absolute;
+  right: 0;
+  background: rgba(238, 238, 238, 0.8);
+  text-align: center;
+  padding-top: 30px;
+  padding: 30px 15px 0 15px;
+  height: 150px;
+  display: none; }
+  .login_modal h4 {
+    display: inline-block;
+    color: #EEE;
+    font-size: 15px; }
+  .login_modal a {
+    display: inline-block;
+    color: #EEE;
+    padding-left: 3px;
+    font-size: 15px; }
+    .login_modal a:hover {
+      color: #D72323; }
+
+.sign-in_btn {
+  background-color: #303841;
+  color: #fff;
+  padding: 10px 75px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .sign-in_btn:hover {
+    color: #EEE;
+    background: #46515e; }
+
+.hr-small {
+  margin: 0 0 5px 0;
+  color: #303841; }
+
 /************************ HERO SECTION **/
 .hero-container {
   background: url("/media/hero-img.png") no-repeat center;
@@ -249,7 +287,8 @@ h1 {
   .product-price_bubble span {
     font-size: 50px;
     position: relative;
-    bottom: 20px; }
+    bottom: 20px;
+    padding-right: 5px; }
 
 .social-sidebar {
   transform: rotate(-90deg); }

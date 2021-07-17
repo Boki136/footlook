@@ -1,0 +1,2305 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals NMD_Racer Primeknit Shoes",
+      "sku": "AH2430",
+      "category": 1,
+      "rrp": 14999,
+      "price": 7499,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "Channeling the streamlined look of an '80s racer, these shoes are updated with modern features. The foot-hugging adidas Primeknit upper offers a soft, breathable feel. The Boost midsole provides responsive comfort accented with a contrast-color EVA heel plug. Embroidered details add a distinctive finish.",
+      "rating": 2.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_1.jpg",
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_2.jpg",
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_3.jpg",
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_4.jpg",
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_5.jpg",
+        "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Sleek Shoes",
+      "sku": "G27341",
+      "category": 1,
+      "rrp": 7599,
+      "price": 3799,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "A modern take on adidas sport heritage, tailored just for women. Perforated 3-Stripes on the leather upper of these shoes offer a sleek look that mirrors iconic tennis styles.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_1.jpg",
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_2.jpg",
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_3.jpg",
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_4.jpg",
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_5.jpg",
+        "https://content.adidas.co.in/static/Product-G27341/WOMEN_Originals_SHOES_LOW_G27341_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Swim Puka Slippers",
+      "sku": "CM0081",
+      "category": 1,
+      "rrp": 999,
+      "price": 599,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These adidas Puka slippers for women's come with slim straps for a great fit. Feature performance logo on the footbed and textured Rubber outsole that gives unique comfort.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM0081/Men_SWIM_SLIDES_CM0081_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Questar Ride Shoes",
+      "sku": "B44832",
+      "category": 1,
+      "rrp": 6999,
+      "price": 3499,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Inspired by modern tech runners, these women's shoes step out with unexpected style. They're built with a breathable knit upper, while the heel offers the extra support of an Achilles-hugging design. The cushioned midsole provides a soft landing with every stride.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_1.jpg",
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_2.jpg",
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_3.jpg",
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_4.jpg",
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_5.jpg",
+        "https://content.adidas.co.in/static/Product-B44832/Women_CORE_RUNNING_SHOES_LOW_B44832_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Taekwondo Shoes",
+      "sku": "D98205",
+      "category": 1,
+      "rrp": 7999,
+      "price": 3999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "This design is inspired by vintage Taekwondo styles originally worn to perfect high kicks and rapid foot strikes. The canvas shoes make a streetwear fashion statement as a chic, foot-hugging slip-on. They're shaped for a narrow, women's-specific fit and ride on a soft gum rubber outsole.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_1.jpg",
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_2.jpg",
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_3.jpg",
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_4.jpg",
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_5.jpg",
+        "https://content.adidas.co.in/static/Product-D98205/WOMEN_Originals_SHOES_LOW_D98205_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Duramo Lite 2.0 Shoes",
+      "sku": "B75586",
+      "category": 1,
+      "rrp": 4799,
+      "price": 1920,
+      "discount": 60,
+      "brand": "CORE / NEO",
+      "description": "Refine your interval training in these women's versatile running-inspired shoes. Featuring a lightweight mesh and synthetic upper, they combine responsive midsole cushioning with a soft collar that reduces ankle pressure.",
+      "rating": 3.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_1.jpg",
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_2.jpg",
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_3.jpg",
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_4.jpg",
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_5.jpg",
+        "https://content.adidas.co.in/static/Product-B75586/WOMEN_core_SHOES_B75586_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Duramo Lite 2.0 Shoes",
+      "sku": "CG4051",
+      "category": 1,
+      "rrp": 4799,
+      "price": 2399,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Refine your interval training in these women's versatile running-inspired shoes. Featuring a lightweight mesh and synthetic upper, they combine responsive midsole cushioning with a soft collar that reduces ankle pressure.",
+      "rating": 3.85,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_1.jpg",
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_2.jpg",
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_3.jpg",
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_4.jpg",
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_5.jpg",
+        "https://content.adidas.co.in/static/Product-CG4051/WOMEN_core_SHOES_CG4051_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Swim Puka Slippers",
+      "sku": "CM0080",
+      "category": 1,
+      "rrp": 999,
+      "price": 599,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These adidas Puka slippers for women's come with slim straps for a great fit. Feature performance logo on the footbed and textured Rubber outsole that gives unique comfort.",
+      "rating": 2.7,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM0080/Men_SWIM_SLIDES_CM0080_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "name": "WOMEN'S ADIDAS RUNNING DURAMO 9 SHOES",
+      "sku": "B75990",
+      "category": 1,
+      "rrp": 5599,
+      "price": 2799,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's neutral running shoes will get you on the road to your goals. A sandwich mesh upper offers lightweight breathability, while a seamless print overlay adds support for a stable stride. The midsole offers pillow-soft Cloudfoam cushioning that eases every stride.",
+      "rating": 2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_1.jpg",
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_2.jpg",
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_3.jpg",
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_4.jpg",
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_5.jpg",
+        "https://content.adidas.co.in/static/Product-B75990/Women_RUNNING_SHOES_LOW_B75990_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals Forest Grove Shoes",
+      "sku": "EE5761",
+      "category": 2,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The Forest Grove brings back the look of the adidas Oregon running design from the '80s. A favourite for marathon training, it had a distinctive look and feel with shock-absorbing cushioning and a web-wrapped midsole. These streetwear shoes echo the original look with a textured nubuck and mesh upper. A web overlay on the midsole adds authentic Oregon style.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE5761/Men_ORIGINALS_SHOES_LOW_EE5761_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Swift Run Shoes",
+      "sku": "EE4553",
+      "category": 1,
+      "rrp": 7599,
+      "price": 4559,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The Swift distills decades of adidas heritage running designs. Made for casual everyday wear, these lightweight knit shoes come with a sleek shape and a supportive yet flexible feel. They stand out with embroidered accents and smooth welded details. An EVA midsole adds all-day wearability.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE4553/Women_ORIGINALS_SHOES_LOW_EE4553_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Continental Vulc Shoes",
+      "sku": "EF9315",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "These low-profile shoes come in a pastel color for a feminine touch. A mix of nubuck and canvas on the upper adds texture. The suede toe cap is abrasion-resistant so they look fresh and new longer. A vulcanized outsole makes them durable.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_1.jpg",
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_2.jpg",
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_3.jpg",
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_4.jpg",
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_5.jpg",
+        "https://content.adidas.co.in/static/Product-EF9315/Women_ORIGINALS_VULCANIZED_SHOES_LOW_EF9315_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Duramo 9 Shoes",
+      "sku": "F35281",
+      "category": 1,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's neutral running shoes will get you on the road to your goals. A sandwich mesh upper offers lightweight breathability, while a seamless print overlay adds support for a stable stride. The midsole offers pillow-soft Cloudfoam cushioning that eases every stride.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_1.jpg",
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_2.jpg",
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_3.jpg",
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_4.jpg",
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_5.jpg",
+        "https://content.adidas.co.in/static/Product-F35281/Women_CORE_RUNNING_SHOES_LOW_F35281_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Supercourt Shoes",
+      "sku": "EF9220",
+      "category": 1,
+      "rrp": 7599,
+      "price": 4559,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "Forty years of court style, refined to the essentials. The clean, simple lines and supple leather upper of these shoes are a nod to tennis history. Iconic perforated 3-Stripes and a contrasting Trefoil heel tab give them a timeless look.",
+      "rating": 1.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_1.jpg",
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_2.jpg",
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_3.jpg",
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_4.jpg",
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_5.jpg",
+        "https://content.adidas.co.in/static/Product-EF9220/Women_ORIGINALS_SHOES_LOW_EF9220_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Response Trail Shoes",
+      "sku": "EG0000",
+      "category": 2,
+      "rrp": 7999,
+      "price": 3999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "When the road turns to trail, all that matters is what lies ahead. These running shoes deliver a plush ride and confident grip in a fresh, sporty look. Cloudfoam cushioning feels ultra-soft while the aggressive outsole grabs on in all directions. The multilayer upper and sleek 3-Stripes elevate your look when you get back to town.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_1.jpg",
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_2.jpg",
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_3.jpg",
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_4.jpg",
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_5.jpg",
+        "https://content.adidas.co.in/static/Product-EG0000/Men_CORE_RUNNING_SHOES_LOW_EG0000_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Cosmic 2 Shoes",
+      "sku": "B44889",
+      "category": 1,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's running shoes have a breathable mesh upper to keep your feet ventilated on your daily runs. The Cloudfoam midsole provides plush cushioning with every stride, and a high-wear outsole holds up over time.",
+      "rating": 2.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_1.jpg",
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_2.jpg",
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_3.jpg",
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_4.jpg",
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_5.jpg",
+        "https://content.adidas.co.in/static/Product-B44889/WOMEN_CORE_SHOES_MID_B44889_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Storm Runner Shoes",
+      "sku": "CL7417",
+      "category": 1,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "A fast, lightweight adidas stormrunner shoes for women. These running-inspired shoes are very comfortable for your daily routine. Made with textile upper and Cloudfoam midsole along with rubber outsole these shoes will provide comfort to your feet all day long.",
+      "rating": 2.4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7417/Women_CORE_RUNNING_SHOES_LOW_CL7417_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Quickspike Shoes",
+      "sku": "CL7408",
+      "category": 1,
+      "rrp": 3999,
+      "price": 1999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's running-inspired shoes feature a breathable mesh upper with a comfort collar, while a moulded overlay provides lightweight support. The soft Cloudfoam cushioning in the one-piece midsole and outsole provides comfort that lasts all day long.",
+      "rating": 2.63,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7408/Women_CORE_RUNNING_SHOES_LOW_CL7408_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "name": "WOMEN'S ADIDAS SWIM CLOUDFOAM FLIP FLOPS",
+      "sku": "B43601",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1649,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "A minimalist design with maximum post-workout comfort. These women's thong sandals feature a soft strap connected to a Cloudfoam footbed that cushions every step and dries quickly. A durable rubber outsole adds long-lasting wear.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_1.jpg",
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_2.jpg",
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_3.jpg",
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_4.jpg",
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_5.jpg",
+        "https://content.adidas.co.in/static/Product-B43601/Women_SWIM_SLIDES_B43601_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Lite Racer Shoes",
+      "sku": "EE8245",
+      "category": 1,
+      "rrp": 4299,
+      "price": 2149,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Unstoppable style. These shoes borrow their lightweight look and feel from celebrated runners. The airy mesh upper has a clean finish with monochrome 3-Stripes. Plush cushioning helps keep the ride smooth.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8245/Men_CORE_SHOES_LOW_EE8245_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Duramo 9 Shoes",
+      "sku": "EE8042",
+      "category": 1,
+      "rrp": 5599,
+      "price": 2799,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's neutral running shoes will get you on the road to your goals. A sandwich mesh upper offers lightweight breathability, while a seamless print overlay adds support for a stable stride. The midsole offers pillow-soft Cloudfoam cushioning that eases every stride.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8042/Women_CORE_RUNNING_SHOES_LOW_EE8042_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Arcadeis Shoes",
+      "sku": "CL7429",
+      "category": 1,
+      "rrp": 4299,
+      "price": 2149,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's running-inspired shoes cradle your feet with a net mesh upper. Pillow-soft Cloudfoam cushioning in the one-piece midsole and outsole provides comfort that lasts all day long.",
+      "rating": 4.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7429/Women_CORE_RUNNING_SHOES_LOW_CL7429_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Videll Shoes",
+      "sku": "CL7370",
+      "category": 1,
+      "rrp": 3799,
+      "price": 2279,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running-inspired shoes for women. Feature a textile-mesh upper and synthetic overlays. EVA cushioning adds extra comfort. The running 3-Stripes on the sides along with an interesting all-over print on the upper add to it's appeal.",
+      "rating": 4.3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7370/Women_CORE_RUNNING_SHOES_LOW_CL7370_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running EnergyFalcon X Shoes",
+      "sku": "EE9946",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "When you dig deep to reach your goals, these running shoes offer the support and stability you need. Every step feels pillow-soft with plush cushioning and an OrthoLiteÂ® sockliner for comfort. A flowing TPU heel counter and thin support cage keep the foot centred and stable. The durable outsole is made for logging many miles.",
+      "rating": 4.1,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9946/Women_CORE_RUNNING_SHOES_LOW_EE9946_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Videll Shoes",
+      "sku": "CK9741",
+      "category": 1,
+      "rrp": 3799,
+      "price": 1899,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running-inspired shoes for women. Feature a textile mesh upper and synthetic overlays. EVA cushioning adds extra comfort. The running 3-Stripes on the sides along with an interesting all-over print on the upper add to it's appeal.",
+      "rating": 2.8,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_1.jpg",
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_2.jpg",
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_3.jpg",
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_4.jpg",
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_5.jpg",
+        "https://content.adidas.co.in/static/Product-CK9741/WOMEN_RUNNING_SHOES_MID_CK9741_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Hellion Z Shoes",
+      "sku": "CL7363",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Great everyday trainer for the runner in you to go that extra mile. The adidas Hellion Z shoes comes with mesh upper for providing lightweight and breathability to your feet.",
+      "rating": 2.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7363/Women_CORE_RUNNING_SHOES_LOW_CL7363_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Videll Shoes",
+      "sku": "CL7372",
+      "category": 1,
+      "rrp": 3799,
+      "price": 2279,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running-inspired shoes for women. Feature a textile-mesh upper and synthetic overlays. EVA cushioning adds extra comfort. The running 3-Stripes on the sides along with an interesting all-over print on the upper add to it's appeal.",
+      "rating": 3.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7372/Women_CORE_RUNNING_SHOES_LOW_CL7372_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Arcadeis Shoes",
+      "sku": "CL7430",
+      "category": 1,
+      "rrp": 4299,
+      "price": 2149,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These women's running-inspired shoes cradle your feet with a net mesh upper. Pillow-soft Cloudfoam cushioning in the one-piece midsole and outsole provides comfort that lasts all day long.",
+      "rating": 3.96,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7430/Women_CORE_RUNNING_SHOES_LOW_CL7430_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Cloudfoam Pure Shoes",
+      "sku": "F34485",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These women's running-inspired shoes cradle your feet with a mesh upper and a Memory Foam footbed that conforms to the shape of your foot. Pillow-soft Cloudfoam cushioning in the one-piece midsole and outsole provides comfort that lasts all day long.",
+      "rating": 3.1,
+      "images": [
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_1.jpg",
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_2.jpg",
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_3.jpg",
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_4.jpg",
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_5.jpg",
+        "https://content.adidas.co.in/static/Product-F34485/Women_CORE_SHOES_LOW_F34485_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Hellion Z Shoes",
+      "sku": "CL7365",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "The adidas Hellion Z Running shoes for women with new design pattern for any runner looking for trendy yet extremely comfortable running shoe. An excellent combination of breathable Mesh with synthetic overlays on the upper makes it very comfortable for your feet on the run. Durable, non slippery, blown out one piece super grip EVA midsole and Rubber outsole ensures maximum stability and grip on the ground.",
+      "rating": 4.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7365/Women_CORE_RUNNING_SHOES_LOW_CL7365_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Yking 2.0 Shoes",
+      "sku": "CL7373",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These lightweight running-inspired shoes for women give all round comfort, cushioning, durability & support in a simplistic design. The mesh upper ensure breathability and durability. Lightstrike EVA midsole gives you cushioning you need everyday and Rubber outsole provides durability.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7373/Women_CORE_RUNNING_SHOES_LOW_CL7373_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Hellion Z Shoes",
+      "sku": "CL7364",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "The adidas Hellion Z Running shoes for women with new design pattern for any runner looking for trendy yet extremely comfortable running shoe. An excellent combination of breathable Mesh with synthetic overlays on the upper makes it very comfortable for your feet on the run. Durable, non slippery, blown out one piece super grip EVA midsole and Rubber outsole ensures maximum stability and grip on the ground.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7364/Women_CORE_RUNNING_SHOES_LOW_CL7364_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Yking 2.0 Shoes",
+      "sku": "CL7374",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These lightweight running-inspired shoes for women give all round comfort, cushioning, durability & support in a simplistic design. The mesh upper ensure breathability and durability. Lightstrike EVA midsole gives you cushioning you need everyday and Rubber outsole provides durability.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7374/Women_CORE_RUNNING_SHOES_LOW_CL7374_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired RunFalcon Shoes",
+      "sku": "EE8167",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Start clocking miles in these lightweight running shoes. On the treadmill or the streets, they add comfort to each step with soft cushioning. The supportive trainers have an airy material-mix upper and a midfoot cage for extra support.",
+      "rating": 3.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8167/Women_CORE_RUNNING_SHOES_LOW_EE8167_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Quickspike Shoes",
+      "sku": "CL7410",
+      "category": 1,
+      "rrp": 3999,
+      "price": 2399,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These women's running-inspired shoes feature a breathable mesh upper with a comfort collar, while a moulded overlay provides lightweight support. The soft Cloudfoam cushioning in the one-piece midsole and outsole provides comfort that lasts all day long.",
+      "rating": 2.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7410/Women_CORE_RUNNING_SHOES_LOW_CL7410_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Blaze Runner Shoes",
+      "sku": "CL7401",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running-inspired shoes for women. The breathable and lightweight Knit-Mesh offer extended ventilation and comfort. Cloudfoam midsole and full Adiwear outsole provides durability.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7401/Women_CORE_RUNNING_SHOES_LOW_CL7401_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Lite Racer CLN Shoes",
+      "sku": "EE8219",
+      "category": 1,
+      "rrp": 4599,
+      "price": 2759,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Designed with sleek lines for a minimalist look, these shoes have a light and breathable mesh upper. Pillowy cushioning delivers comfort that lasts all day.",
+      "rating": 3.75,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8219/Women_CORE_SHOES_LOW_EE8219_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Blaze Runner Shoes",
+      "sku": "CL7402",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running-inspired shoes for women. The breathable and lightweight Knit-Mesh offer extended ventilation and comfort. Cloudfoam midsole and full Adiwear outsole provides durability.",
+      "rating": 4.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7402/Women_CORE_RUNNING_SHOES_LOW_CL7402_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Nova Run X Shoes",
+      "sku": "EE9929",
+      "category": 1,
+      "rrp": 8599,
+      "price": 5159,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Being comfortable on your run is just as important as winning the race. These shoes combine soft, supportive Cloudfoam cushioning with a durable Adiwear outsole for comprehensive control and an energised ride. The mesh upper features a foot-hugging, no-sew fit for a locked-in feel.",
+      "rating": 4.7,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9929/Women_CORE_RUNNING_SHOES_LOW_EE9929_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Questar Flow Shoes",
+      "sku": "EE8221",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Ready for the streets. These shoes borrow their modern look and feel from lightweight runners. They have a flexible knit upper with floating 3-Stripes integrated into the lacing system. Pillow-soft midsole and outsole cushioning provides all-day comfort.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8221/Women_CORE_SHOES_LOW_EE8221_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Questar Flow Shoes",
+      "sku": "EE8224",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Ready for the streets. These shoes borrow their modern look and feel from lightweight runners. They have a flexible knit upper with floating 3-Stripes integrated into the lacing system. Pillow-soft midsole and outsole cushioning provides all-day comfort.",
+      "rating": 3.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8224/Women_CORE_SHOES_LOW_EE8224_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running EnergyFalcon X Shoes",
+      "sku": "EE9941",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "When you dig deep to reach your goals, these running shoes offer the support and stability you need. Every step feels pillow-soft with plush cushioning and an OrthoLiteÂ® sockliner for comfort. A flowing TPU heel counter and thin support cage keep the foot centred and stable. The durable outsole is made for logging many miles.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9941/Women_CORE_RUNNING_SHOES_LOW_EE9941_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Asweego Shoes",
+      "sku": "EE8522",
+      "category": 1,
+      "rrp": 7599,
+      "price": 4559,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Shoes with flexibility and responsiveness for multisport training. These shoes have a knit textile upper that hugs the foot for a sock-like fit. Pillow-like midsole cushioning provides long-lasting comfort. Durable rubber inserts at the forefoot and heel provide added grip so you're ready for unexpected terrain.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8522/Women_CORE_RUNNING_SHOES_LOW_EE8522_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Sooraj Shoes",
+      "sku": "EE9932",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Fast and sleek. Ready to go. These women's running shoes feature a streamlined, low-profile design and pillow-soft Cloudfoam cushioning for plush landings. The mesh upper delivers a speedy look in fun colours and 3-Stripes.",
+      "rating": 2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9932/Women_CORE_RUNNING_SHOES_LOW_EE9932_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Questar Ride Shoes",
+      "sku": "EE8375",
+      "category": 1,
+      "rrp": 6999,
+      "price": 4199,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Inspired by modern tech runners, these women's shoes step out with unexpected style. A two-tone mesh upper keeps the feel flexible and mixes with a sculpted Cloudfoam midsole and contrast heel counter.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8375/Women_CORE_RUNNING_SHOES_LOW_EE8375_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Run 70s Shoes",
+      "sku": "EE9798",
+      "category": 2,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These running-inspired shoes are designed with a mesh upper and a textile lining for flexible, all-day comfort. 3-Stripes and a rubber outsole give the shoes a stylish sign-off.",
+      "rating": 1.3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9798/Women_CORE_SHOES_LOW_EE9798_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Asweerun Shoes",
+      "sku": "EE8502",
+      "category": 1,
+      "rrp": 4999,
+      "price": 2999,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Aspire to greatness. These running shoes for women are made with an airy, lightweight mesh upper. The durable rubber outsole grips the pavement for added stability. A cushioned midsole brings comfort to each step.",
+      "rating": 4.15,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8502/Women_CORE_RUNNING_SHOES_LOW_EE8502_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Archivo Shoes",
+      "sku": "EF0450",
+      "category": 1,
+      "rrp": 4999,
+      "price": 2999,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "A mix of modern comfort and authentic adidas heritage. These running-inspired shoes treat your feet to superior cushioning and an ultra-plush ride with a Cloudfoam midsole and soft sockliner. A sleek mesh upper features suede overlays with subtle 3-Stripes for sporty style.",
+      "rating": 4.96,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_1.jpg",
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_2.jpg",
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_3.jpg",
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_4.jpg",
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_5.jpg",
+        "https://content.adidas.co.in/static/Product-EF0450/Women_CORE_SHOES_LOW_EF0450_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's Sport Inspired Yking 2.0 Shoes",
+      "sku": "CL7375",
+      "category": 1,
+      "rrp": 3299,
+      "price": 1979,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These lightweight running-inspired shoes for women give all round comfort, cushioning, durability & support in a simplistic design. The mesh upper ensure breathability and durability. Lightstrike EVA midsole gives you cushioning you need everyday and Rubber outsole provides durability.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7375/Women_CORE_RUNNING_SHOES_LOW_CL7375_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Sport Inspired Archivo Shoes",
+      "sku": "EF0446",
+      "category": 1,
+      "rrp": 4999,
+      "price": 2999,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "A mix of modern comfort and authentic adidas heritage. These running-inspired shoes treat your feet to superior cushioning and an ultra-plush ride with a Cloudfoam midsole and soft sockliner. A sleek mesh upper features suede overlays with subtle 3-Stripes for sporty style.",
+      "rating": 3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_1.jpg",
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_2.jpg",
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_3.jpg",
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_4.jpg",
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_5.jpg",
+        "https://content.adidas.co.in/static/Product-EF0446/Women_CORE_SHOES_LOW_EF0446_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Response Trail X Shoes",
+      "sku": "EF0529",
+      "category": 1,
+      "rrp": 6999,
+      "price": 4199,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "When the road turns to trail, all that matters is what lies ahead. These running shoes deliver a plush ride and confident grip in a fresh, sporty look. Cloudfoam cushioning feels ultra-soft while the aggressive outsole grabs on in all directions. The multilayer upper and sleek 3-Stripes elevate your look when you get back to town.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_1.jpg",
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_2.jpg",
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_3.jpg",
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_4.jpg",
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_5.jpg",
+        "https://content.adidas.co.in/static/Product-EF0529/Women_CORE_RUNNING_SHOES_LOW_EF0529_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running EnergyFalcon X Shoes",
+      "sku": "EE9940",
+      "category": 1,
+      "rrp": 6599,
+      "price": 3959,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "When you dig deep to reach your goals, these running shoes offer the support and stability you need. Every step feels pillow-soft with plush cushioning and an OrthoLiteÂ® sockliner for comfort. A flowing TPU heel counter and thin support cage keep the foot centred and stable. The durable outsole is made for logging many miles.",
+      "rating": 3.8,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9940/Women_CORE_RUNNING_SHOES_LOW_EE9940_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Marathon Tech Shoes",
+      "sku": "EE4954",
+      "category": 1,
+      "rrp": 11999,
+      "price": 7199,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "These shoes draft off the Marathon TR, a trail-running pioneer that debuted in 1979. The upper mixes breathable mesh and suede overlays with metallic details. A grid print on the midsole highlights the addition of responsive Boost cushioning.",
+      "rating": 2.6,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE4954/Women_ORIGINALS_SHOES_LOW_EE4954_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals U_Path Run Shoes",
+      "sku": "G27996",
+      "category": 1,
+      "rrp": 7999,
+      "price": 4799,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The U_Path offers a sleek combination of retro and modern. These shoes are built of soft, breathable mesh for everyday wear. The unique D-ring lacing system is inspired by a '70s running sneaker design. A bungee heel piece provides support, and a lightweight EVA midsole adds all-day wearability.",
+      "rating": 2.1,
+      "images": [
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_1.jpg",
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_2.jpg",
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_3.jpg",
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_4.jpg",
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_5.jpg",
+        "https://content.adidas.co.in/static/Product-G27996/WOMEN_Originals_SHOES_LOW_G27996_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Drogo Shoes",
+      "sku": "CL4156",
+      "category": 2,
+      "rrp": 2699,
+      "price": 1349,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The adidas running-inspired shoes for men. An excellent combination of breathable Mesh with synthetic overlays on the upper makes it very comfortable for your feet on the run. Durable and non slippery one piece super grip EVA midsole and outsole ensures maximum stability and grip on the ground.",
+      "rating": 3.6,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL4156/MEN_RUNNING_SHOES_CL4156_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Stan Smith Shoes",
+      "sku": "EE4893",
+      "category": 1,
+      "rrp": 7999,
+      "price": 4799,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "Since it first hit the courts in the early '70s, the Stan Smith has become legendary for its timeless style. These shoes pay tribute to the iconic design by preserving the low-profile cupsole and perforated 3-Stripes. The allover floral print on the upper gives this version a fresh twist.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE4893/Women_ORIGINALS_SHOES_LOW_EE4893_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Sooraj Shoes",
+      "sku": "EE9937",
+      "category": 1,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Fast and sleek. Ready to go. These women's running shoes feature a streamlined, low-profile design and pillow-soft Cloudfoam cushioning for plush landings. The mesh upper delivers a speedy look in fun colours and 3-Stripes.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9937/Women_CORE_RUNNING_SHOES_LOW_EE9937_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals U_Path Run Shoes",
+      "sku": "G27649",
+      "category": 1,
+      "rrp": 7999,
+      "price": 4799,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The U_Path offers a sleek combination of retro and modern. These shoes are built of soft, breathable mesh for everyday wear. The unique D-ring lacing system is inspired by a '70s running sneaker design. A bungee heel piece provides support, and a lightweight EVA midsole adds all-day wearability.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_1.jpg",
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_2.jpg",
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_3.jpg",
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_4.jpg",
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_5.jpg",
+        "https://content.adidas.co.in/static/Product-G27649/WOMEN_Originals_SHOES_LOW_G27649_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Run 70s Shoes",
+      "sku": "EE9797",
+      "category": 2,
+      "rrp": 5599,
+      "price": 3359,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These running-inspired shoes are designed with a mesh upper and a textile lining for flexible, all-day comfort. 3-Stripes and a rubber outsole give the shoes a stylish sign-off.",
+      "rating": 4.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE9797/Women_CORE_SHOES_LOW_EE9797_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Nayo 1.0 shoes",
+      "sku": "CI9914",
+      "category": 2,
+      "rrp": 4999,
+      "price": 2000,
+      "discount": 60,
+      "brand": "CORE / NEO",
+      "description": "The adidas Nayo 1.0 shoes for men. These lightweight running shoes give all round comfort, cushioning, durability & support in a simplistic design. The mesh upper ensure breathability and durability while the Light strike EVA midsole provides premium cushioning's. Full Rubber outsole provides durability.",
+      "rating": 4.8,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_1.jpg",
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_2.jpg",
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_3.jpg",
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_4.jpg",
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_5.jpg",
+        "https://content.adidas.co.in/static/Product-CI9914/Men_RUNNING_SHOES_LOW_CI9914_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sports Inspired Lite Racer Shoes",
+      "sku": "EE8252",
+      "category": 2,
+      "rrp": 4299,
+      "price": 2149,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The ultra-lightweight build of these shoes takes a running-inspired style to the streets. The sporty look has a breathable and durable mesh upper with stitched-on 3-Stripes. EVA cushioning provides lightweight comfort for every step.",
+      "rating": 4.7,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8252/Men_CORE_SHOES_LOW_EE8252_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Nepton 2.0 Shoes",
+      "sku": "CK9664",
+      "category": 2,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Sleek design with reflective three stripes makes it a contemporary yet functional",
+      "rating": 4.3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_1.jpg",
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_2.jpg",
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_3.jpg",
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_4.jpg",
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_5.jpg",
+        "https://content.adidas.co.in/static/Product-CK9664/MEN_RUNNING_SHOES_MID_CK9664_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Running Aseerun Shoes",
+      "sku": "EE8501",
+      "category": 1,
+      "rrp": 4999,
+      "price": 2999,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "Aspire to greatness. These running shoes for women are made with an airy, lightweight mesh upper. The durable rubber outsole grips the pavement for added stability. A cushioned midsole brings comfort to each step.",
+      "rating": 3.8,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE8501/Women_CORE_RUNNING_SHOES_LOW_EE8501_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Torik Shoes",
+      "sku": "CL7602",
+      "category": 2,
+      "rrp": 4799,
+      "price": 2399,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "A well cushioned shoe with a fresher look that will appeal to young runners. Features Mesh upper for maximum ventilation, lightstrike IMEVA midsole with visible adiprene providing protection from harmful impact forces and durable Rubber outsole for long-lasting wear.",
+      "rating": 3.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7602/Men_CORE_RUNNING_SHOES_LOW_CL7602_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Kalus 1.0 Shoes",
+      "sku": "CL7494",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "A well cushioned running-inspired shoes with a fresher look that will appeal to all. Features Mesh upper for maximum ventilation, lightstrike IMEVA midsole with visible adiprene providing protection from harmful impact forces and durable Rubber outsole for long-lasting wear.",
+      "rating": 3.85,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7494/Men_CORE_RUNNING_SHOES_LOW_CL7494_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Duramo 9 Shoes",
+      "sku": "EE7923",
+      "category": 2,
+      "rrp": 5999,
+      "price": 3599,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "These men's running shoes will get you on the road to your goals. A sandwich mesh upper offers lightweight breathability, while a seamless print overlay adds support for a stable stride. The midsole offers pillow-soft Cloudfoam cushioning that eases every stride.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE7923/Men_CORE_RUNNING_SHOES_LOW_EE7923_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "name": "Women's adidas Originals Continental 80 Shoes",
+      "sku": "EE5566",
+      "category": 1,
+      "rrp": 7999,
+      "price": 4799,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The Continental 80 is an authentic reissue of an indoor sneaker from the '80s. These leather low top shoes show off a swooping stripe on the side and a split rubber cupsole.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE5566/Women_ORIGINALS_SHOES_LOW_EE5566_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S adidas  RUNNING YAMO 1.0 SHOES",
+      "sku": "CI1821",
+      "category": 2,
+      "rrp": 4799,
+      "price": 2399,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The adidas Yamo 1.0 shoes for men. These lightweight running shoes have a combination of Synthetic with double layer Mesh ensure breathability and durability while the Lightstrike EVA midsole provides premium cushionings. Full Rubber outsole provides durability.",
+      "rating": 2.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_1.jpg",
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_2.jpg",
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_3.jpg",
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_4.jpg",
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_5.jpg",
+        "https://content.adidas.co.in/static/Product-CI1821/Men_RUNNING_SHOES_LOW_CI1821_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "name": "men's ADIDAS RUNNING NEBULAR 1.0 SHOES",
+      "sku": "CJ0082",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The premium looking adidas Nebular 1.0 Running shoes for men crafted with Mesh overlays which make it lightweight. The breathable sandwich Mesh offer extended ventilation and comfort. Light strike IMEVA midsole with full Rubber outsole provides durability.",
+      "rating": 3.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0082/Men_RUNNING_SHOES_LOW_CJ0082_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING LEGUS SHOES",
+      "sku": "CJ8062",
+      "category": 2,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Get maximum support, comfort and a refreshed look with these adidas Legus shoes for men. The textile mesh upper is breathable and has a sock-like fit and the supportive cage in the shoe's midfoot provides midfoot lockdown. CLOUDFOAM gives  instant step in-comfort, long-lasting responsive cushioning and a super-plush feel and the Rubber outsole gives ultimate durability.",
+      "rating": 3.6,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8062/Men_RUNNING_SHOES_LOW_CJ8062_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals Supercourt Shoes",
+      "sku": "EE6038",
+      "category": 2,
+      "rrp": 7599,
+      "price": 4559,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "The Supercourt distills 40 years of adidas tennis style. This version of the classic low-profile shoes has perforated 3-Stripes on a crisp leather upper. Decorative stitching and overlays add texture and depth for a multilayered look.",
+      "rating": 3.7,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE6038/Men_ORIGINALS_SHOES_LOW_EE6038_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Toe Side II Slippers",
+      "sku": "CM0068",
+      "category": 2,
+      "rrp": 1299,
+      "price": 779,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "The adidas casual sandals for men with a striking camouflage design. Features stylish webbing straps, Diecut EVA midsole for stable cushioning and abrasion resistant rubber outsole with wet and dry traction pattern.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM0068/Men_SWIM_SLIDES_CM0068_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Outdoor Elevate Sandals",
+      "sku": "CK9830",
+      "category": 2,
+      "rrp": 2799,
+      "price": 1399,
+      "discount": 50,
+      "brand": "SPORT PERFORMANCE",
+      "description": "Stylish and sleek adidas sandals for women are extremely lightweight. Adjustable straps enable optimal fit while the Synthetic upper and soft EVA footbed with fitted heel provide enhanced comfort. Rubber outsole with wet and dry traction pattern keeps you in control.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_1.jpg",
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_2.jpg",
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_3.jpg",
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_4.jpg",
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_5.jpg",
+        "https://content.adidas.co.in/static/Product-CK9830/MEN_OUTDOOR_SANDALS_CK9830_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "name": "men's ADIDAS RUNNING NEBULAR 1.0 SHOES",
+      "sku": "CJ0080",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The premium looking adidas Nebular 1.0 Running shoes for men crafted with Mesh overlays which make it lightweight. The breathable sandwich Mesh offer extended ventilation and comfort. Light strike IMEVA midsole with full Rubber outsole provides durability.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ0080/Men_RUNNING_SHOES_LOW_CJ0080_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals Superstar Shoes",
+      "sku": "EG4957",
+      "category": 2,
+      "rrp": 7999,
+      "price": 7999,
+      "discount": 0,
+      "brand": "ORIGINALS",
+      "description": "These trainers born in the '70s keep the look classic with a coated leather upper. They feature all the authentic details, including zigzag edging on the tonal 3-Stripes and the signature rubber shell toe.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_1.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_2.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_3.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_4.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_5.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/adidas_EG4957_6.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/EG4957-footwear.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/Superstar_EG4957_7.jpg",
+        "https://content.adidas.co.in/static/Product-EG4957/Superstar_EG4957_8.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals Stan Smith Shoes",
+      "sku": "BD7438",
+      "category": 2,
+      "rrp": 7999,
+      "price": 3999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "The chic minimalism of the Stan Smith invites endless variation. These men's shoes are updated for the season with a subtle twist. A small cutout Trefoil makes a surprise appearance on the smooth leather upper.",
+      "rating": 4.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_1.jpg",
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_2.jpg",
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_3.jpg",
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_4.jpg",
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_5.jpg",
+        "https://content.adidas.co.in/static/Product-BD7438/MEN_Originals_SHOES_LOW_BD7438_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Duramo Lite 2.0 Shoes",
+      "sku": "B75579",
+      "category": 2,
+      "rrp": 4999,
+      "price": 2499,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Refine your interval training in these men's versatile running-inspired shoes. Featuring a lightweight mesh and synthetic upper, they combine responsive midsole cushioning with a soft collar that reduces ankle pressure.",
+      "rating": 4.3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_1.jpg",
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_2.jpg",
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_3.jpg",
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_4.jpg",
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_5.jpg",
+        "https://content.adidas.co.in/static/Product-B75579/MEN_Core_SHOES_B75579_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Swim Ozor III Slippers",
+      "sku": "CM0057",
+      "category": 2,
+      "rrp": 1299,
+      "price": 779,
+      "discount": 40,
+      "brand": "CORE / NEO",
+      "description": "The simple and stylish adidas Ozor III slippers for men. Best suited to match with your swimwear, these printed slippers have a soft footbed for additional comfort for your feet while the Synthetic strap with vents provides breathability proper fitting.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM0057/Men_SWIM_SLIDES_CM0057_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Swim Gadi Slippers",
+      "sku": "CL0206",
+      "category": 2,
+      "rrp": 1499,
+      "price": 749,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These thongs are primed for warm-weather fun in a simple design with an urban inspired city graphic print on footbed and adidas brading featured on heel and strap.",
+      "rating": 3.6,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL0206/MEN_SWIM_SLIDES_CL0206_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING LEGUS SHOES",
+      "sku": "CJ8058",
+      "category": 2,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Get maximum support, comfort and a refreshed look with these adidas Legus shoes for men. The textile mesh upper is breathable and has a sock-like fit and the supportive cage in the shoe's midfoot provides midfoot lockdown. CLOUDFOAM gives  instant step in-comfort, long-lasting responsive cushioning and a super-plush feel and the Rubber outsole gives ultimate durability.",
+      "rating": 3.7,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8058/Men_RUNNING_SHOES_LOW_CJ8058_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals CAMPUS Low Shoes",
+      "sku": "BZ0086",
+      "category": 2,
+      "rrp": 7999,
+      "price": 3999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "This men's classic sneaker stays close to its trendsetting '80s design, while staying modern for today's streets. Boasting a suede upper with contrast 3-Stripes and heel patch, these shoes feature a reinforced toe cap. The cupsole leaves a herringbone-pattern footprint for a retro twist.",
+      "rating": 3.2,
+      "images": [
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_1.jpg",
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_2.jpg",
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_3.jpg",
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_4.jpg",
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_5.jpg",
+        "https://content.adidas.co.in/static/Product-BZ0086/Men_ORIGINALS_SHOES_Low_BZ0086_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING HELKIN 3.0 SHOES",
+      "sku": "CJ8117",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Style and performance go hand in hand in this adidas Helkin 3.0 Running shoes for men. The breathable upper Knit-Mesh offers maximum ventilation. EVA midsole and rubber outsole.",
+      "rating": 3.45,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8117/Men_RUNNING_SHOES_LOW_CJ8117_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING LEGUS 1.0 SHOES",
+      "sku": "CJ8073",
+      "category": 2,
+      "rrp": 5599,
+      "price": 2799,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Get maximum support, comfort and a refreshed look with these adidas Legus shoes for men. The textile mesh upper is breathable and has a sock-like fit and the supportive cage in the shoe's midfoot provides midfoot lockdown. CLOUDFOAM gives  instant step in-comfort, long-lasting responsive cushioning and a super-plush feel and the Rubber outsole gives ultimate durability.",
+      "rating": 4.52,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8073/Men_RUNNING_SHOES_LOW_CJ8073_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Kollide Shoes",
+      "sku": "CL7551",
+      "category": 2,
+      "rrp": 4799,
+      "price": 2399,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Extremely functional and subtle running shoes for men. The breathable and lightweight textile upper offer extended ventilation and comfort. The Cloudfoam midsole gives you cushioning you need everyday and Rubber outsole provides durability.",
+      "rating": 4.69,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7551/Men_CORE_RUNNING_SHOES_LOW_CL7551_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Edge PR Shoes",
+      "sku": "AC8122",
+      "category": 2,
+      "rrp": 7999,
+      "price": 3999,
+      "discount": 50,
+      "brand": "SPORT PERFORMANCE",
+      "description": "With a springy midsole and breathable upper, these men's running shoes are inspired by a racing flat. Bounce provides flexible cushioning for energised comfort, and a mesh upper keeps them lightweight.",
+      "rating": 4.3,
+      "images": [
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_1.jpg",
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_2.jpg",
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_3.jpg",
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_4.jpg",
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_5.jpg",
+        "https://content.adidas.co.in/static/Product-AC8122/Men_RUNNING_SHOES_LOW_AC8122_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals FuturePacer Shoes",
+      "sku": "CM8453",
+      "category": 2,
+      "rrp": 19999,
+      "price": 9999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "The Futurepacer reworks the revolutionary design of the 1984 Micropacer shoes to challenge old ideas of what a sneaker should look like. This futuristic style makes a statement with a fully reflective stretchy upper and a mix of premium leathers. A Boost midsole with textured EVA plugs returns energy with every stride.",
+      "rating": 4.85,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM8453/MEN_Originals_SHOES_LOW_CM8453_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS ORIGINALS MICROPACER X R1 SHOES",
+      "sku": "EE3625",
+      "category": 2,
+      "rrp": 15999,
+      "price": 7999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "These shoes are a hybrid of retro and modern adidas designs. Made in leather with suede overlays, they combine the midsole look of the NMD_R1 with the vintage-tech upper of the 1984 Micropacer, born during an era when wearable technology was an exciting new concept. The Boost midsole adds durable energy return.",
+      "rating": 4.63,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE3625/Men_ORIGINALS_SHOES_LOW_EE3625_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Outdoor Andorian Shoes",
+      "sku": "CM0031",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "SPORT PERFORMANCE",
+      "description": "The adidas Andorian shoes for men are crafted with a strong, grippy outsole inspired by mountain bike tires, and a super durable Mesh and Synthetic upper. They come with Lightweight EVA midsole for stability and cushioning while the abrasion resistant rubber outsole provides aggressive traction for rough terrain.",
+      "rating": 3.95,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_1.jpg",
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_2.jpg",
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_3.jpg",
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_4.jpg",
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_5.jpg",
+        "https://content.adidas.co.in/static/Product-CM0031/Men_OUTDOOR_SHOES_LOW_CM0031_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Sport Inspired Advantage Base Shoes",
+      "sku": "EE7697",
+      "category": 2,
+      "rrp": 4999,
+      "price": 2499,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "A court look emerges on the streets. These shoes have a sleek textile upper and a textured rubber cupsole.",
+      "rating": 3.56,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE7697/Men_CORE_SHOES_LOW_EE7697_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Galaxy 4 Shoes",
+      "sku": "F36159",
+      "category": 2,
+      "rrp": 5299,
+      "price": 2649,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Add miles to your running regimen in these men's shoes. They have a durable and breathable mesh upper with a midfoot cage for added support and stability. The plush Cloudfoam midsole delivers ultra-soft cushioning.",
+      "rating": 3.48,
+      "images": [
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_1.jpg",
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_2.jpg",
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_3.jpg",
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_4.jpg",
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_5.jpg",
+        "https://content.adidas.co.in/static/Product-F36159/MEN_CORE_SHOES_MID_F36159_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS ESSENTIALS EEZAY FLIP-FLOPS",
+      "sku": "F35028",
+      "category": 2,
+      "rrp": 1999,
+      "price": 999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These men's classic flip-flops offer a clean beach design. Featuring midsole cushioning, this essential footwear provides lightweight comfort in a simple silhouette.",
+      "rating": 4.66,
+      "images": [
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_1.jpg",
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_2.jpg",
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_3.jpg",
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_4.jpg",
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_5.jpg",
+        "https://content.adidas.co.in/static/Product-F35028/MEN_SWIM_SLIDES_F35028_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "name": "men's ADIDAS ORIGINALS PW HU HOLI STAN SMITH SHOES",
+      "sku": "AC7042",
+      "category": 2,
+      "rrp": 9999,
+      "price": 4999,
+      "discount": 50,
+      "brand": "ORIGINALS",
+      "description": "A style icon gets some love from one of today's top trendsetters. Pharrell Williams puts his creative spin on these shoes, which have all the clean, classic details of the beloved Stan Smith.",
+      "rating": 5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_1.jpg",
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_2.jpg",
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_3.jpg",
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_4.jpg",
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_5.jpg",
+        "https://content.adidas.co.in/static/Product-AC7042/Men_ORIGINALS_SHOES_LOW_AC7042_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING ZETA 1.0 SHOES",
+      "sku": "CJ8053",
+      "category": 2,
+      "rrp": 5999,
+      "price": 2999,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Designed to go the distance, these adidas Zeta 1.0 running shoes for men give optimum cushioning to your feet with full-length CLOUDFOAM and its stretch Mesh upper inspires comfortable familiarity. It's smart style details balance the clean design and the rubber outsole provides best durability.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8053/Men_RUNNING_SHOES_LOW_CJ8053_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running PureBounce+ Clima Shoes",
+      "sku": "BC0836",
+      "category": 2,
+      "rrp": 8999,
+      "price": 4499,
+      "discount": 50,
+      "brand": "SPORT PERFORMANCE",
+      "description": "These running shoes are designed with 360 degrees of ventilation to help you stay cool on hot days. They have a lightweight and breathable mesh upper. A wide forefoot provides a stable platform for lateral movement, and energised cushioning provides comfort and flexibility.",
+      "rating": 3.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_1.jpg",
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_2.jpg",
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_3.jpg",
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_4.jpg",
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_5.jpg",
+        "https://content.adidas.co.in/static/Product-BC0836/MEN_RUNNING_SHOES_MID_BC0836_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Duramo 9 Shoes",
+      "sku": "F35275",
+      "category": 2,
+      "rrp": 6599,
+      "price": 3299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "These men's versatile running shoes are ideal for the treadmill or the trail. They feature a mesh upper for breathability and a seamless print overlay for additional support. Pillow-soft Cloudfoam cushions every stride, while the durable outsole holds up to everyday wear.",
+      "rating": 4,
+      "images": [
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_1.jpg",
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_2.jpg",
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_3.jpg",
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_4.jpg",
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_5.jpg",
+        "https://content.adidas.co.in/static/Product-F35275/MEN_CORE_SHOES_MID_F35275_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING HELKIN 3.0 SHOES",
+      "sku": "CJ8115",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Style and performance go hand in hand in this adidas Helkin 3.0 Running shoes for men. The breathable upper Knit-Mesh offers maximum ventilation. EVA midsole and rubber outsole.",
+      "rating": 3.89,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8115/Men_RUNNING_SHOES_LOW_CJ8115_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING ARIUS 1.0 SHOES",
+      "sku": "CJ8089",
+      "category": 2,
+      "rrp": 4999,
+      "price": 2499,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "The adidas Arius 1.0 Running shoes for men feature a comfortable two-tone Mesh upper with They come with Lightstrike IMEVA midsole for long term lightweight cushioning and shock absorption with a full rubber outsole for durability.",
+      "rating": 3.45,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8089/Men_RUNNING_SHOES_LOW_CJ8089_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Originals Skateboarding Seeley Shoes",
+      "sku": "EE6128",
+      "category": 2,
+      "rrp": 5999,
+      "price": 3599,
+      "discount": 40,
+      "brand": "ORIGINALS",
+      "description": "Designed so they're ready-to-ride with no wear-in time, these shoes draw on adidas heritage and reimagine it specifically for skateboarding. An abrasion-resistant suede upper holds up to daily park sessions, while the textile lining keeps your feet comfortable on or off the board. Tonal 3-Stripes and a linear Trefoil logo give these shoes low-key adidas style.",
+      "rating": 4.9,
+      "images": [
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_1.jpg",
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_2.jpg",
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_3.jpg",
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_4.jpg",
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_5.jpg",
+        "https://content.adidas.co.in/static/Product-EE6128/Men_SKATEBOARDING_VULCANIZED_SHOES_LOW_EE6128_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.product",
+    "fields": {
+      "name": "MEN'S ADIDAS RUNNING HELKIN 3.0 SHOES",
+      "sku": "CJ8118",
+      "category": 2,
+      "rrp": 4599,
+      "price": 2299,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Style and performance go hand in hand in this adidas Helkin 3.0 Running shoes for men. The breathable upper Knit-Mesh offers maximum ventilation. EVA midsole and rubber outsole.",
+      "rating": 2.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_1.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_2.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_3.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_4.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_5.jpg",
+        "https://content.adidas.co.in/static/Product-CJ8118/Men_RUNNING_SHOES_LOW_CJ8118_6.jpg"
+      ]
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.product",
+    "fields": {
+      "name": "Men's adidas Running Grito Shoes",
+      "sku": "CL7328",
+      "category": 2,
+      "rrp": 4799,
+      "price": 2399,
+      "discount": 50,
+      "brand": "CORE / NEO",
+      "description": "Great everyday shoes for runners to go that extra mile. Features Textile Mesh upper for maximum ventilation, lightstrike EVA midsole with visible adiprene providing protection from harmful impact forces and durable Rubber outsole for long-lasting wear.",
+      "rating": 4.5,
+      "images": [
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_1.jpg",
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_2.jpg",
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_3.jpg",
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_4.jpg",
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_5.jpg",
+        "https://content.adidas.co.in/static/Product-CL7328/Men_CORE_RUNNING_SHOES_LOW_CL7328_6.jpg"
+      ]
+    }
+  }
+
+]

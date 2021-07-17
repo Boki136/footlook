@@ -253,6 +253,57 @@ h1 {
 
 }
 
+/* Profile hover modal */
+
+.login_modal {
+    position: absolute;
+    right: 0;
+    background: rgba(238, 238, 238, .8);
+    text-align: center;
+    padding-top: 30px;
+    padding: 30px 15px 0 15px;
+    height: 150px;
+    display: none;
+
+    h4 {
+        display: inline-block;
+        color: $paper-white;
+        font-size: 15px;
+    }
+
+    a {
+        display: inline-block;
+        color: $paper-white;
+        padding-left: 3px;
+        font-size: 15px;
+
+        &:hover {
+            color: $red;
+        }
+
+    }
+}
+
+.sign-in_btn {
+    background-color: $primary-black;
+    color: #fff;
+    padding: 10px 75px;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &:hover {
+        color: $paper-white;
+        background: lighten($primary-black, 10%);
+    }
+}
+
+.hr-small {
+    margin: 0 0 5px 0;
+    color: $primary-black;
+}
+
 /************************ HERO SECTION **/
 
 .hero-container {
@@ -338,6 +389,7 @@ h1 {
         font-size: 50px;
         position: relative;
         bottom: 20px;
+        padding-right: 5px;
     }
 }
 
