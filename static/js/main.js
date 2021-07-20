@@ -29,11 +29,9 @@ $(document).ready(function () {
 
     $('.profile-icon').mouseover(function () {
         $('.login_modal').fadeIn();
-    }).mouseleave(function () {
-        $('.login_modal').fadeIn();
     })
 
-    $('.hero-container').mouseover(function () {
-        $('.login_modal').fadeOut();
+    $('.login_modal').mouseleave(function () {
+        $(this).fadeOut();
     })
 });

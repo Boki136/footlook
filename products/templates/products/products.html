@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block content %}
-<h1>{{products }}</h1>
+
+<!--Products Count & Filter -->
+<div class="product-tools-wrapper">
+    <h3>(<span>{{products|length}}</span>) products found</h3>
+    <h4 class='sort-filter'>Sort By</h4>
+    <hr class='hr-clear'>
+</div>
+
+
+<!--Products Listing -->
+<section class="product-listing-wrapper">
+    {% for product in products %}
+    <div class="product-card">
+        <img src="{{product.images|first}}" alt="{{product.name}}">
+        <hr>
+        <h2>{{product.name}}</h2>
+        <a href=''>{{product.brand}}</a>
+    </div>
+    {% endfor %}
+
+</section>
+
+
+
+
 {% endblock %}

@@ -28,7 +28,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/88ddfd17d7.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -38,6 +38,9 @@
 </head>
 
 <body>
+
+    {% include 'includes/nav-lg.html' %}
+    {% include 'includes/nav-mobile.html' %}
 
 
     {% if messages %}

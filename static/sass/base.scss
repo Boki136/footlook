@@ -269,6 +269,7 @@ h1 {
         display: inline-block;
         color: $paper-white;
         font-size: 15px;
+        color: $secondary-black;
     }
 
     a {
@@ -276,6 +277,7 @@ h1 {
         color: $paper-white;
         padding-left: 3px;
         font-size: 15px;
+        color: $secondary-black;
 
         &:hover {
             color: $red;
@@ -427,6 +429,72 @@ h1 {
         transform: rotateZ(90deg);
         margin: 20px 0;
         padding: 10px;
+    }
+}
+
+/********************* PRODUCTS PAGE **/
+.product-tools-wrapper {
+    margin-top: 150px;
+    width: 90%;
+    margin: 150px auto 50px auto;
+
+    h3 {
+        font-size: 20px;
+        float: left;
+    }
+
+    span {
+        font-size: 17px;
+    }
+
+    hr {
+        clear: both;
+        margin-top: 20px;
+        opacity: 0.8;
+        color: $paper-white;
+    }
+}
+
+
+.sort-filter {
+    float: right;
+    font-size: 18px;
+    margin-bottom: 25px;
+
+    &::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        padding-left: 8px;
+        position: relative;
+        bottom: 3px;
+    }
+}
+
+.product-listing-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.product-card {
+    flex: 1 0 21%;
+    margin: 5px;
+
+    img {
+        width: 350px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    a {
+        color: $red;
+        font-weight: 600;
+        text-decoration: none;
     }
 }
 

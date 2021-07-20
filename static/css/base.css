@@ -194,12 +194,14 @@ h1 {
   .login_modal h4 {
     display: inline-block;
     color: #EEE;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #3A4750; }
   .login_modal a {
     display: inline-block;
     color: #EEE;
     padding-left: 3px;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #3A4750; }
     .login_modal a:hover {
       color: #D72323; }
 
@@ -313,6 +315,53 @@ h1 {
     transform: rotateZ(90deg);
     margin: 20px 0;
     padding: 10px; }
+
+/********************* PRODUCTS PAGE **/
+.product-tools-wrapper {
+  margin-top: 150px;
+  width: 90%;
+  margin: 150px auto 50px auto; }
+  .product-tools-wrapper h3 {
+    font-size: 20px;
+    float: left; }
+  .product-tools-wrapper span {
+    font-size: 17px; }
+  .product-tools-wrapper hr {
+    clear: both;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: #EEE; }
+
+.sort-filter {
+  float: right;
+  font-size: 18px;
+  margin-bottom: 25px; }
+  .sort-filter::after {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 8px;
+    position: relative;
+    bottom: 3px; }
+
+.product-listing-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 50px; }
+
+.product-card {
+  flex: 1 0 21%;
+  margin: 5px; }
+  .product-card img {
+    width: 350px; }
+  .product-card h2 {
+    font-size: 20px; }
+  .product-card a {
+    color: #D72323;
+    font-weight: 600;
+    text-decoration: none; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {
