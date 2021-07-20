@@ -9,6 +9,23 @@
     <h3>(<span>{{products|length}}</span>) products found</h3>
     <h4 class='sort-filter'>Sort By</h4>
     <hr class='hr-clear'>
+    <div class="filter-box">
+        <ul>
+            <a href="">
+                <li>Price (low - high)</li>
+            </a>
+            <a href="">
+                <li>Price (high - low) </li>
+            </a>
+            <a href="">
+                <li>A - Z</li>
+            </a>
+            <a href="">
+                <li>Z - A</li>
+            </a>
+
+        </ul>
+    </div>
 </div>
 
 
@@ -16,14 +33,25 @@
 <section class="product-listing-wrapper">
     {% for product in products %}
     <div class="product-card">
-        <img src="{{product.images|first}}" alt="{{product.name}}">
-        <hr>
-        <h2>{{product.name}}</h2>
-        <a href=''>{{product.brand}}</a>
+        <div class="learn-more-wrapper">
+            <div class="background-overlay"></div>
+            <a class='learn-more-btn' href="">Learn More</a>
+            <img src="{{product.images|first}}" alt="{{product.name}}">
+            <h1 class='product-price'><span>€</span>{{product.price}}</h1>
+        </div>
+        <div class="product-card-detail">
+            <hr class='product-seperator'>
+            <h2>{{product.name}}</h2>
+            <a href=''>{{product.brand}}</a>
+        </div>
     </div>
     {% endfor %}
 
 </section>
+
+<div class="page-seperator">
+    <hr>
+</div>
 
 
 

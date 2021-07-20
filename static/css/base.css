@@ -320,7 +320,8 @@ h1 {
 .product-tools-wrapper {
   margin-top: 150px;
   width: 90%;
-  margin: 150px auto 50px auto; }
+  margin: 150px auto 50px auto;
+  position: relative; }
   .product-tools-wrapper h3 {
     font-size: 20px;
     float: left; }
@@ -332,10 +333,30 @@ h1 {
     opacity: 0.8;
     color: #EEE; }
 
+.filter-box {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  top: 48px;
+  display: none; }
+  .filter-box ul {
+    list-style: none;
+    background: #3A4750;
+    padding: 35px; }
+    .filter-box ul a {
+      color: #EEE;
+      text-decoration: none; }
+    .filter-box ul li {
+      padding: 5px 0;
+      cursor: pointer; }
+      .filter-box ul li:hover {
+        text-decoration: underline; }
+
 .sort-filter {
   float: right;
   font-size: 18px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  cursor: pointer; }
   .sort-filter::after {
     content: '\f0dd';
     font-family: "Font Awesome 5 Free";
@@ -353,15 +374,63 @@ h1 {
 
 .product-card {
   flex: 1 0 21%;
-  margin: 5px; }
+  margin: 5px;
+  text-align: center; }
   .product-card img {
-    width: 350px; }
+    height: 400px; }
   .product-card h2 {
     font-size: 20px; }
   .product-card a {
     color: #D72323;
     font-weight: 600;
     text-decoration: none; }
+
+.learn-more-wrapper {
+  position: relative; }
+  .learn-more-wrapper div,
+  .learn-more-wrapper a,
+  .learn-more-wrapper h1 {
+    display: none; }
+  .learn-more-wrapper h1 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 50px; }
+    .learn-more-wrapper h1 span {
+      font-size: 35px;
+      position: relative;
+      bottom: 10px;
+      right: 1px; }
+
+.background-overlay {
+  background: #303841;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .2; }
+
+.learn-more-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #303841;
+  color: #EEE !important;
+  padding: 10px 35px;
+  box-shadow: inset 2px 2px 10px 0 #D72323; }
+  .learn-more-btn:hover {
+    background: #3A4750; }
+
+.product-seperator {
+  color: #b5b5b5;
+  margin-bottom: 20px; }
+
+.page-seperator {
+  margin: 200px 0 100px 0; }
+  .page-seperator hr {
+    width: 90%;
+    margin: 0 auto;
+    color: #b5b5b5; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

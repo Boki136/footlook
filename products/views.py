@@ -13,6 +13,8 @@ def products_per_category(request):
     for product in products:
         image_list = product.images
         image_list = ast.literal_eval(image_list)
+        product_calculation = int(product.price) * 0.011
+        product.price = "{:.2f}".format(product_calculation)
         product.images = image_list
 
     context = {

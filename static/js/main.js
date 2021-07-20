@@ -34,4 +34,22 @@ $(document).ready(function () {
     $('.login_modal').mouseleave(function () {
         $(this).fadeOut();
     })
+
+    // Show Learn more button on product hover
+
+    $('.product-card').mouseover(function () {
+        $(this).find('.learn-more-wrapper').children().fadeIn(100);
+    }).mouseleave(function () {
+        $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
+    })
+
+    // Show sort by filter on hover
+
+    $('.sort-filter').mouseover(function () {
+        $('.filter-box').fadeIn(200)
+    })
+
+    $('.navbar, .product-listing-wrapper').mouseover(function () {
+        $('.filter-box').fadeOut(200)
+    })
 });
