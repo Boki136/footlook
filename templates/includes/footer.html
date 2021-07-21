@@ -1,0 +1,82 @@
+<!-- Footer section-->
+<section class='footer-container'>
+    <div class="footer-container_wrapper">
+        <a href="{% url 'home' %}"><img class="navbar-brand" src="{{ MEDIA_URL }}logo.png" /></a>
+        <hr class='footer-seperator'>
+        <div class="footer-action">
+            <div class="footer-links">
+                <div class="footer-links-section">
+                    <h1>QUICK LINKS</h1>
+                    <hr>
+                    <ul>
+                        <a href="">
+                            <li>My Account</li>
+                        </a>
+                        <a href="">
+                            <li>Log In</li>
+                        </a>
+                        <a href="">
+                            <li>Register</li>
+                        </a>
+                        <a href="">
+                            <li>Log Out</li>
+                        </a>
+                        <a href="">
+                            <li>My Orders</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer-links-section">
+                    <h1>SHOP</h1>
+                    <hr>
+                    <ul>
+                        <a href="">
+                            <li>Men's</li>
+                        </a>
+                        <a href="">
+                            <li>Women's</li>
+                        </a>
+                        <a href="">
+                            <li>Kids</li>
+                        </a>
+                        <a href="">
+                            <li>On Sale</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="newsletter-signup">
+                <h2>sign up and get 10% off first order</h2>
+                <form class='newsletter-form' action="">
+                    <label class='sr-only' for="email">Email Address</label>
+                    <input type="email" id='email' name='email' placeholder="enter your email address">
+                    <button type='submit'>SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h2>connect with us</h2>
+            <hr>
+            <div class="social-icons_wrapper">
+                <a href="https://www.facebook.com/" target='_blank'><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=en" target='_blank'><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <hr>
+            <div class="copyright-bar-content">
+                <h3>© COPYRIGHT 2021 | Designed & Developed By Boris Gersic</h3>
+                <div class="accepted-cards">
+                    <img src="{{ MEDIA_URL}}card-1.png" alt="visa icon ">
+                    <img src="{{ MEDIA_URL}}card-2.png" alt="mastercard icon">
+                    <img src="{{ MEDIA_URL}}card-3.png" alt="paypal icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
