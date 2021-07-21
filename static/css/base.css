@@ -76,7 +76,7 @@ h1 {
 .search-function {
   position: relative; }
   .search-function input {
-    padding: 15px 95px 15px 50px;
+    padding: 15px 95px 15px 55px;
     background-image: url(/media/search-icon.png);
     background-position: 15px 12px;
     background-repeat: no-repeat;
@@ -102,6 +102,12 @@ h1 {
       font-size: 30px;
       bottom: -7px;
       font-weight: 100; }
+
+.mobile-search {
+  padding-left: 32px;
+  margin: 35px 0 0 0; }
+  .mobile-search input {
+    width: 100%; }
 
 .mobile_nav {
   position: absolute;
@@ -434,6 +440,9 @@ h1 {
     margin: 0 auto;
     color: #b5b5b5; }
 
+.rotate_back {
+  transform: rotateZ(-90deg) !important; }
+
 /********************** FOOTER SECTION **/
 .footer-container {
   background: #303841; }
@@ -446,7 +455,7 @@ h1 {
   color: #EEE; }
 
 .footer-action {
-  margin-top: 150px;
+  margin-top: 110px;
   display: flex;
   justify-content: space-between; }
 
@@ -533,7 +542,8 @@ h1 {
 
 .copyright-bar-content {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .accepted-cards img {
   padding: 0 5px; }
@@ -553,10 +563,26 @@ h1 {
   .hero-title {
     font-size: 4em; }
   .hero-content p {
-    font-size: 25px; } }
-
-.rotate_back {
-  transform: rotateZ(-90deg) !important; }
+    font-size: 25px; }
+  .footer-action {
+    flex-wrap: wrap;
+    margin-top: 80px; }
+  .footer-links {
+    width: 100%;
+    flex-wrap: wrap; }
+  .footer-links-section {
+    width: 100%; }
+    .footer-links-section:nth-child(2) {
+      text-align: right; }
+  .newsletter-signup {
+    margin: 35px 0; }
+    .newsletter-signup h2 {
+      font-size: 20px; }
+    .newsletter-signup input {
+      font-size: 14px; }
+    .newsletter-signup button {
+      padding: 5px;
+      font-size: 12px; } }
 
 @media only screen and (max-width: 990px) {
   .hero-content-wrapper {
@@ -569,3 +595,14 @@ h1 {
   .social-sidebar,
   .hr-align {
     display: none; } }
+
+@media only screen and (max-width: 750px) {
+  .copyright-bar-content {
+    flex-wrap: wrap; }
+    .copyright-bar-content h3 {
+      width: 100%;
+      text-align: center; }
+  .accepted-cards {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 10px 0; } }

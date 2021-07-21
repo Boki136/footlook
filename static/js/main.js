@@ -52,4 +52,12 @@ $(document).ready(function () {
     $('.navbar, .product-listing-wrapper').mouseover(function () {
         $('.filter-box').fadeOut(200)
     })
+
+    // prepend social footer icons on screen < 1200px
+
+    if ($(window).width() < 1200) {
+        $('.footer-social').insertAfter($('.footer-seperator'))
+        $('.footer-social').css('margin-right', '0')
+    }
+
 });

@@ -19,9 +19,9 @@
                         <a class="nav-link" href="#">BRANDS</a>
                     </li>
                 </ul>
-                <form class="search-function" action="">
-                    <label class='sr-only' for="search_box"></label>
-                    <input class="form-control me-2 rounded-0" name="search_box" id="search_box" type="search" placeholder="Search"
+                <form method='GET' class="search-function" action="{% url 'products' %}">
+                    <label class='sr-only' for="search_term"></label>
+                    <input class="form-control me-2 rounded-0" name="search_term" id="search_term" type="search" placeholder="Search"
                         aria-label="Search">
                     <button type="submit">GO</button>
                 </form>
