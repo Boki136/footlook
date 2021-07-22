@@ -35,25 +35,21 @@
     <div class="product-card">
         <div class="learn-more-wrapper">
             <div class="background-overlay"></div>
-            <a class='learn-more-btn' href="">Learn More</a>
+            <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
             <img src="{{product.images|first}}" alt="{{product.name}}">
             <h1 class='product-price'><span>€</span>{{product.price}}</h1>
         </div>
         <div class="product-card-detail">
             <hr class='product-seperator'>
             <h2>{{product.name}}</h2>
-            <a href=''>{{product.brand}}</a>
+            <a href="">{{product.brand}}</a>
         </div>
     </div>
     {% endfor %}
-
 </section>
 
 <div class="page-seperator">
     <hr>
 </div>
-
-
-
 
 {% endblock %}

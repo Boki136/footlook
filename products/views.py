@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product
@@ -35,3 +35,23 @@ def products_view(request):
     }
 
     return render(request, "products/products.html", context)
+
+
+def product_detail(request, product_id):
+    """ A view to show individual product information """
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    image_list = product.images
+    image_list = ast.literal_eval(image_list)
+    product_calculation = int(product.price) * 0.011
+    product.price = "{:.2f}".format(product_calculation)
+    product.images = image_list
+    
+
+    context = {
+        'product': product,
+    }
+
+    return render(request, "products/product_detail.html", context)
+

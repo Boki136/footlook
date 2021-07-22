@@ -607,6 +607,39 @@ h1 {
     transform: rotateZ(-90deg) !important;
 }
 
+/********************** PRODUCT DETAIL **/
+
+.product-detail-wrapper {
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+
+}
+
+.product-images {
+    width: 50%;
+
+    img {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+.product-details {
+    border-left: 1px solid rgba(48, 56, 65, .2);
+    padding: 5%;
+    width: 45%;
+}
+
+.product-images-additional {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 /********************** FOOTER SECTION **/
 
 .footer-container {

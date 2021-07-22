@@ -60,4 +60,8 @@ $(document).ready(function () {
         $('.footer-social').css('margin-right', '0')
     }
 
+    // Remove fist image in the list
+
+    $('.product-images-additional img').first().remove();
+
 });
