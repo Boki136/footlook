@@ -20,13 +20,28 @@
         <h1>{{product.name}}</h1>
         <hr>
         <div class="rating-and-sku">
-            <p>{{product.rating}}</p>
-            <p>{{product.sku}}</p>
+            <div class="product-rating">
+                <p class='rating-score'>{{product.rating}}</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+
+            </div>
+            <p>SKU: {{product.sku}}</p>
         </div>
         <h4>SELECT THE SIZE:</h4>
         <hr>
         <p>{{product.description}}</p>
+
+        <div class="product-action">
+            <p>€{{product.price}}</p>
+        </div>
+
     </div>
+
+
 </div>
 
 {% endblock %}

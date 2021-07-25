@@ -448,7 +448,7 @@ h1 {
   margin: 200px auto;
   display: flex;
   justify-content: space-between;
-  width: 90%; }
+  width: 95%; }
 
 .product-images {
   width: 50%; }
@@ -460,10 +460,50 @@ h1 {
   border-left: 1px solid rgba(48, 56, 65, 0.2);
   padding: 5%;
   width: 45%; }
+  .product-details a {
+    color: #3A4750;
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: block;
+    font-weight: 500; }
+  .product-details h4 {
+    font-size: 15px; }
 
 .product-images-additional img {
-  width: 200px;
-  height: 200px; }
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer; }
+  .product-images-additional img:hover {
+    box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.1); }
+
+.rating-and-sku {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+  .rating-and-sku p {
+    font-size: 15px; }
+
+.product-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .product-rating p {
+    padding-right: 10px; }
+  .product-rating img {
+    width: 18px;
+    height: 17px; }
+  .product-rating i {
+    color: #FFD700; }
+
+.product-action {
+  margin-top: 35px; }
+  .product-action p {
+    font-size: 30px; }
+
+.rating-score {
+  margin-bottom: 0; }
 
 /********************** FOOTER SECTION **/
 .footer-container {
@@ -543,7 +583,7 @@ h1 {
 
 .footer-social {
   text-align: right;
-  margin-right: 250px; }
+  margin: 0 250px 50px 0; }
   .footer-social h2 {
     color: #EEE;
     font-size: 22px; }

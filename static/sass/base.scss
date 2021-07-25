@@ -613,7 +613,7 @@ h1 {
     margin: 200px auto;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
 
 
 }
@@ -631,13 +631,77 @@ h1 {
     border-left: 1px solid rgba(48, 56, 65, .2);
     padding: 5%;
     width: 45%;
+
+    a {
+        color: $secondary-black;
+        text-decoration: none;
+        padding-bottom: 15px;
+        display: block;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
 }
 
 .product-images-additional {
+
     img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 5px 5px 15px rgba(1, 1, 1, .1);
+        }
     }
+
+}
+
+.rating-and-sku {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.product-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        padding-right: 10px;
+    }
+
+    img {
+        width: 18px;
+        height: 17px;
+    }
+
+    i {
+        color: #FFD700;
+    }
+}
+
+.product-action {
+
+    margin-top: 35px;
+
+    p {
+        font-size: 30px;
+    }
+
+}
+
+.rating-score {
+    margin-bottom: 0;
 }
 
 /********************** FOOTER SECTION **/
@@ -750,7 +814,7 @@ h1 {
 
 .footer-social {
     text-align: right;
-    margin-right: 250px;
+    margin: 0 250px 50px 0;
 
     h2 {
         color: $paper-white;
