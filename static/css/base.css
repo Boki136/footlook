@@ -656,7 +656,31 @@ h1 {
     margin: 0 0 0 auto; }
   .social-sidebar,
   .hr-align {
-    display: none; } }
+    display: none; }
+  .product-detail-wrapper {
+    flex-wrap: wrap;
+    margin-top: 100px; }
+  .product-images,
+  .product-details {
+    width: 100%; }
+  .product-images {
+    margin: 0 auto;
+    text-align: center; }
+    .product-images > img {
+      max-width: 400px;
+      max-height: 400px;
+      width: 100%;
+      height: auto; }
+    .product-images hr {
+      display: none; }
+  .product-details {
+    border: none; }
+  .product-images-additional img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ececec;
+    padding: 0;
+    margin: 5px; } }
 
 @media only screen and (max-width: 750px) {
   .copyright-bar-content {
