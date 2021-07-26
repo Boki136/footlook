@@ -11,17 +11,14 @@
     <hr class='hr-clear'>
     <div class="filter-box">
         <ul>
-            <a href="">
+            <a href="{% url 'products' %}?sort=price&direction=asc">
                 <li>Price (low - high)</li>
             </a>
-            <a href="">
+            <a href="{% url 'products' %}?sort=price&direction=dsc">
                 <li>Price (high - low) </li>
             </a>
-            <a href="">
-                <li>A - Z</li>
-            </a>
-            <a href="">
-                <li>Z - A</li>
+            <a href="{% url 'products' %}?sort=rating">
+                <li>Rating</li>
             </a>
 
         </ul>
@@ -43,6 +40,7 @@
             <hr class='product-seperator'>
             <h2>{{product.name}}</h2>
             <a href="">{{product.brand}}</a>
+
         </div>
     </div>
     {% endfor %}

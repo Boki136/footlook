@@ -60,9 +60,6 @@ $(document).ready(function () {
         $('.footer-social').css('margin-right', '0')
     }
 
-    // Remove fist image in the list
-
-
     // Show additional image on click
     $('.product-images-additional img').click(function () {
         let image_url = $(this).attr('src');

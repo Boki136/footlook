@@ -47,9 +47,21 @@ h1 {
 .nav-link {
   padding: 0; }
 
+.brand-submenu a {
+  font-size: 18px;
+  padding: 8px 30px !important; }
+
+.brand-submenu li {
+  padding: 0; }
+
 .nav-link:focus,
 .nav-link:hover {
   color: #fff; }
+
+.brand-submenu {
+  left: auto !important;
+  background: #3A4750;
+  border-radius: 0; }
 
 .nav-icons {
   justify-content: center;

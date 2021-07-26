@@ -70,9 +70,27 @@ h1 {
     padding: 0;
 }
 
+.brand-submenu {
+
+    a {
+        font-size: 18px;
+        padding: 8px 30px !important;
+    }
+
+    li {
+        padding: 0;
+    }
+}
+
 .nav-link:focus,
 .nav-link:hover {
     color: #fff;
+}
+
+.brand-submenu {
+    left: auto !important;
+    background: $secondary-black;
+    border-radius: 0;
 }
 
 .nav-icons {

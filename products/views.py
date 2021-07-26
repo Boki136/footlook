@@ -12,13 +12,42 @@ def products_view(request):
     products = Product.objects.all()
     query = None
     categories = None
+    brand = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortval = request.GET['sort']
+            sort = sortval
+            if sortval == 'name':
+                sortval = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            elif sortval == 'rating':
+                 sortval = f'-{sortval}'
+                 products = products.order_by(sortval)
+
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'dsc':
+                    sortval = f'-{sortval}'
+                elif direction == 'asc':
+                    sortval = sortval
+            products = products.order_by(sortval)
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+    if request.GET:
+        if 'brand' in request.GET:
+            brand = request.GET['brand'].split(',')
+            print(brand)
+            products = products.filter(brand__in=brand)
+            brand = Product.objects.filter(brand__in=brand)
+           
     if request.GET:
         if 'search_term' in request.GET:
             query = request.GET['search_term']
@@ -35,14 +64,19 @@ def products_view(request):
         product_calculation = int(product.price) * 0.011
         product.price = "{:.2f}".format(product_calculation)
         product.images = image_list
+    
+    current_sort = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_sort': current_sort,
     }
 
     return render(request, "products/products.html", context)
+
+
 
 
 def product_detail(request, product_id):

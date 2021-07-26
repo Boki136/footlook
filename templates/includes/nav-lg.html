@@ -16,7 +16,15 @@
                         <a class="nav-link" href="{% url 'products' %}?category=women">WOMEN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'products' %}?category=brands">BRANDS</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BRANDS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark brand-submenu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=ORIGINALS">Originals</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <form method='GET' class="search-function" action="{% url 'products' %}">
