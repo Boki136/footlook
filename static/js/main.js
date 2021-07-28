@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     // Show Learn more button on product hover
 
-    $('.product-card').mouseover(function () {
+    $('.product-card,.product-slider_item').mouseover(function () {
         $(this).find('.learn-more-wrapper').children().fadeIn(100);
     }).mouseleave(function () {
         $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
@@ -138,5 +138,48 @@ $(document).ready(function () {
     }
 
     calculateStars(rating_score);
+
+    // Transition for next button on homepage slider
+
+    $('.slider-navigation').mouseover(function () {
+        $('.slider-navigation img').css({
+            left: '15px',
+            position: 'relative'
+        })
+    }).mouseleave(function () {
+        $('.slider-navigation img').css({
+            left: '0',
+            position: 'relative'
+        })
+    })
+
+
+    // Homepage Category slider
+
+    let cellArray1 = document.getElementsByClassName("product-slider_item");
+    let cellArray = Object.values(cellArray1);
+
+
+    $(".slider-navigation").click(moveFoward);
+
+    function moveFoward() {
+        let firstImg = cellArray[0];
+        let lastImg = cellArray[9];
+        let lastImgOrder = parseInt($(lastImg).css("order"));
+        let moveValue = parseInt($(".product-slider-container").css("margin-left"));
+        let imgWidth = parseInt($(".product-slider-container img").css("width")) + 25;
+        $(".product-slider-container").animate({
+            marginLeft: moveValue - imgWidth + 'px'
+        })
+        $(".slider-navigation").unbind("click");
+        $(".slider-navigation").unbind("click");
+        setTimeout(function () {
+            $(firstImg).css("order", lastImgOrder + 1);
+            $(".product-slider-container").css("margin-left", moveValue + 'px');
+            cellArray.push(cellArray[0]);
+            cellArray.shift();
+            $(".slider-navigation").click(moveFoward);
+        }, 650);
+    }
 
 });

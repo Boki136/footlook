@@ -40,4 +40,30 @@
 
 </section>
 
+<!--New arrivals section-->
+<section class="new-arrivals-slider_wrapper">
+    <h1 class='section_title'>NEW ARRIVALS</h1>
+    <div class="horizontal_divide">
+    </div>
+    <div class="product-slider-container">
+        {% for product in products %}
+        <div class="product-slider_item">
+            <div class="learn-more-wrapper">
+                <div class="background-overlay"></div>
+                <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
+                <img src="{{product.images|first}}" alt="{{product.name}}">
+                <h1 class='product-price'><span>€</span>{{product.price}}</h1>
+            </div>
+            <h2>{{product.name}}</h2>
+            <h5>{{product.brand}}</h5>
+        </div>
+        {% endfor %}
+    </div>
+    <hr>
+    <div class="slider-navigation">
+        <h3>Next</h3><img src="{{MEDIA_URL}}arrow-right-lg.png" alt="arrow-right">
+    </div>
+</section>
+
+
 {% endblock %}

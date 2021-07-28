@@ -24,16 +24,13 @@ def products_view(request):
                 sortval = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
             elif sortval == 'rating':
-                 sortval = f'-{sortval}'
-                 products = products.order_by(sortval)
-
+                sortval = f'-{sortval}'
+                products = products.order_by(sortval)
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'dsc':
                     sortval = f'-{sortval}'
-                elif direction == 'asc':
-                    sortval = sortval
             products = products.order_by(sortval)
 
         if 'category' in request.GET:
@@ -44,10 +41,9 @@ def products_view(request):
     if request.GET:
         if 'brand' in request.GET:
             brand = request.GET['brand'].split(',')
-            print(brand)
             products = products.filter(brand__in=brand)
             brand = Product.objects.filter(brand__in=brand)
-           
+
     if request.GET:
         if 'search_term' in request.GET:
             query = request.GET['search_term']
@@ -55,7 +51,8 @@ def products_view(request):
                 messages.error(request, "You didn't enter any search terms")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     for product in products:
@@ -64,7 +61,7 @@ def products_view(request):
         product_calculation = int(product.price) * 0.011
         product.price = "{:.2f}".format(product_calculation)
         product.images = image_list
-    
+
     current_sort = f'{sort}_{direction}'
 
     context = {
@@ -72,11 +69,10 @@ def products_view(request):
         'search_term': query,
         'current_categories': categories,
         'current_sort': current_sort,
+        'current_brand': brand,
     }
 
     return render(request, "products/products.html", context)
-
-
 
 
 def product_detail(request, product_id):
@@ -89,11 +85,9 @@ def product_detail(request, product_id):
     product_calculation = int(product.price) * 0.011
     product.price = "{:.2f}".format(product_calculation)
     product.images = image_list
-    
 
     context = {
         'product': product,
     }
 
     return render(request, "products/product_detail.html", context)
-

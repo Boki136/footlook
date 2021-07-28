@@ -6,7 +6,17 @@
 
 <!--Products Count & Filter -->
 <div class="product-tools-wrapper">
-    <h3>(<span>{{products|length}}</span>) products found</h3>
+    (<span>{{products|length}}</span>)
+    Products {% if current_categories %} found in category
+    <strong>{% for c in current_categories %}{{c}}{% endfor %}</strong>
+    {% endif %}
+
+    {% if search_term %}
+    found for <strong>"{{ search_term }}"</strong>
+    {% endif %}
+
+    </h3>
+
     <h4 class='sort-filter'>Sort By</h4>
     <hr class='hr-clear'>
     <div class="filter-box">
@@ -40,7 +50,6 @@
             <hr class='product-seperator'>
             <h2>{{product.name}}</h2>
             <a href="">{{product.brand}}</a>
-
         </div>
     </div>
     {% endfor %}
