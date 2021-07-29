@@ -465,9 +465,9 @@ h1 {
 
 /*********** New arrivals section **/
 
-.new-arrivals-slider_wrapper {
+.section-wrapper {
     width: 90%;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 .horizontal_divide {
@@ -505,9 +505,11 @@ h1 {
         margin: 20px 0;
     }
 
-    h5 {
+    a {
         font-size: 15px;
         font-weight: 700;
+        text-decoration: none;
+        color: $red;
     }
 
     img {
@@ -534,6 +536,81 @@ h1 {
 
     img {
         height: 80px;
+    }
+}
+
+/*********** Testimonials section **/
+
+.section_background {
+    background-color: rgba(250, 250, 250, .5);
+    margin: 150px auto;
+    padding: 100px;
+    width: 100%;
+}
+
+.testimonial-mobile-wrapper {
+    display: none;
+}
+
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    width: 90%;
+}
+
+.review_two,
+.review_three {
+    display: none;
+}
+
+
+.person-info {
+    width: 50%;
+    border-right: 1px solid $paper-white;
+}
+
+.testimonials-content {
+    width: 40%;
+    align-self: flex-start;
+    margin-top: 100px;
+
+}
+
+.rating {
+    margin-bottom: 25px;
+
+    i {
+        color: #FFD700;
+    }
+}
+
+.person-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.person-details-mobile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.person-info-card {
+    margin: 50px 0;
+    padding: 50px 30px;
+    width: 400px;
+    transition: .2s ease-in;
+    border-radius: 10px;
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(1, 1, 1, .1);
+        background-color: #fff;
     }
 }
 
@@ -1018,6 +1095,43 @@ h1 {
     }
 
 
+    .testimonials-container {
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+
+    .section_background {
+        padding: 100px 50px;
+    }
+
+    .person-info {
+        display: flex;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #EEE;
+    }
+
+    .testimonials-content {
+        width: 100%;
+    }
+
+    .person-details {
+        gap: 15px;
+
+        img {
+            width: 85px;
+        }
+    }
+
+    .person-name {
+        h4 {
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: 15px;
+        }
+    }
 
 }
 
@@ -1075,6 +1189,7 @@ h1 {
         border: none;
     }
 
+
     .product-images-additional img {
         width: 100px;
         height: 100px;
@@ -1083,7 +1198,45 @@ h1 {
         margin: 5px;
     }
 
+    .section_background {
+        display: none;
+    }
 
+    .testimonial-mobile-wrapper {
+        display: block;
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .testimonial-mobile-content {
+
+        margin-top: 100px;
+        box-shadow: 5px 5px 50px 0 #eee;
+        border-radius: 20px;
+        padding: 25px;
+
+    }
+
+    .testimonials-content {
+        margin-top: 25px;
+    }
+
+    .person-info-card {
+        padding: 50px 0 50px 0;
+        margin: 0;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    .carousel-inner {
+        padding-left: 25px;
+    }
+
+    .testimonials-content h2 {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 750px) {

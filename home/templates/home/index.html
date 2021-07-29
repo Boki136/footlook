@@ -41,7 +41,7 @@
 </section>
 
 <!--New arrivals section-->
-<section class="new-arrivals-slider_wrapper">
+<section class="section-wrapper">
     <h1 class='section_title'>NEW ARRIVALS</h1>
     <div class="horizontal_divide">
     </div>
@@ -55,7 +55,7 @@
                 <h1 class='product-price'><span>€</span>{{product.price}}</h1>
             </div>
             <h2>{{product.name}}</h2>
-            <h5>{{product.brand}}</h5>
+            <a href="{% url 'products' %}?brand={{product.brand}}">{{product.brand}}</a>
         </div>
         {% endfor %}
     </div>
@@ -65,5 +65,159 @@
     </div>
 </section>
 
+<!--Testimonials section-->
+<section class="section-wrapper section_background">
+    <h1 class='section_title'>TESTIMONIALS</h1>
+    <div class="horizontal_divide"></div>
+    <div class="testimonials-container">
+        <div class="person-info">
+            <div class="person-info-card">
+                <div class="person-details">
+                    <img src="{{MEDIA_URL}}review-1.png" alt="image of person who left a review">
+                    <div class="person-name">
+                        <h4>Jessica Jones</h4>
+                        <h6>27, Ohio</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="person-info-card">
+                <div class="person-details">
+                    <img src="{{MEDIA_URL}}review-2.png" alt="image of person who left a review">
+                    <div class="person-name">
+                        <h4>Clare Hopkins</h4>
+                        <h6>22, New York</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="person-info-card">
+                <div class="person-details">
+                    <img src="{{MEDIA_URL}}review-3.png" alt="image of person who left a review">
+                    <div class="person-name">
+                        <h4>Mark Johnson</h4>
+                        <h6>25, Chicago</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-content review_one">
+            <h2>Best Shoes Ever</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum pariatur
+                odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+        </div>
+        <div class="testimonials-content review_two">
+            <h2>I love shopping at Footlook</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum pariatur
+                odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+        </div>
+        <div class="testimonials-content review_three">
+            <h2>Great deals and prices!</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum pariatur
+                odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+        </div>
+    </div>
+</section>
 
+<!-- Mobile Version Testimonials-->
+<section class="testimonial-mobile-wrapper">
+    <h1 class='section_title'>TESTIMONIALS</h1>
+    <div class="horizontal_divide"></div>
+    <div class='testimonial-mobile-content'>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="person-info-card">
+                        <div class="person-details-mobile">
+                            <img src="{{MEDIA_URL}}review-1.png" alt="image of person who left a review">
+                            <div class="person-name">
+                                <h4>Jessica Jones</h4>
+                                <h6>27, Ohio</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-content">
+                        <h2>Best Shoes Ever</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum
+                            pariatur
+                            odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="person-info-card">
+                        <div class="person-details-mobile">
+                            <img src="{{MEDIA_URL}}review-2.png" alt="image of person who left a review">
+                            <div class="person-name">
+                                <h4>Clare Hopkins</h4>
+                                <h6>22, New York</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-content">
+                        <h2>I love shopping at Footlook</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum
+                            pariatur
+                            odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="person-info-card">
+                        <div class="person-details-mobile">
+                            <img src="{{MEDIA_URL}}review-3.png" alt="image of person who left a review">
+                            <div class="person-name">
+                                <h4>Mark Johnson</h4>
+                                <h6>25, Chicago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-content">
+                        <h2>I love shopping at Footlook</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat ipsam sint, sapiente laudantium voluptatum
+                            pariatur
+                            odio ducimus vel maxime a dolores reprehenderit quae quaerat adipisci alias error consequatur in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

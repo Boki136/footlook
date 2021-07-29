@@ -23,6 +23,7 @@ $(document).ready(function () {
         $('.rotate-selector i').css('transform', 'rotateZ(0deg)')
     }).mouseleave(function () {
         $('.social-sidebar').addClass('rotate_back');
+        $('.rotate-selector i').css('transform', 'rotateZ(90deg)')
     });
 
     // Show log-in modal when hovering profile icon
@@ -154,7 +155,7 @@ $(document).ready(function () {
     })
 
 
-    // Homepage Category slider
+    // Homepage Category slider, move to right on click
 
     let cellArray1 = document.getElementsByClassName("product-slider_item");
     let cellArray = Object.values(cellArray1);
@@ -181,5 +182,26 @@ $(document).ready(function () {
             $(".slider-navigation").click(moveFoward);
         }, 650);
     }
+
+
+    // Show correct review on hover
+
+    $('.person-info-card:eq(0)').mouseover(function () {
+        $('.review_one').show();
+        $('.review_two, .review_three').hide();
+    })
+
+    $('.person-info-card:eq(1)').mouseover(function () {
+        $('.review_two').show();
+        $('.review_one, .review_three').hide();
+
+    })
+
+    $('.person-info-card:eq(2)').mouseover(function () {
+        $('.review_three').show();
+        $('.review_one, .review_two').hide();
+
+    })
+
 
 });
