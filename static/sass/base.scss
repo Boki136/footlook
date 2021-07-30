@@ -614,6 +614,77 @@ h1 {
     }
 }
 
+/************** SHOP BY CATEGORY SECTION **/
+
+.category-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.category-box {
+    width: 49%;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+
+    &:nth-child(1) {
+        background: url('/media/category-background-1.png') no-repeat center;
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background: url('/media/category-background-2.png') no-repeat center;
+        background-size: cover;
+    }
+
+    &:nth-child(3) {
+        background: url('/media/category-background-3.png') no-repeat center;
+        background-size: cover;
+        width: 99%;
+    }
+
+    h1 {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+
+    a {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        display: none;
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: #EEE;
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+            left: 65px;
+        }
+    }
+
+
+
+
+
+}
+
+
 /********************* PRODUCTS PAGE **/
 .product-tools-wrapper {
     margin-top: 150px;
@@ -744,6 +815,11 @@ h1 {
     width: 100%;
     height: 100%;
     opacity: .2;
+}
+
+.category-opacity {
+    opacity: .5;
+    transition: .35s ease-in-out;
 }
 
 .learn-more-btn {
@@ -1236,6 +1312,10 @@ h1 {
 
     .testimonials-content h2 {
         font-size: 22px;
+    }
+
+    .category-box {
+        width: 100%;
     }
 }
 

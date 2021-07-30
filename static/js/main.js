@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+    // Make Navigation Sticky
+
+    $(window).scroll(function () {
+        $('.navbar').css({
+            position: 'sticky',
+            top: 0,
+            background: '#303841',
+            'z-index': 1000
+        })
+
+        if ($(this).scrollTop() <= 0) {
+            $('.navbar').css({
+                position: 'static',
+                background: '#3A4750',
+            })
+        }
+    });
+
     // Open Mobile Menu
 
     $(".navbar-toggler").click(function () {
@@ -200,6 +218,22 @@ $(document).ready(function () {
     $('.person-info-card:eq(2)').mouseover(function () {
         $('.review_three').show();
         $('.review_one, .review_two').hide();
+
+    })
+
+    // Show shop now button when hovering over category
+
+    $('.category-box').mouseover(function () {
+        $(this).find(".background-overlay").addClass('category-opacity')
+        $(this).find('a').show().animate({
+            left: '55%',
+        })
+    }).mouseleave(function () {
+        $(this).find('a').hide()
+        $(this).find('a').animate({
+            left: '50%',
+        })
+        $(this).find(".background-overlay").removeClass('category-opacity')
 
     })
 
