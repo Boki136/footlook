@@ -27,39 +27,41 @@
 
 <!--Products Count & Filter -->
 <div class="product-tools-wrapper">
+    <div class="product-result-message">
+        <h3><span>({{products|length}}) </span>Products found </h3>
 
-    <h3><span>({{products|length}}) </span>Products found </h3>
+        {% if current_categories %}
+        <h3>&nbsp;in category <strong>{% for c in current_categories %}{{c}}{% endfor %}</strong></h3>
+        {% endif %}
 
-    {% if current_categories %}
-    <h3>&nbsp;in category <strong>{% for c in current_categories %}{{c}}{% endfor %}</strong></h3>
-    {% endif %}
+        {% if search_term %}
+        <h3>&nbsp;for <strong>"{{ search_term }}"</strong></h3>
+        {% endif %}
 
-    {% if search_term %}
-    <h3>&nbsp;for <strong>"{{ search_term }}"</strong></h3>
-    {% endif %}
+        {% if current_brand %}
+        <h3>&nbsp;under <strong>{{brand_name}}</strong></h3>
+        {% endif %}
 
-    {% if current_brand %}
-    <h3>&nbsp;under <strong>{{brand_name}}</strong></h3>
-    {% endif %}
+        {% if products|length != 100 %}
+        <span> &nbsp; | &nbsp; </span><a href="{% url 'products' %}">See All Products</a>
+        {% endif %}
+    </div>
+    <div class="sort-by-container">
+        <h4 class='sort-filter'>Sort By (all products)</h4>
+        <div class="filter-box">
+            <ul>
+                <a href="{% url 'products' %}?sort=price&direction=asc">
+                    <li>Price (low - high)</li>
+                </a>
+                <a href="{% url 'products' %}?sort=price&direction=dsc">
+                    <li>Price (high - low) </li>
+                </a>
+                <a href="{% url 'products' %}?sort=rating">
+                    <li>Rating</li>
+                </a>
 
-    {% if products|length != 100 %}
-    <span> &nbsp; | </span><a href="{% url 'products' %}">See All Products</a>
-    {% endif %}
-    <h4 class='sort-filter'>Sort By (all products)</h4>
-    <hr class='hr-clear'>
-    <div class="filter-box">
-        <ul>
-            <a href="{% url 'products' %}?sort=price&direction=asc">
-                <li>Price (low - high)</li>
-            </a>
-            <a href="{% url 'products' %}?sort=price&direction=dsc">
-                <li>Price (high - low) </li>
-            </a>
-            <a href="{% url 'products' %}?sort=rating">
-                <li>Rating</li>
-            </a>
-
-        </ul>
+            </ul>
+        </div>
     </div>
 </div>
 

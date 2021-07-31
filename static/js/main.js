@@ -58,34 +58,44 @@ $(document).ready(function () {
 
     if ($(window).width() > 990) {
         $('.product-card,.product-slider_item').mouseover(function () {
-
             $(this).find('.learn-more-wrapper').children().fadeIn(100);
         }).mouseleave(function () {
             $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
         })
+
+        $('.product-card').mouseover(function () {
+            var second_image = $(this).find('.additional_img_hover').attr('src')
+            $(this).find('.primary_img').attr('src', second_image);
+
+        }).mouseleave(function () {
+            var first_img = $(this).find('.primary-img_link').html()
+            $(this).find('.primary_img').attr('src', first_img);
+        })
     }
 
+    // Detach results message on screen < 990px
 
+    if ($(window).width() < 990) {
+        let result_message = $('.product-result-message').detach()
+        result_message.insertAfter($('.product-tools-wrapper'))
+        result_message.addClass('product-result-message_mobile')
 
-    $('.product-card').mouseover(function () {
-        var second_image = $(this).find('.additional_img_hover').attr('src')
-        $(this).find('.primary_img').attr('src', second_image);
+        $('.sort-filter').html('Filters ')
+    }
 
-    }).mouseleave(function () {
-        var first_img = $(this).find('.primary-img_link').html()
-        $(this).find('.primary_img').attr('src', first_img);
-    })
+    // Show sort by filter on hover only screens > 1200
 
+    if ($(window).width() > 990) {
 
-    // Show sort by filter on hover
+        $('.sort-filter').mouseover(function () {
+            $('.filter-box').fadeIn(200)
+        })
 
-    $('.sort-filter').mouseover(function () {
-        $('.filter-box').fadeIn(200)
-    })
+        $('.product-listing-wrapper, .brand-box-wrapper').mouseover(function () {
+            $('.filter-box').fadeOut(200)
+        })
 
-    $('.navbar, .product-listing-wrapper').mouseover(function () {
-        $('.filter-box').fadeOut(200)
-    })
+    }
 
     // prepend social footer icons on screen < 1200px
 
