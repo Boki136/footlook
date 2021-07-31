@@ -4,20 +4,48 @@
 
 {% block content %}
 
+<!--Brand Selection-->
+
+<div class="brand-box-wrapper">
+    <h1>SHOP BRANDS</h1>
+    <div class="brand_box">
+        <a href="{% url 'products' %}?brand=ORIGINALS">
+            <img src="{{MEDIA_URL}}brand_logo_1.png" alt="originals-brand-logo-img">
+        </a>
+    </div>
+    <div class="brand_box">
+        <a href="{% url 'products' %}?brand=CORE / NEO">
+            <img src="{{MEDIA_URL}}brand_logo_2.png" alt="core/neo-brand-logo-img">
+        </a>
+    </div>
+    <div class="brand_box">
+        <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">
+            <img src="{{MEDIA_URL}}brand_logo_3.png" alt="sport-performance-brand-logo-img">
+        </a>
+    </div>
+</div>
+
 <!--Products Count & Filter -->
 <div class="product-tools-wrapper">
-    (<span>{{products|length}}</span>)
-    Products {% if current_categories %} found in category
-    <strong>{% for c in current_categories %}{{c}}{% endfor %}</strong>
+
+    <h3><span>({{products|length}}) </span>Products found </h3>
+
+    {% if current_categories %}
+    <h3>&nbsp;in category <strong>{% for c in current_categories %}{{c}}{% endfor %}</strong></h3>
     {% endif %}
 
     {% if search_term %}
-    found for <strong>"{{ search_term }}"</strong>
+    <h3>&nbsp;for <strong>"{{ search_term }}"</strong></h3>
     {% endif %}
 
-    </h3>
+    {% if current_brand %}
+    <h3>&nbsp;under <strong>{{brand_name}}</strong></h3>
+    {% endif %}
 
-    <h4 class='sort-filter'>Sort By</h4>
+    {% if products|length != 100 %}
+    <span> &nbsp; | </span><a href="{% url 'products' %}">See All Products</a>
+    {% endif %}
+    <h4 class='sort-filter'>Sort By (all products)</h4>
     <hr class='hr-clear'>
     <div class="filter-box">
         <ul>
@@ -35,7 +63,6 @@
     </div>
 </div>
 
-
 <!--Products Listing -->
 <section class="product-listing-wrapper">
     {% for product in products %}
@@ -43,14 +70,16 @@
         <div class="learn-more-wrapper">
             <div class="background-overlay"></div>
             <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
-            <img src="{{product.images|first}}" alt="{{product.name}}">
+            <img class="primary_img" src="{{product.images|first}}" alt="{{product.name}}">
             <h1 class='product-price'><span>€</span>{{product.price}}</h1>
         </div>
         <div class="product-card-detail">
             <hr class='product-seperator'>
             <h2>{{product.name}}</h2>
-            <a href="">{{product.brand}}</a>
+            <h3>{{product.brand}}</h3>
         </div>
+        <h4 class='primary-img_link'>{{product.images|first}}</h4>
+        <img class='additional_img_hover' src="{{product.images.2}}" alt="{{product.name}}">
     </div>
     {% endfor %}
 </section>

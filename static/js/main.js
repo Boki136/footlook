@@ -56,11 +56,26 @@ $(document).ready(function () {
 
     // Show Learn more button on product hover
 
-    $('.product-card,.product-slider_item').mouseover(function () {
-        $(this).find('.learn-more-wrapper').children().fadeIn(100);
+    if ($(window).width() > 990) {
+        $('.product-card,.product-slider_item').mouseover(function () {
+
+            $(this).find('.learn-more-wrapper').children().fadeIn(100);
+        }).mouseleave(function () {
+            $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
+        })
+    }
+
+
+
+    $('.product-card').mouseover(function () {
+        var second_image = $(this).find('.additional_img_hover').attr('src')
+        $(this).find('.primary_img').attr('src', second_image);
+
     }).mouseleave(function () {
-        $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
+        var first_img = $(this).find('.primary-img_link').html()
+        $(this).find('.primary_img').attr('src', first_img);
     })
+
 
     // Show sort by filter on hover
 

@@ -16,10 +16,18 @@
     </div>
 
     <div class="product-details">
-        <a href="">{{product.brand}}</a>
+        {% if product.brand == 'ORIGINALS' %}
+        <img src="{{MEDIA_URL}}brand_logo_1.png" alt="{{product.brand}} brand logo">
+        {% endif %}
+        {% if product.brand == 'CORE / NEO' %}
+        <img src="{{MEDIA_URL}}brand_logo_2.png" alt="{{product.brand}} brand logo">
+        {% endif %}
+        {% if product.brand == 'SPORT PERFORMANCE' %}
+        <img src=" {{MEDIA_URL}}brand_logo_3.png" alt="{{product.brand}} brand logo">
+        {% endif %}
         <h1>{{product.name}}</h1>
         <hr>
-        <div class="rating-and-sku">
+        <div class=" rating-and-sku">
             <div class="product-rating">
                 <p class='rating-score'>{{product.rating}}</p>
                 <i class="fas fa-star"></i>

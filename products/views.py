@@ -15,6 +15,7 @@ def products_view(request):
     brand = None
     sort = None
     direction = None
+    brand_name = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -43,6 +44,7 @@ def products_view(request):
             brand = request.GET['brand'].split(',')
             products = products.filter(brand__in=brand)
             brand = Product.objects.filter(brand__in=brand)
+            brand_name = request.GET['brand']
 
     if request.GET:
         if 'search_term' in request.GET:
@@ -70,6 +72,7 @@ def products_view(request):
         'current_categories': categories,
         'current_sort': current_sort,
         'current_brand': brand,
+        'brand_name': brand_name,
     }
 
     return render(request, "products/products.html", context)
