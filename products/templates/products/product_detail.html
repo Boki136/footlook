@@ -27,15 +27,8 @@
         {% endif %}
         <h1>{{product.name}}</h1>
         <hr>
-        <div class=" rating-and-sku">
-            <div class="product-rating">
-                <p class='rating-score'>{{product.rating}}</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+        <div class="rating-and-sku">
+            {% include 'includes/rating_product_page.html' %}
             <p>SKU: {{product.sku}}</p>
         </div>
         <h4>SELECT THE SIZE:</h4>

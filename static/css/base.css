@@ -123,7 +123,7 @@ h1 {
     width: 100%; }
 
 .mobile_nav {
-  position: absolute;
+  position: sticky;
   top: 0;
   height: 100vh;
   width: 100%;
@@ -340,7 +340,8 @@ h1 {
 /*********** New arrivals section **/
 .section-wrapper {
   width: 90%;
-  margin: 150px auto; }
+  margin: 150px auto;
+  overflow-x: hidden; }
 
 .horizontal_divide {
   width: 250px;
@@ -365,11 +366,11 @@ h1 {
   margin: 50px 0; }
 
 .product-slider_item h2 {
-  font-size: 20px;
-  margin: 20px 0; }
+  font-size: 18px;
+  margin: 20px 0 10px 0; }
 
 .product-slider_item a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   color: #D72323; }
@@ -609,7 +610,7 @@ h1 {
   .product-card img {
     height: 400px; }
   .product-card h2 {
-    font-size: 20px; }
+    font-size: 18px; }
   .product-card a {
     color: #D72323;
     font-weight: 600;
@@ -660,11 +661,13 @@ h1 {
   .learn-more-btn:hover {
     background: #3A4750; }
 
-.product-card-detail h3 {
-  color: #D72323;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600; }
+.product-card-detail {
+  text-align: left; }
+  .product-card-detail h3 {
+    color: #D72323;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600; }
 
 .product-seperator {
   color: #b5b5b5;
@@ -730,7 +733,7 @@ h1 {
 
 .product-rating {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
   .product-rating p {
     padding-right: 10px; }
@@ -738,7 +741,8 @@ h1 {
     width: 18px;
     height: 17px; }
   .product-rating i {
-    color: #FFD700; }
+    color: #FFD700;
+    font-size: 15px; }
 
 .product-action {
   margin-top: 35px; }
@@ -746,7 +750,8 @@ h1 {
     font-size: 30px; }
 
 .rating-score {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 15px; }
 
 /********************** FOOTER SECTION **/
 .footer-container {
@@ -1034,4 +1039,6 @@ h1 {
   .product-result-message_mobile a {
     font-size: 15px; }
   .sort-filter {
-    display: none; } }
+    display: none; }
+  .slider-navigation {
+    margin-left: 100px; } }

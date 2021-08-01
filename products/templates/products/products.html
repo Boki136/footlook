@@ -79,6 +79,7 @@
             <hr class='product-seperator'>
             <h2>{{product.name}}</h2>
             <h3>{{product.brand}}</h3>
+            {% include 'includes/rating_product_page.html' %}
         </div>
         <h4 class='primary-img_link'>{{product.images|first}}</h4>
         <img class='additional_img_hover' src="{{product.images.2}}" alt="{{product.name}}">

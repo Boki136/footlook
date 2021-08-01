@@ -9,13 +9,13 @@
 
         <ul class="mobile_nav_links">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'products' %}?category=men">MEN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">WOMEN</a>
+                <a class="nav-link" href="{% url 'products' %}?category=women">WOMEN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">BRANDS</a>
+                <a class="nav-link" href="{% url 'products' %}">BRANDS</a>
             </li>
         </ul>
         <ul class="support-links">
