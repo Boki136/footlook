@@ -241,6 +241,19 @@ h1 {
   margin: 0 0 5px 0;
   color: #303841; }
 
+.arrow-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+  z-index: 10000;
+  background: #303841;
+  border: 1px solid #EEE;
+  padding: 10px 15px;
+  display: none;
+  cursor: pointer; }
+  .arrow-to-top i {
+    color: #EEE; }
+
 /************************ HERO SECTION **/
 .hero-container {
   background: url("/media/hero-img.png") no-repeat center;

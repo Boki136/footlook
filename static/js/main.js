@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    // Make Navigation Sticky
+    // Make Navigation Sticky & back to the top of the page
 
     $(window).scroll(function () {
         $('.navbar').css({
@@ -16,7 +16,20 @@ $(document).ready(function () {
                 background: '#3A4750',
             })
         }
+
+        if ($(this).scrollTop() > 600) {
+            $('.arrow-to-top').fadeIn(200)
+        }
+
+        if ($(this).scrollTop() < 600) {
+            $('.arrow-to-top').fadeOut(200)
+        }
+
     });
+
+    $('.arrow-to-top').click(function () {
+        $("html").scrollTop(0);
+    })
 
     // Open Mobile Menu
 
@@ -192,6 +205,8 @@ $(document).ready(function () {
         $(this).find(".background-overlay").removeClass('category-opacity')
 
     })
+
+
 
 
 });

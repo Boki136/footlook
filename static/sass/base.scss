@@ -336,6 +336,22 @@ h1 {
     color: $primary-black;
 }
 
+.arrow-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    z-index: 10000;
+    background: $primary-black;
+    border: 1px solid $paper-white;
+    padding: 10px 15px;
+    display: none;
+    cursor: pointer;
+
+    i {
+        color: $paper-white;
+    }
+}
+
 /************************ HERO SECTION **/
 
 .hero-container {
