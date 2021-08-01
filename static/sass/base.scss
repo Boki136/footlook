@@ -17,6 +17,7 @@ h1 {
 .navbar {
     background: $secondary-black;
     height: 110px;
+    opacity: 1;
 }
 
 .navbar-brand {
@@ -543,7 +544,7 @@ h1 {
 /*********** Testimonials section **/
 
 .section_background {
-    background-color: rgba(250, 250, 250, .5);
+    background-color: rgba(250, 250, 250, 1);
     margin: 150px auto;
     padding: 100px;
     width: 100%;
@@ -824,6 +825,7 @@ h1 {
     flex: 1 0 21%;
     margin: 5px;
     text-align: center;
+    max-width: 600px;
 
     img {
         height: 400px;
@@ -1504,6 +1506,17 @@ h1 {
 
 
 @media only screen and (max-width: 550px) {
+
+
+
+    .hero-content {
+        padding: 100px 0;
+
+        p {
+            width: 100%;
+        }
+    }
+
     .product-result-message_mobile {
 
         h3 {
@@ -1512,7 +1525,17 @@ h1 {
 
         a {
             font-size: 15px;
+            display: none;
         }
+
+        &>span {
+            display: none;
+        }
+
+    }
+
+    .product-tools-wrapper {
+        width: 100%;
     }
 
     .sort-filter {
@@ -1522,5 +1545,41 @@ h1 {
     .slider-navigation {
         margin-left: 100px;
     }
+
+    .filter-box {
+
+        a {
+            margin: 0 10px 0 0 !important
+        }
+
+        ul {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .product-card {
+        margin: 0;
+
+        img {
+            height: 300px;
+        }
+
+    }
+
+    .learn-more-wrapper h1 {
+        font-size: 40px;
+
+        span {
+            font-size: 28px;
+        }
+    }
+
+    .learn-more-btn {
+        padding: 5px 20px;
+        left: 90px;
+    }
+
 
 }

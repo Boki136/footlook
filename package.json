@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Boki136/footlook#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "tilt.js": "^1.2.1"
   },
   "devDependencies": {

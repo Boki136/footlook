@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     // Make Navigation Sticky
 
     $(window).scroll(function () {
@@ -12,7 +13,6 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() <= 0) {
             $('.navbar').css({
-                position: 'static',
                 background: '#3A4750',
             })
         }

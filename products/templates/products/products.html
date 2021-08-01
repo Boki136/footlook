@@ -68,7 +68,7 @@
 <!--Products Listing -->
 <section class="product-listing-wrapper">
     {% for product in products %}
-    <div class="product-card">
+    <div data-aos="fade-up" data-aos-duration="2500" data-aos-once="true" class="product-card">
         <div class="learn-more-wrapper">
             <div class="background-overlay"></div>
             <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
