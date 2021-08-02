@@ -36,7 +36,12 @@
             </div>
 
             <div class="nav-icons">
-                <img class='shopping_bag' src="{{ MEDIA_URL }}bag-icon.png" alt="bag icon">
+                <div class="shopping-bag-wrapper">
+                    <img class='shopping_bag' src="{{ MEDIA_URL }}bag-icon.png" alt="bag icon">
+                    {% if product_count > 0 %}
+                    <span>{{product_count}}</span>
+                    {% endif %}
+                </div>
                 <img class='profile-icon' src="{{ MEDIA_URL }}profile-icon.png" alt="profile icon">
             </div>
         </div>

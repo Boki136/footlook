@@ -97,6 +97,7 @@ h1 {
 
 .nav-icons {
 
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -114,6 +115,27 @@ h1 {
             padding: 5px;
             border-radius: 50%;
         }
+    }
+}
+
+.shopping-bag-wrapper {
+    position: relative;
+
+    span {
+        position: absolute;
+        background: #EEE;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 21px;
+        vertical-align: middle;
+        border: 5px solid #3A4750;
+        bottom: -5px;
+        font-weight: 600;
+        font-size: 15px;
+        transition: .35s ease-in-out;
     }
 }
 
@@ -1060,12 +1082,13 @@ h1 {
 }
 
 .quantity_selector {
-    width: 20%;
+    width: 10%;
 
     input {
         width: 100%;
         border-radius: 0;
         border: 1px solid $paper-white;
+        padding: 10px .75rem;
     }
 }
 
@@ -1075,6 +1098,7 @@ h1 {
     input {
         background-color: $primary-black;
         color: $paper-white;
+        padding: 10px 35px;
 
         &:hover {
             color: $paper-white;
