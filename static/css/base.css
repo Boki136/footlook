@@ -768,6 +768,33 @@ h1 {
   margin-bottom: 0;
   font-size: 15px; }
 
+.add-to-cart-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 5px; }
+
+.quantity_selector {
+  width: 20%; }
+  .quantity_selector input {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #EEE; }
+
+.submit_btn {
+  width: 70%; }
+  .submit_btn input {
+    background-color: #303841;
+    color: #EEE; }
+    .submit_btn input:hover {
+      color: #EEE;
+      background: #3A4750; }
+
+.form-control:focus {
+  background: none;
+  box-shadow: none;
+  border: 1px solid #EEE; }
+
 /********************** FOOTER SECTION **/
 .footer-container {
   background: #303841; }

@@ -1052,6 +1052,44 @@ h1 {
     font-size: 15px;
 }
 
+.add-to-cart-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.quantity_selector {
+    width: 20%;
+
+    input {
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid $paper-white;
+    }
+}
+
+.submit_btn {
+    width: 70%;
+
+    input {
+        background-color: $primary-black;
+        color: $paper-white;
+
+        &:hover {
+            color: $paper-white;
+            background: $secondary-black;
+        }
+    }
+
+}
+
+.form-control:focus {
+    background: none;
+    box-shadow: none;
+    border: 1px solid $paper-white;
+}
+
 /********************** FOOTER SECTION **/
 
 .footer-container {
