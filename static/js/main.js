@@ -67,9 +67,33 @@ $(document).ready(function () {
         $('.login_modal').fadeIn();
     })
 
+    $('.shopping_bag').mouseover(function () {
+        $('.login_modal').css('display', 'none');
+    })
+
     $('.login_modal').mouseleave(function () {
         $(this).fadeOut();
     })
+
+    // Show basket on icon hover
+
+    $('.shopping-bag-wrapper').click(function () {
+        $('.bag_wrapper').animate({
+            width: 'toggle'
+        }, 350);
+
+        $('.body-overlay').fadeIn()
+    })
+
+    $('.close-bag').click(function () {
+        $('.bag_wrapper').animate({
+            width: 'toggle'
+        }, 150);
+
+        $('.body-overlay').fadeOut()
+    });
+
+
 
     // Show Learn more button on product hover
 

@@ -2,6 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
+import ast
 
 
 def bag_contents(request):
@@ -13,6 +14,9 @@ def bag_contents(request):
 
     for item_id, quantity in bag.items():
         product = get_object_or_404(Product, pk=item_id)
+        image_list = product.images
+        image_list = ast.literal_eval(image_list)
+        product.images = image_list
         price = int(product.price) * 0.011
         total += quantity * price
         product_count += quantity
@@ -20,6 +24,7 @@ def bag_contents(request):
             'item_id': item_id,
             'quantity': quantity,
             'product': product,
+            'image_list': image_list,
         })
 
     if total < settings.FREE_DELIVERY_TRESHOLD:

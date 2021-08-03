@@ -8,6 +8,7 @@ $paper-white: #EEE;
 body {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
@@ -18,6 +19,28 @@ h1 {
     background: $secondary-black;
     height: 110px;
     opacity: 1;
+}
+
+.shipping-announcement {
+    text-align: center;
+    background: $primary-black;
+
+    h2 {
+        color: $paper-white;
+        font-size: 21px;
+        margin: 0;
+        padding: 5px 0;
+        text-transform: uppercase;
+
+        &::before {
+            content: '\f0d1';
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            font-size: 19px;
+            padding-right: 15px;
+        }
+
+    }
 }
 
 .navbar-brand {
@@ -66,6 +89,16 @@ h1 {
         padding: 0 15px;
 
     }
+}
+
+.body-overlay {
+    background: rgba(1, 1, 1, 0.4);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    display: none;
 }
 
 .nav-link {
@@ -120,6 +153,8 @@ h1 {
 
 .shopping-bag-wrapper {
     position: relative;
+    cursor: pointer;
+
 
     span {
         position: absolute;
@@ -137,6 +172,104 @@ h1 {
         font-size: 15px;
         transition: .35s ease-in-out;
     }
+}
+
+.bag_wrapper {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: $paper-white;
+    z-index: 100000;
+    height: 100vh;
+    width: 40%;
+    max-width: 600px;
+    overflow: scroll;
+}
+
+.bag_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.top-menu-actions {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $paper-white;
+    background: $red;
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+.products-wrapper {
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+
+.product-box-img {
+    position: relative;
+}
+
+.overlay-white {
+    opacity: 0.1 !important;
+}
+
+.product-box {
+    position: relative;
+    border-bottom: 1px solid;
+    border-color: rgba(58, 71, 80, .1);
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img {
+        width: 150px;
+    }
+}
+
+.product-box_details {
+    width: 65%;
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+}
+
+.bag-quantity {
+    width: 20% !important;
+
+    label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        background: $paper-white;
+        border-color: rgba(58, 71, 80, .1) !important;
+    }
+}
+
+.bag-options {
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
 }
 
 .navbar-toggler:focus {
