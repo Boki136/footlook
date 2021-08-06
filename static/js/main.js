@@ -65,9 +65,10 @@ $(document).ready(function () {
 
     $('.profile-icon').mouseover(function () {
         $('.login_modal').fadeIn();
+        $('.login_modal').css('position', 'fixed');
     })
 
-    $('.shopping_bag').mouseover(function () {
+    $('.shopping-bag-wrapper').mouseover(function () {
         $('.login_modal').css('display', 'none');
     })
 
@@ -75,7 +76,7 @@ $(document).ready(function () {
         $(this).fadeOut();
     })
 
-    // Show basket on icon hover
+    // Show basket on icon click
 
     $('.shopping-bag-wrapper').click(function () {
         $('.bag_wrapper').animate({
@@ -91,9 +92,17 @@ $(document).ready(function () {
         }, 150);
 
         $('.body-overlay').fadeOut()
+
+        let product_count = $('.product-box');
+
+        for (let i = 0; i <= product_count.length - 1; i++) {
+            let item_q_original = $('.item_quantity_original:eq(' + parseInt(i) + ')').html()
+            let item_p_original = $('.product-price:eq(' + parseInt(i) + ')').html()
+            $('.qty_input_bag:eq(' + parseInt(i) + ')').val(item_q_original)
+            $('.product-total:eq(' + parseInt(i) + ')').text(parseFloat(item_p_original * 0.011).toFixed(2) * item_q_original);
+        }
+
     });
-
-
 
     // Show Learn more button on product hover
 
@@ -114,7 +123,7 @@ $(document).ready(function () {
         })
     }
 
-    // Detach results message on screen < 990px
+    // Detach product page results message on screen < 990px
 
     if ($(window).width() < 990) {
         let result_message = $('.product-result-message').detach()
@@ -230,6 +239,60 @@ $(document).ready(function () {
 
     })
 
+
+    // Update Price On quantity changes
+    let product_count = $('.product-box');
+
+    for (let i = 0; i <= product_count.length - 1; i++) {
+        let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val()
+        let product_price = $('.product-price:eq(' + parseInt(i) + ')').text()
+        let sum = parseFloat(quantity_value * (product_price * 0.011)).toFixed(2);
+        $('.product-total:eq(' + parseInt(i) + ')').text(sum)
+    }
+
+    function update_price() {
+        let product_count = $('.product-box');
+        for (let i = 0; i <= product_count.length - 1; i++) {
+            let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val()
+            let product_price = $('.product-price:eq(' + parseInt(i) + ')').text()
+            let sum = parseFloat(quantity_value * (product_price * 0.011)).toFixed(2)
+            $('.product-total:eq(' + parseInt(i) + ')').text(sum)
+        }
+    }
+
+    $('.qty_input_bag').change(function () {
+
+
+        let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'))
+        item_quantity_in_bag = item_quantity_in_bag.html();
+
+        if (item_quantity_in_bag < $(this).val() || item_quantity_in_bag > $(this).val()) {
+            console.log(item_quantity_in_bag)
+            $(this).parent().parent().find($('.update-link')).fadeIn()
+        } else if (item_quantity_in_bag == $(this).val()) {
+            $(this).parent().parent().find($('.update-link')).fadeOut()
+        }
+        update_price();
+        calculate_basket_total()
+    })
+
+    function calculate_basket_total() {
+
+        let product_total = $('.product-total')
+        let all_total_array = [];
+        for (i = 0; i < product_total.length; i++) {
+            all_total_array.push(parseInt($('.product-total:eq(' + parseInt(i) + ')').text()))
+        }
+
+        let basket_total = 0;
+        for (var i = 0; i < all_total_array.length; i++) {
+            basket_total += all_total_array[i]
+        }
+
+        $('.basket-total').html(parseFloat(basket_total).toFixed(2))
+    }
+
+    calculate_basket_total();
 
 
 

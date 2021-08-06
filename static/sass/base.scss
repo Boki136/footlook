@@ -21,27 +21,6 @@ h1 {
     opacity: 1;
 }
 
-.shipping-announcement {
-    text-align: center;
-    background: $primary-black;
-
-    h2 {
-        color: $paper-white;
-        font-size: 21px;
-        margin: 0;
-        padding: 5px 0;
-        text-transform: uppercase;
-
-        &::before {
-            content: '\f0d1';
-            font-weight: 900;
-            font-family: 'Font Awesome 5 Free';
-            font-size: 19px;
-            padding-right: 15px;
-        }
-
-    }
-}
 
 .navbar-brand {
     width: 250px;
@@ -182,9 +161,15 @@ h1 {
     background: $paper-white;
     z-index: 100000;
     height: 100vh;
-    width: 40%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 700px;
     overflow: scroll;
+}
+
+.basket_contents_and_action {
+    width: 85%;
+    margin: 0 auto;
+    height: 70vh;
 }
 
 .bag_wrapper::-webkit-scrollbar {
@@ -206,8 +191,14 @@ h1 {
 }
 
 .products-wrapper {
-    width: 90%;
-    margin: 50px auto 0 auto;
+    margin-top: 50px;
+    max-height: 80%;
+    overflow: scroll;
+    margin-bottom: 125px;
+}
+
+.products-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .product-box-img {
@@ -240,20 +231,53 @@ h1 {
         font-size: 20px;
     }
 
-    h6 {
+    h5 {
         font-size: 13px;
         margin-top: 10px;
     }
 
     h4 {
         font-size: 18px;
-        margin-top: 25px;
+    }
+
+    h6 {
+        display: none;
     }
 
 }
 
+.update-link {
+    display: none;
+}
+
+
+.basket-subtotal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-total {
+
+    font-size: 25px;
+
+    &::before {
+        content: '\€';
+        font-size: 25px;
+
+    }
+
+}
+
+.item_quantity_original {
+    display: none;
+}
+
+.product-total {
+    display: inline-block;
+}
+
 .bag-quantity {
-    width: 20% !important;
 
     label {
         font-size: 13px;
@@ -266,10 +290,35 @@ h1 {
     }
 }
 
+
 .bag-options {
     justify-content: space-between;
     align-items: flex-end;
     width: 90%;
+}
+
+.checkout_btn-wrapper {
+
+    button {
+        background: $primary-black;
+        color: $paper-white;
+        padding: 10px 35px;
+        outline: none;
+        border: none;
+
+        &:hover {
+            background: $secondary-black;
+        }
+    }
+
+
+}
+
+.basket-seperator {
+    height: 0 !important;
+    border-bottom: 1px solid;
+    border-color: rgba(58, 71, 80, 0.1);
+    margin-bottom: 50px;
 }
 
 .navbar-toggler:focus {
@@ -302,6 +351,7 @@ h1 {
         border: none;
         outline: none;
         font-size: 13px;
+
 
         &:hover {
             background: $secondary-black;
@@ -449,6 +499,8 @@ h1 {
     padding: 30px 15px 0 15px;
     height: 150px;
     display: none;
+    top: 110px;
+    z-index: 10000;
 
     h4 {
         display: inline-block;
@@ -1209,20 +1261,38 @@ h1 {
 
 .add-to-cart-actions {
     display: flex;
-    align-items: center;
     margin-top: 50px;
     gap: 5px;
 }
 
+.update_bag_form label {
+    margin-bottom: 10px;
+}
+
 .quantity_selector {
-    width: 10%;
+    width: 50%;
 
     input {
-        width: 100%;
+        width: 80px;
         border-radius: 0;
         border: 1px solid $paper-white;
         padding: 10px .75rem;
+        margin-bottom: 20px;
     }
+}
+
+.form-group {
+    a {
+        cursor: pointer;
+        color: $primary-black;
+
+        &:nth-child(3) {
+            color: $red;
+            padding-left: 5px;
+        }
+    }
+
+
 }
 
 .submit_btn {
@@ -1242,9 +1312,9 @@ h1 {
 }
 
 .form-control:focus {
-    background: none;
     box-shadow: none;
     border: 1px solid $paper-white;
+    background: none;
 }
 
 /********************** FOOTER SECTION **/
@@ -1577,8 +1647,17 @@ h1 {
         }
     }
 
+    .bag_wrapper {
+        width: 100%;
+        max-width: none;
+    }
+
     .background-overlay {
         background: #00000040;
+    }
+
+    .overlay-white {
+        background-color: #303841;
     }
 
     .learn-more-btn {
