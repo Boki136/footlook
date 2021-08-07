@@ -4,6 +4,7 @@
         <i class="fas fa-times fa-2x close-bag"></i>
     </div>
     <div class="basket_contents_and_action">
+        {% if bag_items %}
         <div class="products-wrapper">
             {% for item in bag_items %}
             <div class="product-box">
@@ -22,7 +23,7 @@
                                     {% csrf_token %}
                                     <label for="quantity">Quantity</label>
                                     <input class="form-control qty_input_bag" type="number" name="quantity" value="{{item.quantity}}" min="1" max="99"
-                                        data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id}}">
+                                        max-length='99' data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id}}">
                                     <input type="hidden" name="redirect_url_bag" value="{{ request.path }}">
                                 </form>
                                 <a class="update-link" id="update_{{ item.item_id }}"><small>Update</small></a>
@@ -49,6 +50,28 @@
         <div class="checkout_btn-wrapper">
             <button>Checkout</button>
         </div>
+        {% else %}
+
+        <div class="shop_options">
+            <h4 class='no_products_in_basket'>
+                No products in your basket at the moment.
+            </h4>
+
+            <div class="shop_by_cat">
+                <h4>Shop by Category:</h4>
+                <a aria-current="page" href="{% url 'products' %}?category=men">MEN</a>
+                <a aria-current="page" href="{% url 'products' %}?category=women">WOMEN</a>
+            </div>
+
+            <div class="shop_by_brand">
+                <h4>Shop by Brand:</h4>
+                <a href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
+                <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
+                <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
+            </div>
+        </div>
+
+        {% endif %}
     </div>
 
 </section>

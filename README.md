@@ -88,4 +88,4 @@ Colour Pallet was determined while re-searching for usual brand colours and dark
 
 ## **Wireframes**
 
-All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be preview here [here](media/wireframes).
+All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed here [here](media/wireframes).

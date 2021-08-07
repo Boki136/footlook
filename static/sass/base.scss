@@ -153,6 +153,29 @@ h1 {
     }
 }
 
+.no_products_in_basket {
+    margin: 85px auto 0 auto;
+    font-size: 22px;
+
+}
+
+.shop_by_cat,
+.shop_by_brand {
+    margin-top: 100px;
+
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: $primary-black;
+        padding: .25rem 1rem;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
 .bag_wrapper {
     display: none;
     position: fixed;
@@ -1493,6 +1516,17 @@ h1 {
 
 @media only screen and (max-width: 1200px) {
     .nav-icons {
+        position: fixed;
+        right: 35px;
+        top: 175px;
+        background: $secondary-black;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid $paper-white;
+    }
+
+    .profile-icon {
         display: none;
     }
 

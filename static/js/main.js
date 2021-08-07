@@ -260,14 +260,40 @@ $(document).ready(function () {
         }
     }
 
+    // Prevent keyboard input to basket qty field & paste function
+
+    function preventNumberInput(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+        if (keyCode > 47 && keyCode < 58 || keyCode > 95 && keyCode < 107) {
+            e.preventDefault();
+        }
+    }
+
+    $('.qty_input_bag').keypress(function (e) {
+        preventNumberInput(e);
+    });
+
+    $(function () {
+        $(document).on("cut copy paste", ".qty_input_bag", function (e) {
+            e.preventDefault();
+        });
+    });
+
+    // Update / calculate totals on product qty change
+
     $('.qty_input_bag').change(function () {
 
-
+        let qty_in_selector = $(this).val();
         let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'))
         item_quantity_in_bag = item_quantity_in_bag.html();
 
         if (item_quantity_in_bag < $(this).val() || item_quantity_in_bag > $(this).val()) {
-            $(this).parent().parent().find($('.update-link')).fadeIn()
+            if (qty_in_selector == "") {
+                $(this).parent().parent().find($('.update-link')).css('display', 'none')
+            } else {
+                $(this).parent().parent().find($('.update-link')).fadeIn()
+            }
+
         } else if (item_quantity_in_bag == $(this).val()) {
             $(this).parent().parent().find($('.update-link')).fadeOut()
         }
