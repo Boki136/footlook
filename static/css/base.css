@@ -953,7 +953,9 @@ h1 {
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #EEE;
+  border: 1px solid #EEE; }
+
+.qty_input_bag:focus {
   background: none; }
 
 /********************** FOOTER SECTION **/

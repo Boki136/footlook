@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     // Make Navigation Sticky & back to the top of the page
 
     $(window).scroll(function () {
@@ -84,6 +83,7 @@ $(document).ready(function () {
         }, 350);
 
         $('.body-overlay').fadeIn()
+
     })
 
     $('.close-bag').click(function () {
@@ -267,7 +267,6 @@ $(document).ready(function () {
         item_quantity_in_bag = item_quantity_in_bag.html();
 
         if (item_quantity_in_bag < $(this).val() || item_quantity_in_bag > $(this).val()) {
-            console.log(item_quantity_in_bag)
             $(this).parent().parent().find($('.update-link')).fadeIn()
         } else if (item_quantity_in_bag == $(this).val()) {
             $(this).parent().parent().find($('.update-link')).fadeOut()
@@ -281,7 +280,7 @@ $(document).ready(function () {
         let product_total = $('.product-total')
         let all_total_array = [];
         for (i = 0; i < product_total.length; i++) {
-            all_total_array.push(parseInt($('.product-total:eq(' + parseInt(i) + ')').text()))
+            all_total_array.push(parseFloat($('.product-total:eq(' + parseInt(i) + ')').text()))
         }
 
         let basket_total = 0;

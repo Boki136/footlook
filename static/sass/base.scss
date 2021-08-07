@@ -1314,6 +1314,9 @@ h1 {
 .form-control:focus {
     box-shadow: none;
     border: 1px solid $paper-white;
+}
+
+.qty_input_bag:focus {
     background: none;
 }
 
