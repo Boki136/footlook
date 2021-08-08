@@ -69,6 +69,7 @@ For this project, I wanted to build an e-commerce website, but I was unsure at t
 - Creating tracking system within the profile page
 - Implementing auto-address plug in to help the users to quickly fill in their details
 - Adding more products and batter filtering system (shoe color, size etc.)
+- Real life inventory 
 
 ### **User Stories**
 

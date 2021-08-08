@@ -188,10 +188,11 @@ h1 {
 .product-box_details {
   width: 65%; }
   .product-box_details h3 {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 15px; }
   .product-box_details h5 {
     font-size: 13px;
-    margin-top: 10px; }
+    margin: 0 0 5px 0; }
   .product-box_details h4 {
     font-size: 18px; }
   .product-box_details h6 {
@@ -298,7 +299,8 @@ h1 {
 
 .nav-content_wrapper {
   width: 90%;
-  padding: 3% 6%; }
+  padding: 3% 6%;
+  margin: 0 auto; }
 
 .fa-times {
   color: #fff;
@@ -1270,6 +1272,11 @@ h1 {
     margin: 5px 0 10px 0; } }
 
 @media only screen and (max-width: 550px) {
+  .navbar-brand {
+    width: 200px; }
+  .fa-bars,
+  .fa-times {
+    font-size: 35px !important; }
   .hero-content {
     padding: 100px 0; }
     .hero-content p {

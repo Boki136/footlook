@@ -12,20 +12,36 @@ def bag_contents(request):
     product_count = 0
     bag = request.session.get('bag', {})
 
-    for item_id, quantity in bag.items():
-        product = get_object_or_404(Product, pk=item_id)
-        image_list = product.images
-        image_list = ast.literal_eval(image_list)
-        product.images = image_list
-        price = int(product.price) * 0.011
-        total += quantity * price
-        product_count += quantity
-        bag_items.append({
-            'item_id': item_id,
-            'quantity': quantity,
-            'product': product,
-            'image_list': image_list,
-        })
+    for item_id, item_data in bag.items():
+        if isinstance(item_data, int):
+            product = get_object_or_404(Product, pk=item_id)
+            image_list = product.images
+            image_list = ast.literal_eval(image_list)
+            product.images = image_list
+            price = int(product.price) * 0.011
+            total += item_data * price
+            product_count += item_data
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'product': product,
+                'image_list': image_list,
+            })
+        else:
+            product = get_object_or_404(Product, pk=item_id)
+            image_list = product.images
+            image_list = ast.literal_eval(image_list)
+            product.images = image_list
+            for size, quantity in item_data['items_by_size'].items():
+                total += quantity * (int(product.price) * 0.011)
+                product_count += quantity
+                bag_items.append({
+                    'item_id': item_id,
+                    'quantity': quantity,
+                    'product': product,
+                    'size': size,
+                    'image_list': image_list,
+                })
 
     if total < settings.FREE_DELIVERY_TRESHOLD:
         delivery = settings.STANDARD_DELIVERY_COST

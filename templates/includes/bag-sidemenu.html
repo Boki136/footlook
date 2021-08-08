@@ -15,6 +15,8 @@
                 <div class="product-box_details">
                     <h3>{{item.product.name}}</h3>
                     <h5>SKU:{{item.product.sku}}</h5>
+                    <h5>SIZE: {{item.size}}</h5>
+                    <h5></h5>
                     <!--Product quantity adjust-->
                     <div class="add-to-cart-actions bag-options">
                         <div class="quantity_selector bag-quantity">
@@ -25,9 +27,12 @@
                                     <input class="form-control qty_input_bag" type="number" name="quantity" value="{{item.quantity}}" min="1" max="99"
                                         max-length='99' data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id}}">
                                     <input type="hidden" name="redirect_url_bag" value="{{ request.path }}">
+                                    <input class='product_size' name='product_size' type="hidden" data-product_size='{{item.size}}'
+                                        value='{{item.size}}'>
                                 </form>
                                 <a class="update-link" id="update_{{ item.item_id }}"><small>Update</small></a>
-                                <a class="remove-item float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                <a class="remove-item float-right" id="remove_{{ item.item_id }}"
+                                    data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </div>
                         </div>
                         <h5 class='item_quantity_original'>{{item.quantity}}</h5>
@@ -57,13 +62,16 @@
                 No products in your basket at the moment.
             </h4>
 
+            <hr>
             <div class="shop_by_cat">
                 <h4>Shop by Category:</h4>
                 <a aria-current="page" href="{% url 'products' %}?category=men">MEN</a>
                 <a aria-current="page" href="{% url 'products' %}?category=women">WOMEN</a>
             </div>
 
+
             <div class="shop_by_brand">
+
                 <h4>Shop by Brand:</h4>
                 <a href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
                 <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
@@ -88,9 +96,11 @@
     $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
         var url = `/bag/remove/${itemId}/`;
         var data = {
-            'csrfmiddlewaretoken': csrfToken
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
         };
 
         $.post(url, data)

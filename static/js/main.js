@@ -269,12 +269,12 @@ $(document).ready(function () {
         }
     }
 
-    $('.qty_input_bag').keypress(function (e) {
+    $('.qty_input_bag, .qty_input').keypress(function (e) {
         preventNumberInput(e);
     });
 
     $(function () {
-        $(document).on("cut copy paste", ".qty_input_bag", function (e) {
+        $(document).on("cut copy paste", ".qty_input_bag, .qty_input", function (e) {
             e.preventDefault();
         });
     });
@@ -318,6 +318,15 @@ $(document).ready(function () {
     }
 
     calculate_basket_total();
+
+    // Shoe size selection
+
+    $('.size_selector').click(function () {
+        let size_selected = $(this).html()
+        $('.product_size').val(size_selected)
+        $('.product_size').attr('data-product_size', size_selected)
+    })
+
 
 
 

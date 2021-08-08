@@ -26,12 +26,34 @@
         <img src=" {{MEDIA_URL}}brand_logo_3.png" alt="{{product.brand}} brand logo">
         {% endif %}
         <h1>{{product.name}}</h1>
+        <h2>{{product.category}}</h2>
         <hr>
         <div class="rating-and-sku">
             {% include 'includes/rating_product_page.html' %}
             <p>SKU: {{product.sku}}</p>
         </div>
         <h4>SELECT THE SIZE:</h4>
+        {% if product.category.name == 'men' %}
+        <div class="sizes_selection_wrapper">
+            <button class='size_selector' type="submit">6</button>
+            <button class='size_selector' type="submit">7</button>
+            <button class='size_selector' type="submit">8</button>
+            <button class='size_selector' type="submit">9</button>
+            <button class='size_selector' type="submit">10</button>
+            <button class='size_selector' type="submit">11</button>
+            <button class='size_selector' type="submit">12</button>
+        </div>
+        {% elif product.category.name == 'women' %}
+        <div class="sizes_selection_wrapper">
+            <button class='size_selector' type="submit">3</button>
+            <button class='size_selector' type="submit">4</button>
+            <button class='size_selector' type="submit">5</button>
+            <button class='size_selector' type="submit">6</button>
+            <button class='size_selector' type="submit">7</button>
+            <button class='size_selector' type="submit">8</button>
+            <button class='size_selector' type="submit">9</button>
+        </div>
+        {% endif %}
         <hr>
         <p>{{product.description}}</p>
 
@@ -48,6 +70,7 @@
                             <label class='sr-only' for="quantity">Quantity</label>
                             <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99"
                                 data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                            <input class='product_size' name='product_size' type="hidden" data-product_size='' value=''>
                         </div>
                     </div>
                 </div>

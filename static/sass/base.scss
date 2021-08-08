@@ -252,11 +252,12 @@ h1 {
 
     h3 {
         font-size: 20px;
+        margin-bottom: 15px;
     }
 
     h5 {
         font-size: 13px;
-        margin-top: 10px;
+        margin: 0 0 5px 0;
     }
 
     h4 {
@@ -415,6 +416,7 @@ h1 {
 .nav-content_wrapper {
     width: 90%;
     padding: 3% 6%;
+    margin: 0 auto;
 }
 
 .fa-times {
@@ -1834,7 +1836,14 @@ h1 {
 
 @media only screen and (max-width: 550px) {
 
+    .navbar-brand {
+        width: 200px;
+    }
 
+    .fa-bars,
+    .fa-times {
+        font-size: 35px !important;
+    }
 
     .hero-content {
         padding: 100px 0;
