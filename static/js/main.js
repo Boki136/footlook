@@ -31,7 +31,6 @@ $(document).ready(function () {
     })
 
     // Open Mobile Menu
-
     $(".navbar-toggler").click(function () {
         $('.mobile_nav').fadeIn(200);
         $('.nav-content-wrapper').css('display', 'none');
@@ -44,7 +43,6 @@ $(document).ready(function () {
         $('.nav-content-wrapper').show();
         $('.navbar').css('height', '110px')
     })
-
 
     // Insert HR after each mobile link
 
@@ -75,18 +73,20 @@ $(document).ready(function () {
         $(this).fadeOut();
     })
 
-    // Show basket on icon click
 
+    // Show basket on icon click
     $('.shopping-bag-wrapper').click(function () {
         $('.bag_wrapper').animate({
             width: 'toggle'
         }, 350);
 
+        $('body').css('overflow', 'hidden')
         $('.body-overlay').fadeIn()
 
     })
 
     $('.close-bag').click(function () {
+        $('body').css('overflow', 'scroll')
         $('.bag_wrapper').animate({
             width: 'toggle'
         }, 150);
@@ -121,20 +121,23 @@ $(document).ready(function () {
             var first_img = $(this).find('.primary-img_link').html()
             $(this).find('.primary_img').attr('src', first_img);
         })
+
     }
 
     // Detach product page results message on screen < 990px
-
     if ($(window).width() < 990) {
         let result_message = $('.product-result-message').detach()
         result_message.insertAfter($('.product-tools-wrapper'))
         result_message.addClass('product-result-message_mobile')
 
         $('.sort-filter').html('Filters ')
+
+        // Move basket subtotal to top of the basket sidebar
+
+        $('.bottom-menu-actions-wrapper').insertAfter($('.top-menu-actions'));
     }
 
     // Show sort by filter on hover only screens > 1200
-
     if ($(window).width() > 990) {
 
         $('.sort-filter').mouseover(function () {
@@ -176,7 +179,6 @@ $(document).ready(function () {
 
 
     // Homepage Category slider, move to right on click
-
     let cellArray1 = document.getElementsByClassName("product-slider_item");
     let cellArray = Object.values(cellArray1);
 
@@ -204,8 +206,7 @@ $(document).ready(function () {
     }
 
 
-    // Show correct review on hover
-
+    // Show correct testemonial on hover
     $('.person-info-card:eq(0)').mouseover(function () {
         $('.review_one').show();
         $('.review_two, .review_three').hide();
@@ -224,7 +225,6 @@ $(document).ready(function () {
     })
 
     // Show shop now button when hovering over category
-
     $('.category-box').mouseover(function () {
         $(this).find(".background-overlay").addClass('category-opacity')
         $(this).find('a').show().animate({
@@ -323,11 +323,10 @@ $(document).ready(function () {
 
     $('.size_selector').click(function () {
         let size_selected = $(this).html()
+        $('.size_selector').removeClass('selected_box')
+        $(this).addClass('selected_box')
         $('.product_size').val(size_selected)
         $('.product_size').attr('data-product_size', size_selected)
     })
-
-
-
 
 });
