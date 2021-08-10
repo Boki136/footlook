@@ -250,6 +250,12 @@ h1 {
   .checkout_btn-wrapper button:hover {
     background: #3A4750; }
 
+.bag-notification-wrapper img {
+  width: 100px; }
+
+.bag-notification-wrapper h6 {
+  margin-top: 10px; }
+
 .basket-seperator {
   height: 0 !important;
   border-bottom: 1px solid;
@@ -378,11 +384,29 @@ h1 {
       background: rgba(215, 35, 35, 0.25); }
 
 .message-wrapper {
-  position: absolute;
-  top: 115px;
-  right: 25px;
-  z-index: 9999999999999;
-  height: 200px; }
+  z-index: 10000;
+  box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.15);
+  position: fixed;
+  top: 110px;
+  width: 100%;
+  background-color: white; }
+
+.custom-toast {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 70px; }
+  .custom-toast img {
+    width: 100px; }
+
+.toast-header {
+  justify-content: space-between; }
+
+.toast-body {
+  margin-top: 20px;
+  padding: 10px 0; }
 
 /* Profile hover modal */
 .login_modal {
