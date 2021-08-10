@@ -329,7 +329,7 @@ $(document).ready(function () {
         $('.product_size').attr('data-product_size', size_selected)
     })
 
-    // Remove message after 3 seconds
+    // Remove message after 3.5 seconds
 
     $('.message-wrapper').delay(3000).fadeOut(400);
 

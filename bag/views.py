@@ -25,17 +25,18 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f"{quantity}x {product.name}")           
+                messages.success(request, f'{size}')          
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f"{quantity}x {product.name}")        
+                messages.success(request, f'{size}')       
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f"{quantity}x {product.name}")  
+            messages.success(request, f'{size}')
 
     context = {
         'product': product,
         'image_list': image_list,
+        'quantity': quantity,
     }
 
     request.session['bag'] = bag
@@ -45,6 +46,7 @@ def add_to_bag(request, item_id):
 def update_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url_bag')
     size = None
@@ -55,10 +57,6 @@ def update_bag(request, item_id):
     if size:
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
-        else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -76,7 +74,7 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
-
+        
         request.session['bag'] = bag
         return HttpResponse(status=200)
 

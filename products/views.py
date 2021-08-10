@@ -50,7 +50,7 @@ def products_view(request):
         if 'search_term' in request.GET:
             query = request.GET['search_term']
             if not query:
-                messages.error(request, "You didn't enter any search terms")
+                messages.error(request, "You didn't enter any search terms, try again.")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(
