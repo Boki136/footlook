@@ -314,6 +314,12 @@ $(document).ready(function () {
             basket_total += all_total_array[i]
         }
 
+        if (basket_total < 75) {
+            basket_total = basket_total + 6.99
+        } else if (basket_total >= 75) {
+            basket_total = basket_total
+        }
+
         $('.basket-total').html(parseFloat(basket_total).toFixed(2))
     }
 

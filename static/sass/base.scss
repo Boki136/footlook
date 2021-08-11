@@ -286,16 +286,41 @@ h1 {
     display: none;
 }
 
+.delivery-total {
+
+    h2 {
+        clear: both;
+        margin: 10px 0 30px 0;
+        font-size: 18px;
+    }
+
+    h5 {
+        float: left;
+
+    }
+
+    h6 {
+        float: right;
+        font-size: 22px;
+    }
+}
+
 
 .basket-subtotal-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    clear: both;
+
 }
 
 .basket-total {
 
+    background: $secondary-black;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-size: 25px;
+    color: $paper-white;
 
     &::before {
         content: '\€';

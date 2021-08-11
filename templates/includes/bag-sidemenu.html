@@ -49,6 +49,16 @@
         </div>
         <div class="bottom-menu-actions-wrapper">
             <div class="bottom_menu_actions">
+                <div class="delivery-total">
+                    {% if total < free_delivery_treshold %}
+                    <h5>Delivery Charge</h5>
+                    <h6>€ {{delivery}}</h6>
+                    <h2>(Spend €{{free_delivery_aquire|floatformat:2}} more to acquire a <strong>FREE</strong> Delivery)</h2>
+                    {% else %}
+                    <h5 class="mb-3">Delivery Charge</h5>
+                    <h6 class="mb-3">€0.00</h6>
+                    {% endif %}
+                </div>
                 <div class="basket-subtotal-wrapper">
                     <h5>Basket Subtotal</h5>
                     <h5 class='basket-total'></h5>
