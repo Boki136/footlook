@@ -291,7 +291,7 @@ h1 {
     h2 {
         clear: both;
         margin: 10px 0 30px 0;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     h5 {
@@ -1900,7 +1900,7 @@ h1 {
 
     .bottom_menu_actions {
         width: 90%;
-        padding: 10px 0;
+        padding: 20px 0;
         background: #303841;
         margin: 0 auto;
         vertical-align: middle;
@@ -1917,6 +1917,15 @@ h1 {
             clear: both;
         }
     }
+
+    .delivery-total {
+
+        h2,
+        h6 {
+            color: $paper-white;
+        }
+    }
+
 
     .basket-subtotal-wrapper {
         float: left;
@@ -1940,8 +1949,14 @@ h1 {
         font-size: 1.25em;
     }
 
-    .basket-total::before {
-        font-size: 20px;
+    .basket-total {
+        background: transparent;
+        padding: 0;
+
+        &::before {
+            font-size: 20px;
+        }
+
     }
 
     .basket-seperator {

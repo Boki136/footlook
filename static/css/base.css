@@ -214,7 +214,7 @@ h1 {
 .delivery-total h2 {
   clear: both;
   margin: 10px 0 30px 0;
-  font-size: 18px; }
+  font-size: 15px; }
 
 .delivery-total h5 {
   float: left; }
@@ -1326,7 +1326,7 @@ h1 {
     background: #303841; }
   .bottom_menu_actions {
     width: 90%;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #303841;
     margin: 0 auto;
     vertical-align: middle;
@@ -1337,6 +1337,9 @@ h1 {
       content: "";
       display: block;
       clear: both; }
+  .delivery-total h2,
+  .delivery-total h6 {
+    color: #EEE; }
   .basket-subtotal-wrapper {
     float: left;
     display: block;
@@ -1351,8 +1354,11 @@ h1 {
     margin: 0;
     display: inline-block;
     font-size: 1.25em; }
-  .basket-total::before {
-    font-size: 20px; }
+  .basket-total {
+    background: transparent;
+    padding: 0; }
+    .basket-total::before {
+      font-size: 20px; }
   .basket-seperator {
     display: none; }
   .product-details {
