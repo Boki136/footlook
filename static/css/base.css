@@ -258,13 +258,22 @@ h1 {
   align-items: flex-end;
   width: 90%; }
 
-.checkout_btn-wrapper button {
+.checkout_btn-wrapper a {
   background: #303841;
   color: #EEE;
-  padding: 10px 35px;
+  padding: 15px 35px;
   outline: none;
-  border: none; }
-  .checkout_btn-wrapper button:hover {
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .checkout_btn-wrapper a::before {
+    content: '\f07a';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 8px;
+    font-size: 20px; }
+  .checkout_btn-wrapper a:hover {
     background: #3A4750; }
 
 .bag-notification-wrapper img {
@@ -1345,9 +1354,10 @@ h1 {
     display: block;
     position: relative;
     top: 5px; }
-  .checkout_btn-wrapper button {
+  .checkout_btn-wrapper a {
     border: 1px solid #EEE;
-    padding: 5px 25px; }
+    padding: 5px 25px;
+    text-decoration: none; }
   .checkout_btn-wrapper {
     float: right; }
   .basket-subtotal-wrapper h5 {

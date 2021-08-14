@@ -360,12 +360,24 @@ h1 {
 
 .checkout_btn-wrapper {
 
-    button {
+    a {
         background: $primary-black;
         color: $paper-white;
-        padding: 10px 35px;
+        padding: 15px 35px;
         outline: none;
         border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+
+
+        &::before {
+            content: '\f07a';
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            padding-right: 8px;
+            font-size: 20px;
+        }
 
         &:hover {
             background: $secondary-black;
@@ -1934,9 +1946,10 @@ h1 {
         top: 5px;
     }
 
-    .checkout_btn-wrapper button {
+    .checkout_btn-wrapper a {
         border: 1px solid $paper-white;
         padding: 5px 25px;
+        text-decoration: none;
     }
 
     .checkout_btn-wrapper {

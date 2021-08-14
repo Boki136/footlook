@@ -144,6 +144,10 @@ $(document).ready(function () {
             $('.filter-box').fadeIn(200)
         })
 
+        $('.product-tools-wrapper').mouseleave(function () {
+            $('.filter-box').fadeOut(200)
+        })
+
         $('.product-listing-wrapper, .brand-box-wrapper').mouseover(function () {
             $('.filter-box').fadeOut(200)
         })
