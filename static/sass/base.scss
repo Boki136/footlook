@@ -1410,6 +1410,7 @@ h1 {
 
 .product-action {
     margin-top: 35px;
+    position: relative;
 
     p {
         font-size: 30px;
@@ -1444,6 +1445,21 @@ h1 {
     color: $paper-white;
 }
 
+.warning_message {
+    margin: 15px 0;
+    font-size: 18px;
+    position: absolute;
+    top: 45px;
+
+    &::after {
+        content: '\f12a';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: $red;
+        padding-left: 5px;
+    }
+}
+
 
 .add-to-cart-actions {
     display: flex;
@@ -1466,6 +1482,7 @@ h1 {
         margin-bottom: 20px;
     }
 }
+
 
 .form-group {
     a {

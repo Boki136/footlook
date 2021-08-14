@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title_extend %} | {{product.name}}{% endblock %}
+
 
 {% block content %}
 
@@ -59,7 +61,7 @@
             <p>€{{product.price}}</p>
         </div>
 
-        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+        <form class="form" id='add_to_bag_form' action="{% url 'add_to_bag' product.id %}" method="POST">
             {% csrf_token %}
             <div class="form-row add-to-cart-actions">
                 <div class="quantity_selector">

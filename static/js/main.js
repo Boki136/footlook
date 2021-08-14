@@ -339,6 +339,22 @@ $(document).ready(function () {
         $('.product_size').attr('data-product_size', size_selected)
     })
 
+    // Make product size selection required
+
+    $('#add_to_bag_form').click(function (e) {
+        $('.warning_message').hide();
+        let size_button = $('.size_selector').hasClass('selected_box')
+        if (size_button == true) {
+            $('#add_to_bag_form').submit()
+        } else if (size_button == false) {
+            e.preventDefault()
+            $('.product-action').append(`<h5 class='warning_message'>Please select the size</h5>`)
+            $('.warning_message').fadeOut(4000);
+        }
+    })
+
+
+
     // Remove message after 3.5 seconds
 
     $('.message-wrapper').delay(3000).fadeOut(400);

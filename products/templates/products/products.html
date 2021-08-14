@@ -1,7 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title_extend %} |
 
+{% if current_categories %}
+{% for c in current_categories %}
+{{c|title}}
+{% endfor %}
+{% endif %}
+
+{% if search_term %}
+"{{ search_term|title}}"
+{% endif %}
+
+{% if current_brand %}
+{{brand_name|title}}
+{% endif %}
+
+{% if not search_term and not current_categories and not current_brand %}
+All Products
+{% endif %}
+
+{% endblock %}
 {% block content %}
 
 <!--Brand Selection-->
