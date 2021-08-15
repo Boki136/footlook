@@ -163,7 +163,7 @@ h1 {
     font-size: 25px; }
 
 .products-wrapper {
-  margin: 50px 0;
+  margin: 50px 0 85px 0;
   max-height: 80%;
   overflow: scroll;
   overflow-x: hidden;

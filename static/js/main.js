@@ -310,8 +310,12 @@ $(document).ready(function () {
 
         if (basket_total < 75) {
             basket_total = basket_total + 6.99
+            $('.delivery_treshold').show();
+            $('.delivery_treshold span').html(parseFloat((75 - basket_total) + 6.99).toFixed(2))
         } else if (basket_total >= 75) {
             basket_total = basket_total
+            $('.delivery_amount').html("FREE")
+            $('.delivery_treshold').hide();
         }
 
         $('.basket-total').html(parseFloat(basket_total).toFixed(2))
@@ -322,9 +326,7 @@ $(document).ready(function () {
     // Calculate amount of items in the bag
 
     function calculate_items_in_basket() {
-
         let items_total = $('.qty_input_bag')
-        console.log(items_total)
         let all_items_total_qty = [];
         for (i = 0; i < items_total.length; i++) {
             all_items_total_qty.push(parseFloat($('.qty_input_bag:eq(' + parseInt(i) + ')').val()))
@@ -339,7 +341,7 @@ $(document).ready(function () {
         $('.shopping-bag-wrapper span').html(all_total_test)
     }
 
-    calculate_items_in_basket()
+    calculate_items_in_basket();
 
     $('.qty_input_bag').change(calculate_items_in_basket)
 
@@ -366,6 +368,44 @@ $(document).ready(function () {
             $('#add_to_bag').submit()
         }
     });
+
+    // Remove item from bag on click
+    $('.remove-item').click(function () {
+        setTimeout(function () {
+            calculate_items_in_basket();
+            calculate_basket_total();
+            let basket_count = $('.total_items_in_bag span').html()
+            if (basket_count == 0) {
+                $('.bottom-menu-actions-wrapper, .products-wrapper').hide()
+                $('.shopping-bag-wrapper span').hide()
+                $('.basket_contents_and_action').append(` 
+                <div class="shop_options">
+                <h4 class='no_products_in_basket'>
+                    No products in your basket at the moment.
+                </h4>
+    
+                <hr>
+                <div class="shop_by_cat">
+                    <h4>Shop by Category:</h4>
+                    <a aria-current="page" href="{% url 'products' %}?category=men">Men</a>
+                    <a aria-current="page" href="{% url 'products' %}?category=women">Women</a>
+                </div>
+    
+    
+                <div class="shop_by_brand">
+    
+                    <h4>Shop by Brand:</h4>
+                    <a href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
+                    <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
+                    <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
+                </div>
+            </div>`)
+            }
+        }, 1);
+
+        $(this).closest($('.product-box')).remove();
+    })
+
 
     // Remove message after 3.5 seconds
 

@@ -49,7 +49,6 @@ def update_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url_bag')
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
@@ -66,8 +65,6 @@ def update_bag(request, item_id):
 
     request.session['bag'] = bag
     return JsonResponse(context)
-    
-   # return redirect(redirect_url)
 
 
 def remove_from_bag(request, item_id):

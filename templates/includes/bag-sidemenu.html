@@ -14,7 +14,7 @@
                 </div>
                 <div class="product-box_details">
                     <h3>{{item.product.name}}</h3>
-                    <h5>SKU:{{item.product.sku}}</h5>
+                    <h5>SKU: {{item.product.sku}}</h5>
                     <h5>SIZE: {{item.size}}</h5>
                     <h5></h5>
                     <!--Product quantity adjust-->
@@ -40,7 +40,6 @@
                             <h4 class='product-total'></h4>
                             <h6 class='product-price'>{{item.product.price}}</h6>
                         </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </div>
             </div>
@@ -49,14 +48,9 @@
         <div class="bottom-menu-actions-wrapper">
             <div class="bottom_menu_actions">
                 <div class="delivery-total">
-                    {% if total < free_delivery_treshold %}
                     <h5>Delivery Charge</h5>
-                    <h6>€ {{delivery}}</h6>
-                    <h2>(Spend €{{free_delivery_aquire|floatformat:2}} more to acquire a <strong>FREE</strong> Delivery)</h2>
-                    {% else %}
-                    <h5 class="mb-3">Delivery Charge</h5>
-                    <h6 class="mb-3">Free</h6>
-                    {% endif %}
+                    <h6 class='delivery_amount'>€6.99</h6>
+                    <h2 class='delivery_treshold'>(Spend €<span></span> more to acquire a <strong>FREE</strong> Delivery)</h2>
                 </div>
                 <div class="basket-subtotal-wrapper">
                     <h5>Basket Subtotal</h5>
@@ -78,8 +72,8 @@
             <hr>
             <div class="shop_by_cat">
                 <h4>Shop by Category:</h4>
-                <a aria-current="page" href="{% url 'products' %}?category=men">MEN</a>
-                <a aria-current="page" href="{% url 'products' %}?category=women">WOMEN</a>
+                <a aria-current="page" href="{% url 'products' %}?category=men">Men</a>
+                <a aria-current="page" href="{% url 'products' %}?category=women">Women</a>
             </div>
 
 
@@ -120,23 +114,27 @@
                 console.log(product_url)
             }
         });
-
-    })
+    });
 
     // Remove item and reload on click
     $('.remove-item').click(function (e) {
+        e.preventDefault();
         var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
+        var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
-        var data = {
+        data = {
             'csrfmiddlewaretoken': csrfToken,
-            'product_size': size
-        };
-
-        $.post(url, data)
-            .done(function () {
-                location.reload();
-            });
-    })
+            "product_size": size
+        }
+        $.post({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function () {
+                console.log("Data: " + data['quantity']);
+                console.log(url)
+            }
+        });
+    });
 </script>
