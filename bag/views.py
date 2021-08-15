@@ -2,6 +2,7 @@ from django.shortcuts import redirect, HttpResponse
 from django.contrib import messages
 import ast
 from products.models import Product
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -43,6 +44,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url, context)
 
 
+
 def update_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -57,8 +59,15 @@ def update_bag(request, item_id):
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
 
+    context = {
+        'quantity': quantity,
+        'size': size,
+    }
+
     request.session['bag'] = bag
-    return redirect(redirect_url)
+    return JsonResponse(context)
+    
+   # return redirect(redirect_url)
 
 
 def remove_from_bag(request, item_id):

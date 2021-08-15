@@ -218,10 +218,9 @@ h1 {
 }
 
 .products-wrapper {
-    margin-top: 50px;
+    margin: 50px 0;
     max-height: 80%;
     overflow: scroll;
-    margin-bottom: 125px;
     overflow-x: hidden;
     padding-right: 20px;
 }
@@ -1674,6 +1673,23 @@ h1 {
     img {
         padding: 0 5px;
     }
+}
+
+/**************************** CHECKOUT **/
+.checkout-heading-wrapper {
+    background: $paper-white;
+    margin-top: 35px;
+    height: 150px;
+}
+
+.checkout-heading {
+    width: 90%;
+    padding: 25px 12px 25px 20px;
+    color: $secondary-black;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 30px;
+
 }
 
 /************************ MEDIA QUERIES **/

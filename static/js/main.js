@@ -86,6 +86,7 @@ $(document).ready(function () {
     })
 
     $('.close-bag').click(function () {
+
         $('body').css('overflow', 'scroll')
         $('.bag_wrapper').animate({
             width: 'toggle'
@@ -287,20 +288,9 @@ $(document).ready(function () {
 
     $('.qty_input_bag').change(function () {
 
-        let qty_in_selector = $(this).val();
         let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'))
         item_quantity_in_bag = item_quantity_in_bag.html();
 
-        if (item_quantity_in_bag < $(this).val() || item_quantity_in_bag > $(this).val()) {
-            if (qty_in_selector == "") {
-                $(this).parent().parent().find($('.update-link')).css('display', 'none')
-            } else {
-                $(this).parent().parent().find($('.update-link')).fadeIn()
-            }
-
-        } else if (item_quantity_in_bag == $(this).val()) {
-            $(this).parent().parent().find($('.update-link')).fadeOut()
-        }
         update_price();
         calculate_basket_total()
     })
@@ -329,6 +319,30 @@ $(document).ready(function () {
 
     calculate_basket_total();
 
+    // Calculate amount of items in the bag
+
+    function calculate_items_in_basket() {
+
+        let items_total = $('.qty_input_bag')
+        console.log(items_total)
+        let all_items_total_qty = [];
+        for (i = 0; i < items_total.length; i++) {
+            all_items_total_qty.push(parseFloat($('.qty_input_bag:eq(' + parseInt(i) + ')').val()))
+        }
+
+        let all_total_test = 0;
+        for (var i = 0; i < all_items_total_qty.length; i++) {
+            all_total_test += all_items_total_qty[i]
+        }
+
+        $('.total_items_in_bag span').html(all_total_test)
+        $('.shopping-bag-wrapper span').html(all_total_test)
+    }
+
+    calculate_items_in_basket()
+
+    $('.qty_input_bag').change(calculate_items_in_basket)
+
     // Shoe size selection
 
     $('.size_selector').click(function () {
@@ -341,19 +355,17 @@ $(document).ready(function () {
 
     // Make product size selection required
 
-    $('#add_to_bag_form').click(function (e) {
+    $('#add_to_bag').click(function (e) {
         $('.warning_message').hide();
         let size_button = $('.size_selector').hasClass('selected_box')
-        if (size_button == true) {
-            $('#add_to_bag_form').submit()
-        } else if (size_button == false) {
-            e.preventDefault()
+        if (size_button == false) {
+            e.preventDefault();
             $('.product-action').append(`<h5 class='warning_message'>Please select the size</h5>`)
             $('.warning_message').fadeOut(4000);
+        } else if (size_button == true) {
+            $('#add_to_bag').submit()
         }
-    })
-
-
+    });
 
     // Remove message after 3.5 seconds
 

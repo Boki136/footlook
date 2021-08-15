@@ -1,6 +1,6 @@
 <section class="bag_wrapper">
     <div class="top-menu-actions">
-        <h2>Your Bag ({{product_count}})</h2>
+        <h2 class='total_items_in_bag'>Your Bag (<span>{{product_count}}</span>)</h2>
         <i class="fas fa-times fa-2x close-bag"></i>
     </div>
     <div class="basket_contents_and_action">
@@ -30,7 +30,6 @@
                                     <input class='product_size' name='product_size' type="hidden" data-product_size='{{item.size}}'
                                         value='{{item.size}}'>
                                 </form>
-                                <a class="update-link" id="update_{{ item.item_id }}"><small>Update</small></a>
                                 <a class="remove-item float-right" id="remove_{{ item.item_id }}"
                                     data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </div>
@@ -101,9 +100,27 @@
 
 <script>
     // Update quantity on click
-    $('.update-link').click(function (e) {
-        var form = $(this).prev('.update_bag_form');
-        form.submit();
+    $('.qty_input_bag').click(function (e) {
+        var form = $(this).parent();
+        form.submit(function (e) {
+            e.preventDefault();
+        })
+        data = {
+            'csrfmiddlewaretoken': $("input[name=csrfmiddlewaretoken]").val(),
+            "quantity": $(this).val(),
+            "product_size": $(this).next().next().val()
+        }
+        product_url = $(this).attr('data-item_id');
+        $.post({
+            type: "POST",
+            url: `/bag/update/${product_url}/`,
+            data: data,
+            success: function () {
+                console.log("Data: " + data['quantity']);
+                console.log(product_url)
+            }
+        });
+
     })
 
     // Remove item and reload on click
