@@ -295,6 +295,8 @@ $(document).ready(function () {
         calculate_basket_total()
     })
 
+    // Calculate basket total
+
     function calculate_basket_total() {
 
         let product_total = $('.product-total')
@@ -358,7 +360,7 @@ $(document).ready(function () {
     // Make product size selection required
 
     $('#add_to_bag').click(function (e) {
-        $('.warning_message').hide();
+        $('.warning_message').remove();
         let size_button = $('.size_selector').hasClass('selected_box')
         if (size_button == false) {
             e.preventDefault();
@@ -406,9 +408,7 @@ $(document).ready(function () {
         $(this).closest($('.product-box')).remove();
     })
 
-
     // Remove message after 3.5 seconds
-
     $('.message-wrapper').delay(3000).fadeOut(400);
 
 });

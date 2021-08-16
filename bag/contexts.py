@@ -35,12 +35,14 @@ def bag_contents(request):
             for size, quantity in item_data['items_by_size'].items():
                 total += quantity * (int(product.price) * 0.011)
                 product_count += quantity
+                product_total = quantity * (int(product.price) * 0.011)
                 bag_items.append({
                     'item_id': item_id,
                     'quantity': quantity,
                     'product': product,
                     'size': size,
                     'image_list': image_list,
+                    'product_total': product_total,
                 })
 
     if total < settings.FREE_DELIVERY_TRESHOLD:

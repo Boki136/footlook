@@ -581,7 +581,8 @@ h1 {
   align-items: center; }
   .product-price_bubble h1 {
     color: #EEE;
-    font-size: 70px; }
+    font-size: 70px;
+    cursor: default; }
   .product-price_bubble span {
     font-size: 50px;
     position: relative;
@@ -1209,16 +1210,108 @@ h1 {
 /**************************** CHECKOUT **/
 .checkout-heading-wrapper {
   background: #EEE;
-  margin-top: 35px;
-  height: 150px; }
+  height: 100px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000000; }
+
+.checkout-heading_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  color: #3A4750;
+  margin: 0 auto; }
 
 .checkout-heading {
-  width: 90%;
   padding: 25px 12px 25px 20px;
-  color: #3A4750;
-  margin: 0 auto;
   font-weight: 600;
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 50px; }
+
+.checkout-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin: 100px auto 100px auto; }
+
+.back-to-shopping-cta {
+  color: #303841;
+  text-decoration: none;
+  font-size: 20px; }
+  .back-to-shopping-cta:hover {
+    color: #303841; }
+  .back-to-shopping-cta::before {
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    padding-right: 3px; }
+
+.checkout-form {
+  width: 60%; }
+
+.checkout-order-summary {
+  width: 50%; }
+
+#payment-form legend {
+  font-size: 15px;
+  color: #D72323;
+  font-weight: 600;
+  margin-bottom: 15px; }
+
+#payment-form fieldset {
+  width: 80%;
+  border: 1px solid #eaeaea;
+  padding: 20px 0; }
+
+#payment-form legend {
+  position: relative;
+  bottom: 35px;
+  font-size: 20px;
+  background: white; }
+
+#payment-form label[for="id-save-info"] {
+  vertical-align: middle; }
+
+#payment-form .form-check {
+  padding-left: 0;
+  margin-left: 0; }
+
+.text-info {
+  color: #3A4750 !important; }
+  .text-info:hover {
+    color: #D72323 !important; }
+
+.smaller_height_checkout {
+  height: 55vh; }
+
+.stripe-style-input {
+  display: block;
+  width: 95%;
+  border-radius: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-bottom: 1.5px solid #EEE; }
+  .stripe-style-input::placeholder {
+    font-size: 15px; }
+  .stripe-style-input:focus {
+    outline: none; }
+
+.item_price_and_qty {
+  margin-top: 25px; }
+
+#submit-button {
+  background: #303841;
+  color: #EEE;
+  padding: 10px 30px;
+  font-size: 20px; }
+  #submit-button i {
+    color: #EEE;
+    padding-left: 5px; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

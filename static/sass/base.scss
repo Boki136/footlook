@@ -801,6 +801,7 @@ h1 {
     h1 {
         color: $paper-white;
         font-size: 70px;
+        cursor: default;
     }
 
     span {
@@ -1679,18 +1680,139 @@ h1 {
 /**************************** CHECKOUT **/
 .checkout-heading-wrapper {
     background: $paper-white;
-    margin-top: 35px;
-    height: 150px;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+.checkout-heading_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: $secondary-black;
+    margin: 0 auto;
 }
 
 .checkout-heading {
-    width: 90%;
     padding: 25px 12px 25px 20px;
-    color: $secondary-black;
-    margin: 0 auto;
     font-weight: 600;
     font-size: 30px;
+    line-height: 50px;
+}
 
+.checkout-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin: 100px auto 100px auto;
+}
+
+.back-to-shopping-cta {
+    color: $primary-black;
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+        color: $primary-black;
+    }
+
+    &::before {
+        content: '\f104';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 20px;
+        padding-right: 3px;
+    }
+}
+
+.checkout-form {
+    width: 60%;
+}
+
+.checkout-order-summary {
+    width: 50%;
+}
+
+#payment-form {
+    legend {
+        font-size: 15px;
+        color: #D72323;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    fieldset {
+        width: 80%;
+        border: 1px solid #eaeaea;
+        padding: 20px 0;
+
+    }
+
+    legend {
+        position: relative;
+        bottom: 35px;
+        font-size: 20px;
+        background: white;
+    }
+
+    label[for="id-save-info"] {
+        vertical-align: middle;
+    }
+
+    .form-check {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.text-info {
+    color: $secondary-black !important;
+
+    &:hover {
+        color: $red !important;
+    }
+}
+
+.smaller_height_checkout {
+    height: 55vh;
+}
+
+.stripe-style-input {
+    display: block;
+    width: 95%;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1.5px solid $paper-white;
+
+    &::placeholder {
+        font-size: 15px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.item_price_and_qty {
+    margin-top: 25px;
+}
+
+#submit-button {
+    background: $primary-black;
+    color: $paper-white;
+    padding: 10px 30px;
+    font-size: 20px;
+
+    i {
+        color: $paper-white;
+        padding-left: 5px;
+    }
 }
 
 /************************ MEDIA QUERIES **/
