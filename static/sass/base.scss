@@ -1819,6 +1819,11 @@ h1 {
     }
 }
 
+.StripeElement {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /************************ MEDIA QUERIES **/
 
 
@@ -2285,6 +2290,16 @@ h1 {
         text-align: center;
         margin: 5px 0 10px 0;
     }
+
+    .basket_contents_and_action {
+        height: calc(100vh - 400px);
+    }
+
+
+    .products-wrapper {
+        max-height: 100%;
+    }
+
 }
 
 
@@ -2335,6 +2350,7 @@ h1 {
     .slider-navigation {
         margin-left: 100px;
     }
+
 
     .filter-box {
 
@@ -2395,6 +2411,4 @@ h1 {
     .mobile_shp-cta {
         font-size: 18px;
     }
-
-
 }

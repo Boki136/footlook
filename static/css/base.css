@@ -1316,6 +1316,10 @@ h1 {
     color: #EEE;
     padding-left: 5px; }
 
+.StripeElement {
+  width: 90%;
+  margin: 0 auto; }
+
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {
   .search-function input {
@@ -1576,7 +1580,11 @@ h1 {
   .accepted-cards {
     width: 100%;
     text-align: center;
-    margin: 5px 0 10px 0; } }
+    margin: 5px 0 10px 0; }
+  .basket_contents_and_action {
+    height: calc(100vh - 400px); }
+  .products-wrapper {
+    max-height: 100%; } }
 
 @media only screen and (max-width: 550px) {
   .navbar-brand {
