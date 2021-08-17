@@ -1279,10 +1279,6 @@ h1 {
 #payment-form label[for="id-save-info"] {
   vertical-align: middle; }
 
-#payment-form .form-check {
-  padding-left: 0;
-  margin-left: 0; }
-
 .text-info {
   color: #3A4750 !important; }
   .text-info:hover {

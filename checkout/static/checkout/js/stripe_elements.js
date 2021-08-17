@@ -7,14 +7,14 @@ var style = {
         color: '#000',
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        fontSize: '17px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: '#757575'
         }
     },
     invalid: {
-        color: '#dc3545',
-        iconColor: '#dc3545'
+        color: '#D72323',
+        iconColor: '#D72323'
     }
 };
 var card = elements.create('card', {
