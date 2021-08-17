@@ -1256,6 +1256,9 @@ h1 {
 .checkout-order-summary {
   width: 50%; }
 
+.mobile_shp-cta {
+  display: none; }
+
 #payment-form legend {
   font-size: 15px;
   color: #D72323;
@@ -1531,7 +1534,38 @@ h1 {
       position: static;
       width: 100%;
       color: #3A4750;
-      font-size: 40px; } }
+      font-size: 40px; }
+  .checkout-content-wrapper {
+    flex-wrap: wrap;
+    margin-top: 50px; }
+  .checkout-form {
+    width: 100%;
+    order: 2; }
+  .back-to-shopping-cta {
+    display: none; }
+  .mobile_shp-cta {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    text-align: right; }
+  .checkout-order-summary {
+    margin: 20px 0 80px 0;
+    order: 1;
+    width: 100%; }
+    .checkout-order-summary hr:nth-child(2) {
+      display: none; }
+  .order-total_wrapper h5 {
+    font-size: 1em; }
+  .order-total_wrapper h4 {
+    font-size: 1.25em; }
+  .order-total_wrapper h6 {
+    font-size: 15px; }
+  .products-wrapper {
+    margin-bottom: 30px; }
+  #payment-form fieldset {
+    width: 100%; }
+  .smaller_height_checkout {
+    height: 300px; } }
 
 @media only screen and (max-width: 750px) {
   .copyright-bar-content {
@@ -1586,4 +1620,12 @@ h1 {
   .basket-subtotal-wrapper {
     float: none; }
   .checkout_btn-wrapper {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .checkout-heading {
+    font-size: 25px; }
+  .checkout-product_box {
+    flex-wrap: wrap; }
+    .checkout-product_box div {
+      width: 100%; }
+  .mobile_shp-cta {
+    font-size: 18px; } }

@@ -20,6 +20,8 @@
 
 </div>
 
+<a class='back-to-shopping-cta mobile_shp-cta' href="{% url 'products' %}"> Back to Shopping</a>
+
 <section class="checkout-content-wrapper">
     <div class="checkout-form">
         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -80,7 +82,7 @@
         <hr>
         <div class="products-wrapper smaller_height_checkout">
             {% for item in bag_items %}
-            <div class="product-box">
+            <div class="product-box checkout-product_box">
                 <div class="product-box-img">
                     <img src="{{item.image_list|first}}" alt="{{item.product.name}}">
                 </div>
