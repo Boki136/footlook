@@ -1,42 +1,67 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
-
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
 {% block content %}
-<div class="overlay"></div>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Thank You</h2>
-            <hr>
-            <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+<div class="body-overlay-checkout-success">
+    <section class="order_success_wrapper">
+        <div class="order_success_header">
+            <i class="far fa-check-circle fa-3x"></i>
+            <h2>Thank you
+                <br>
+                Your order has been received
+            </h2>
+            <h6>You will receive the confirmation via email</h6>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-lg-7"></div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
-                <span class="icon mr-2">
-                    <i class="fas fa-gifts"></i>
-                </span>
-                <span class="text-uppercase">Now check out the latest deals!</span>
-            </a>
+        <div class="order-details-wrapper">
+            <h3>Order details</h3>
+            <p>Order number:</p><span>{{order.order_number}}</span>
+            <p>Date:</p><span>{{order.date}}</span>
+            <p>Payment method:</p><span>Credit Card</span>
+            <br>
+            <hr>
+            <br>
+            <div class="order-details_total">
+                <p>Subtotal:</p><span><strong>€{{order.order_total}}</strong></span>
+                <p>Delivery Charge:</p><span><strong>€{{order.delivery_cost}}</strong></span>
+                <p>Total:</p><span><strong>€{{order.grand_total}}</strong></span>
+            </div>
         </div>
-    </div>
+        <div class="order-product_details">
+            <h3>Products</h3>
+            <br>
+            {% for item in order_line_items %}
+            <div class="product-contents">
+                <h6>{{item.quantity}} x {{item.product.name}}</h6>
+                <p>€{{item.lineitem_total}}</p>
+            </div>
+            <p>Size: {{item.product_size}}</p>
+            <hr>
+            {% endfor %}
+        </div>
+        <div class="order-customer-details">
+            <h3>Customer Details</h3>
+            <div class="details_wrapper">
+                <div class="contact-details">
+                    <h6>Contact</h6>
+                    <p>Email: {{order.email}}</p>
+                    <p>Phone number: {{order.phone_number}}</p>
+                </div>
+                <div class="billing-details">
+                    <h6>Billing Address</h6>
+                    <p>{{order.full_name}}</p>
+                    <p>{{order.address_line_1}}</p>
+                    {% if order.address_line_2 == None %}
+                    {% else %}
+                    <p>{{order.address_line_2}}</p>
+                    {% endif %}
+                    <p>{{order.city}}</p>
+                    <p>{{order.county}}</p>
+                    <p>{{order.postcode}}</p>
+                    <p>{{order.country}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
 {% endblock %}
