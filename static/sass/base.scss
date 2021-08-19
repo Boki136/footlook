@@ -36,6 +36,7 @@ h1 {
     width: 250px;
     position: relative;
     top: 3px;
+    left: -13px;
 }
 
 .navbar-collapse {
@@ -453,8 +454,9 @@ h1 {
 }
 
 .mobile-search {
-    padding-left: 32px;
+
     margin: 35px 0 0 0;
+    width: 70%;
 
     input {
         width: 100%;
@@ -469,12 +471,12 @@ h1 {
     width: 100%;
     background: $secondary-black;
     display: none;
-    z-index: 1000;
+    z-index: 1000000;
 }
 
 .nav-content_wrapper {
-    width: 90%;
-    padding: 3% 6%;
+    width: 95%;
+    padding: 10px;
     margin: 0 auto;
 }
 
@@ -496,7 +498,7 @@ h1 {
 
 .mobile_nav_links {
 
-    padding-left: 30px;
+    padding: 0;
     margin-top: 70px;
 
     li {
@@ -526,6 +528,7 @@ h1 {
 
 .support-links {
     margin-top: 50px;
+    padding: 0;
 
     li {
         list-style: none;
@@ -1918,6 +1921,7 @@ h1 {
     p {
         margin-bottom: 5px;
     }
+
 }
 
 .billing-details {
@@ -2387,6 +2391,10 @@ h1 {
         height: 300px;
     }
 
+    .delivery_amount {
+        font-size: 18px;
+    }
+
 
 }
 
@@ -2530,5 +2538,162 @@ h1 {
 
     .mobile_shp-cta {
         font-size: 18px;
+    }
+
+    .details_wrapper {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .product-contents {
+        h6 {
+            font-size: 15px;
+            width: 80%;
+        }
+    }
+}
+
+
+#custom-overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+}
+
+/* http://projects.lukehaas.me/css-loaders/ by @lukehaas */
+.loading-spinner {
+    font-size: 12px;
+    margin: 25% auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+}
+
+@-webkit-keyframes load4 {
+
+    0%,
+    100% {
+        box-shadow: 0em -3em 0em 0.2em #ffffff, 2em -2em 0 0em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff,
+            -3em 0em 0 -0.5em #ffffff, -2em -2em 0 0em #ffffff;
+    }
+
+    12.5% {
+        box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 0.2em #ffffff,
+            3em 0em 0 0em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    25% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 0em #ffffff,
+            3em 0em 0 0.2em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 -0.5em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    37.5% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 0em #ffffff, 2em 2em 0 0.2em #ffffff, 0em 3em 0 0em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    50% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 0.2em #ffffff,
+            -2em 2em 0 0em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    62.5% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 0em #ffffff,
+            -2em 2em 0 0.2em #ffffff, -3em 0em 0 0em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0.2em #ffffff,
+            -2em -2em 0 0em #ffffff;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0em #ffffff,
+            -2em -2em 0 0.2em #ffffff;
+    }
+}
+
+@keyframes load4 {
+
+    0%,
+    100% {
+        box-shadow: 0em -3em 0em 0.2em #ffffff, 2em -2em 0 0em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff,
+            -3em 0em 0 -0.5em #ffffff, -2em -2em 0 0em #ffffff;
+    }
+
+    12.5% {
+        box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 0.2em #ffffff,
+            3em 0em 0 0em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    25% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 0em #ffffff,
+            3em 0em 0 0.2em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 -0.5em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    37.5% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 0em #ffffff, 2em 2em 0 0.2em #ffffff, 0em 3em 0 0em #ffffff,
+            -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    50% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 0.2em #ffffff,
+            -2em 2em 0 0em #ffffff, -3em 0em 0 -0.5em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    62.5% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 0em #ffffff,
+            -2em 2em 0 0.2em #ffffff, -3em 0em 0 0em #ffffff,
+            -2em -2em 0 -0.5em #ffffff;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0.2em #ffffff,
+            -2em -2em 0 0em #ffffff;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 -0.5em #ffffff,
+            3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff,
+            0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0em #ffffff,
+            -2em -2em 0 0.2em #ffffff;
     }
 }

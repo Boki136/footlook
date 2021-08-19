@@ -5,7 +5,7 @@
 <div class="body-overlay-checkout-success">
     <section class="order_success_wrapper">
         <div class="order_success_header">
-            <i class="far fa-check-circle fa-3x"></i>
+            <i class="far fa-check-circle fa-4x"></i>
             <h2>Thank you
                 <br>
                 Your order has been received
@@ -29,14 +29,14 @@
         <div class="order-product_details">
             <h3>Products</h3>
             <br>
-            {% for item in order_line_items %}
+
             <div class="product-contents">
-                <h6>{{item.quantity}} x {{item.product.name}}</h6>
+                <h6>{{order.OrderLineItem}} x {{item.product.name}}</h6>
                 <p>€{{item.lineitem_total}}</p>
             </div>
             <p>Size: {{item.product_size}}</p>
             <hr>
-            {% endfor %}
+
         </div>
         <div class="order-customer-details">
             <h3>Customer Details</h3>
@@ -60,6 +60,7 @@
                     <p>{{order.country}}</p>
                 </div>
             </div>
+
         </div>
     </section>
 </div>

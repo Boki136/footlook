@@ -47,6 +47,11 @@ form.addEventListener('submit', function (ev) {
         'disabled': true
     });
     $('#submit-button').attr('disabled', true);
+    $('#custom-overlay').show();
+    $('#loading-custom-overlay').loading({
+        overlay: $("#custom-overlay")
+    });
+    $('body').css('overflow', 'hidden')
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
@@ -60,6 +65,8 @@ form.addEventListener('submit', function (ev) {
                 </span>
                 <span>${result.error.message}</span>`;
             $(errorDiv).html(html);
+            $('#custom-overlay').hide();
+            $('body').css('overflow', 'scroll')
             card.update({
                 'disabled': false
             });
