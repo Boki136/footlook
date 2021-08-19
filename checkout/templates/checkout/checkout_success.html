@@ -31,10 +31,10 @@
             <br>
 
             <div class="product-contents">
-                <h6>{{order.OrderLineItem}} x {{item.product.name}}</h6>
-                <p>€{{item.lineitem_total}}</p>
+                <h6>{{order_line_items.quantity}} x {{order_line_items.product.name}}</h6>
+                <p>€{{order_line_items.lineitem_total}}</p>
             </div>
-            <p>Size: {{item.product_size}}</p>
+            <p>Size: {{order_line_items.product_size}}</p>
             <hr>
 
         </div>
