@@ -1722,7 +1722,7 @@ h1 {
     width: 80%; } }
 
 #custom-overlay {
-  height: 100%;
+  height: 1000%;
   position: absolute;
   top: 0;
   width: 100%;
