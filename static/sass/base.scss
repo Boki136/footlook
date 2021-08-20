@@ -1772,6 +1772,16 @@ h1 {
 
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #757575 !important;
+}
+
 .text-info {
     color: $secondary-black !important;
 
@@ -1901,7 +1911,7 @@ h1 {
 
 
     h3 {
-        margin-bottom: 25px;
+        margin-bottom: 45px;
     }
 }
 
