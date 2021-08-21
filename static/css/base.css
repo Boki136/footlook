@@ -212,7 +212,7 @@ h1 {
     color: #EEE;
     background: transparent;
     border-radius: 50%;
-    padding: 5px;
+    padding: 0 5px;
     cursor: pointer; }
     .nav-icons img:hover {
       color: #fff;
@@ -220,6 +220,10 @@ h1 {
       background: rgba(255, 255, 255, 0.25);
       padding: 5px;
       border-radius: 50%; }
+
+.profile-icon {
+  position: relative;
+  bottom: 2px; }
 
 .shopping-bag-wrapper {
   position: relative;
@@ -610,8 +614,8 @@ h1 {
 
 .sign-in_btn {
   background-color: #303841;
-  color: #fff;
-  padding: 10px 75px;
+  color: #fff !important;
+  padding: 10px 75px !important;
   border-radius: 0;
   display: block;
   margin: 0 auto;

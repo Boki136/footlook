@@ -255,7 +255,7 @@ h1 {
         color: $paper-white;
         background: transparent;
         border-radius: 50%;
-        padding: 5px;
+        padding: 0 5px;
         cursor: pointer;
 
         &:hover {
@@ -266,6 +266,11 @@ h1 {
             border-radius: 50%;
         }
     }
+}
+
+.profile-icon {
+    position: relative;
+    bottom: 2px;
 }
 
 .shopping-bag-wrapper {
@@ -816,8 +821,8 @@ h1 {
 
 .sign-in_btn {
     background-color: $primary-black;
-    color: #fff;
-    padding: 10px 75px;
+    color: #fff !important;
+    padding: 10px 75px !important;
     border-radius: 0;
     display: block;
     margin: 0 auto;
