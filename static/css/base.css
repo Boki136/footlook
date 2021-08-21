@@ -1421,7 +1421,8 @@ select option[value=""] {
 .smaller_height_checkout {
   height: 55vh; }
 
-.stripe-style-input {
+.stripe-style-input,
+.allauth-form-inner-content input {
   display: block;
   width: 95%;
   border-radius: 0;
@@ -1429,9 +1430,11 @@ select option[value=""] {
   margin-bottom: 10px;
   border: 0;
   border-bottom: 1.5px solid #EEE; }
-  .stripe-style-input::placeholder {
+  .stripe-style-input::placeholder,
+  .allauth-form-inner-content input::placeholder {
     font-size: 15px; }
-  .stripe-style-input:focus {
+  .stripe-style-input:focus,
+  .allauth-form-inner-content input:focus {
     outline: none; }
 
 .item_price_and_qty {
@@ -1538,6 +1541,97 @@ select option[value=""] {
 
 .billing-details p {
   margin-bottom: 5px; }
+
+/************************ ALLUTH FORMS **/
+.allauth-form-wrapper {
+  height: 100vh;
+  background: url("/media/allauth_form-background.png") no-repeat center;
+  background-size: cover;
+  margin: auto;
+  position: relative; }
+
+.allauth-title-seperator {
+  margin-bottom: 50px;
+  background: #EEE; }
+
+.allauth-form-inner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: rgba(58, 71, 80, 0.5); }
+  .allauth-form-inner-content form {
+    padding: 30px 0; }
+  .allauth-form-inner-content h1,
+  .allauth-form-inner-content p {
+    color: #EEE; }
+  .allauth-form-inner-content input {
+    background: transparent;
+    border: 1px solid #EEE;
+    border-width: thin;
+    color: white;
+    font-weight: 500;
+    vertical-align: middle; }
+    .allauth-form-inner-content input::placeholder {
+      color: #EEE;
+      text-transform: lowercase; }
+    .allauth-form-inner-content input[name=remember] {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      margin-left: 5px;
+      margin-top: 20px; }
+  .allauth-form-inner-content label {
+    visibility: hidden;
+    position: absolute;
+    vertical-align: middle; }
+    .allauth-form-inner-content label[for="id_remember"] {
+      visibility: visible;
+      position: relative;
+      margin-top: 20px; }
+  .allauth-form-inner-content a {
+    color: #EEE; }
+    .allauth-form-inner-content a:hover {
+      color: #D72323; }
+  .allauth-form-inner-content button {
+    padding: 10px 45px;
+    text-decoration: none;
+    background: #EEE;
+    color: #303841;
+    margin: 25px 0 0 0;
+    outline: none;
+    border: none;
+    transition: .2s ease-in-out; }
+    .allauth-form-inner-content button:hover {
+      background: #303841;
+      color: #EEE; }
+
+.btn_back_to_login {
+  color: #EEE !important;
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 18px; }
+  .btn_back_to_login::before {
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 8px;
+    font-size: 18px; }
+
+.secondaryAction {
+  color: #EEE !important; }
+
+.errorlist li {
+  color: #D72323;
+  font-weight: 600;
+  margin: 10px 0;
+  bottom: 50px; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

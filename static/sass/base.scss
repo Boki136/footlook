@@ -1926,7 +1926,8 @@ select option[value=""] {
     height: 55vh;
 }
 
-.stripe-style-input {
+.stripe-style-input,
+.allauth-form-inner-content input {
     display: block;
     width: 95%;
     border-radius: 0;
@@ -2098,6 +2099,135 @@ select option[value=""] {
         margin-bottom: 5px;
     }
 }
+
+/************************ ALLUTH FORMS **/
+.allauth-form-wrapper {
+    height: 100vh;
+    background: url('/media/allauth_form-background.png') no-repeat center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+}
+
+.allauth-title-seperator {
+    margin-bottom: 50px;
+    background: $paper-white;
+}
+
+.allauth-form-inner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: rgba(58, 71, 80, .5);
+
+    form {
+        padding: 30px 0;
+    }
+
+    h1,
+    p {
+        color: $paper-white;
+    }
+
+    input {
+        background: transparent;
+        border: 1px solid $paper-white;
+        border-width: thin;
+        color: white;
+        font-weight: 500;
+        vertical-align: middle;
+
+        &::placeholder {
+            color: $paper-white;
+            text-transform: lowercase;
+        }
+
+        &[name=remember] {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            margin-left: 5px;
+            margin-top: 20px;
+
+        }
+
+    }
+
+    label {
+        visibility: hidden;
+        position: absolute;
+        vertical-align: middle;
+
+        &[for="id_remember"] {
+            visibility: visible;
+            position: relative;
+            margin-top: 20px;
+        }
+    }
+
+    a {
+        color: $paper-white;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    button {
+        padding: 10px 45px;
+        text-decoration: none;
+        background: $paper-white;
+        color: $primary-black;
+        margin: 25px 0 0 0;
+        outline: none;
+        border: none;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background: $primary-black;
+            color: $paper-white;
+        }
+    }
+
+}
+
+.btn_back_to_login {
+    color: $paper-white !important;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 18px;
+
+    &::before {
+        content: '\f104';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        padding-right: 8px;
+        font-size: 18px;
+
+    }
+}
+
+.secondaryAction {
+    color: $paper-white !important;
+}
+
+.errorlist li {
+
+    color: $red;
+    font-weight: 600;
+    margin: 10px 0;
+    bottom: 50px;
+}
+
+
+
 
 
 /************************ MEDIA QUERIES **/

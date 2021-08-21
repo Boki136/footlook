@@ -408,9 +408,11 @@ $(document).ready(function () {
         $(this).closest($('.product-box')).remove();
     })
 
-    // Remove message after 3.5 seconds
+    // Remove message after 3 seconds
     $('.message-wrapper').delay(3000).fadeOut(400);
 
+    // Remove error message after 3 seconds
 
+    // $('.errorlist').delay(3000).fadeOut(400);
 
 });

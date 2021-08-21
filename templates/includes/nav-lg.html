@@ -46,7 +46,7 @@
     </nav>
 
     <div class="login_modal">
-        <a href='accounts/login/' class='btn sign-in_btn'>SIGN IN</a>
+        <a href='{% url "account_login" %}' class='btn sign-in_btn'>SIGN IN</a>
         <hr class='hr-small'>
-        <h4>Don't have an account? </h4><a href=''>Register here!</a>
+        <h4>Don't have an account? </h4><a href='{% url "account_signup" %}'>Register here!</a>
     </div>
