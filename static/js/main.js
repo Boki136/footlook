@@ -416,6 +416,8 @@ $(document).ready(function () {
         $('.img-test').remove();
         let profileIcon = $('.profile_icon_loggedin-wrapper').detach();
         $('.nav-icons').append(profileIcon)
+        $(profileIcon).css('position', 'relative');
+        $('.profile_icon_loggedin').css('visibility', 'visible');
         $('.profile_icon_loggedin-wrapper div').addClass('loggedin_elipse')
     }
 

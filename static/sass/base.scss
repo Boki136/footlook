@@ -1689,6 +1689,11 @@ h1 {
     width: 60%;
 }
 
+.brands-footer {
+    margin-top: 20px;
+
+}
+
 .newsletter-signup {
 
     h2 {
@@ -1719,6 +1724,7 @@ h1 {
         color: $red;
         height: 1px;
         opacity: 0.8;
+        margin-bottom: 20px;
     }
 
     ul {
@@ -1734,6 +1740,14 @@ h1 {
             color: $paper-white;
             text-decoration: none;
         }
+    }
+
+
+    h5 {
+        color: $paper-white;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-decoration: underline;
     }
 }
 
@@ -2229,12 +2243,12 @@ select option[value=""] {
 
 .profile_icon_loggedin-wrapper {
     line-height: 0;
-    position: relative;
+    position: absolute;
 }
 
 .profile_icon_loggedin {
     display: inline-block;
-
+    visibility: hidden;
 }
 
 .loggedin_elipse {
@@ -2243,7 +2257,7 @@ select option[value=""] {
     width: 12px;
     border-radius: 50%;
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     right: 5px;
 }
 
@@ -2375,6 +2389,10 @@ select option[value=""] {
 
     .order_success_wrapper {
         width: 90%;
+    }
+
+    .loggedin_elipse {
+        display: none;
     }
 
 }
@@ -2703,7 +2721,11 @@ select option[value=""] {
     }
 
     .delivery_amount {
-        font-size: 18px;
+        font-size: 18px !important;
+    }
+
+    .allauth-form-inner-content {
+        width: 90%;
     }
 
 

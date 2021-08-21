@@ -7,6 +7,12 @@
             <i class="fas fa-times fa-3x"></i>
         </div>
 
+        <form method=' GET' class="search-function mobile-search" action="{% url 'products' %}">
+            <label class='sr-only' for="search_term"></label>
+            <input class="form-control me-2 rounded-0" name="search_term" id="search_term" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit">GO</button>
+        </form>
+
         <ul class="mobile_nav_links">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'products' %}?category=men">MEN</a>
@@ -18,24 +24,33 @@
                 <a class="nav-link" href="{% url 'products' %}">BRANDS</a>
             </li>
         </ul>
+
+        {% if user.is_authenticated %}
         <ul class="support-links">
             <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
+                <a class="nav-link" href="{% url 'profile' %}">My Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
+                <a class="nav-link" href="{% url 'profile' %}">My Orders</a>
             </li>
         </ul>
+        {% else %}
+        <ul class="support-links">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'account_login' %}">Contact Us</a>
+            </li>
+        </ul>
+        {% endif %}
 
-        <form method='GET' class="search-function mobile-search" action="{% url 'products' %}">
-            <label class='sr-only' for="search_term"></label>
-            <input class="form-control me-2 rounded-0" name="search_term" id="search_term" type="search" placeholder="Search" aria-label="Search">
-            <button type="submit">GO</button>
-        </form>
+
         <hr class='hr-lg mt2'>
         <div class="social-icons_wrapper">
             <a href="https://www.facebook.com/" target='_blank'><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i>
+            </a>
             <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
 
         </div>

@@ -8,41 +8,55 @@
                 <div class="footer-links-section">
                     <h1>QUICK LINKS</h1>
                     <hr>
-                    <ul>
-                        <a href="">
-                            <li>My Account</li>
-                        </a>
-                        <a href="">
-                            <li>Log In</li>
-                        </a>
-                        <a href="">
-                            <li>Register</li>
-                        </a>
-                        <a href="">
-                            <li>Log Out</li>
-                        </a>
-                        <a href="">
-                            <li>My Orders</li>
-                        </a>
+                    {% if user.is_authenticated %}
+                    <ul class="support-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'profile' %}">My Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'profile' %}">My Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'profile' %}">Contact Us</a>
+                        </li>
                     </ul>
+                    {% else %}
+                    <ul class="support-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_login' %}">Contact Us</a>
+                        </li>
+                    </ul>
+                    {% endif %}
+
                 </div>
 
                 <div class="footer-links-section">
                     <h1>SHOP</h1>
                     <hr>
+
+                    <h5>Categories:</h5>
                     <ul>
-                        <a href="">
-                            <li>Men's</li>
-                        </a>
-                        <a href="">
-                            <li>Women's</li>
-                        </a>
-                        <a href="">
-                            <li>Kids</li>
-                        </a>
-                        <a href="">
-                            <li>On Sale</li>
-                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'products' %}?category=men">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'products' %}?category=women">Women</a>
+                        </li>
+                        <div class='brands-footer'>
+                            <h5>Brands:</h5>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
 

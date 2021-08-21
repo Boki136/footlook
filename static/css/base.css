@@ -1250,6 +1250,9 @@ h1 {
   gap: 35px;
   width: 60%; }
 
+.brands-footer {
+  margin-top: 20px; }
+
 .newsletter-signup h2 {
   color: #EEE;
   font-size: 25px;
@@ -1270,7 +1273,8 @@ h1 {
   .footer-links-section hr {
     color: #D72323;
     height: 1px;
-    opacity: 0.8; }
+    opacity: 0.8;
+    margin-bottom: 20px; }
   .footer-links-section ul {
     list-style: none;
     margin-top: 20px;
@@ -1280,6 +1284,11 @@ h1 {
     .footer-links-section ul a {
       color: #EEE;
       text-decoration: none; }
+  .footer-links-section h5 {
+    color: #EEE;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: underline; }
 
 .newsletter-form {
   position: relative; }
@@ -1635,10 +1644,11 @@ select option[value=""] {
 
 .profile_icon_loggedin-wrapper {
   line-height: 0;
-  position: relative; }
+  position: absolute; }
 
 .profile_icon_loggedin {
-  display: inline-block; }
+  display: inline-block;
+  visibility: hidden; }
 
 .loggedin_elipse {
   background: #D72323;
@@ -1646,7 +1656,7 @@ select option[value=""] {
   width: 12px;
   border-radius: 50%;
   position: absolute;
-  bottom: 3px;
+  bottom: 5px;
   right: 5px; }
 
 /************************ MEDIA QUERIES **/
@@ -1719,7 +1729,9 @@ select option[value=""] {
   .person-name h6 {
     font-size: 15px; }
   .order_success_wrapper {
-    width: 90%; } }
+    width: 90%; }
+  .loggedin_elipse {
+    display: none; } }
 
 @media only screen and (max-width: 990px) {
   .hero-content-wrapper {
@@ -1902,7 +1914,9 @@ select option[value=""] {
   .smaller_height_checkout {
     height: 300px; }
   .delivery_amount {
-    font-size: 18px; } }
+    font-size: 18px !important; }
+  .allauth-form-inner-content {
+    width: 90%; } }
 
 @media only screen and (max-width: 750px) {
   .copyright-bar-content {
