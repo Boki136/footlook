@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+import ast
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -122,12 +123,20 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+    order_lines_items = OrderLineItem.objects.all().filter(order=order)
+    for item in order_lines_items:
+        image_list = item.product.images
+        image_list = ast.literal_eval(image_list)
+        item.product.images = image_list
     if 'bag' in request.session:
         del request.session['bag']
 
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
+        'order_lines_items': order_lines_items,
+        'image_list': image_list,
     }
+    print(order.lineitems)
 
     return render(request, template, context)
