@@ -410,9 +410,14 @@ $(document).ready(function () {
 
     // Remove message after 3 seconds
     $('.message-wrapper').delay(3000).fadeOut(400);
+    let loggedInIconState = $('.profile_icon_loggedin').css('display');
+    console.log(loggedInIconState)
+    if (loggedInIconState == 'inline-block') {
+        $('.img-test').remove();
+        let profileIcon = $('.profile_icon_loggedin-wrapper').detach();
+        $('.nav-icons').append(profileIcon)
+        $('.profile_icon_loggedin-wrapper div').addClass('loggedin_elipse')
+    }
 
-    // Remove error message after 3 seconds
-
-    // $('.errorlist').delay(3000).fadeOut(400);
 
 });

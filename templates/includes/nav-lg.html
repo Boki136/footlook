@@ -40,13 +40,22 @@
                     <span>{{product_count}}</span>
                     {% endif %}
                 </div>
-                <img class='profile-icon' src="{{ MEDIA_URL }}profile-icon.png" alt="profile icon">
+                <img class='profile-icon img-test' src="{{ MEDIA_URL }}profile-icon.png" alt="profile icon">
             </div>
         </div>
     </nav>
 
+    {% if user.is_authenticated %}
+    <div class="profile_icon_loggedin-wrapper">
+        <a class='profile_icon_loggedin' href="{% url 'profile' %}"> <img class='profile-icon' src="{{ MEDIA_URL }}profile-icon.png"
+                alt="profile icon">
+        </a>
+        <div></div>
+    </div>
+    {% else %}
     <div class="login_modal">
         <a href='{% url "account_login" %}' class='btn sign-in_btn'>SIGN IN</a>
         <hr class='hr-small'>
         <h4>Don't have an account? </h4><a href='{% url "account_signup" %}'>Register here!</a>
     </div>
+    {% endif %}

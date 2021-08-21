@@ -212,7 +212,7 @@ h1 {
     color: #EEE;
     background: transparent;
     border-radius: 50%;
-    padding: 0 5px;
+    padding: 5px;
     cursor: pointer; }
     .nav-icons img:hover {
       color: #fff;
@@ -239,7 +239,7 @@ h1 {
     line-height: 21px;
     vertical-align: middle;
     border: 5px solid #3A4750;
-    bottom: -5px;
+    bottom: 0;
     font-weight: 600;
     font-size: 15px;
     transition: .35s ease-in-out; }
@@ -1632,6 +1632,22 @@ select option[value=""] {
   font-weight: 600;
   margin: 10px 0;
   bottom: 50px; }
+
+.profile_icon_loggedin-wrapper {
+  line-height: 0;
+  position: relative; }
+
+.profile_icon_loggedin {
+  display: inline-block; }
+
+.loggedin_elipse {
+  background: #D72323;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  right: 5px; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

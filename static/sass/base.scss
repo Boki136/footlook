@@ -255,7 +255,7 @@ h1 {
         color: $paper-white;
         background: transparent;
         border-radius: 50%;
-        padding: 0 5px;
+        padding: 5px;
         cursor: pointer;
 
         &:hover {
@@ -289,7 +289,7 @@ h1 {
         line-height: 21px;
         vertical-align: middle;
         border: 5px solid #3A4750;
-        bottom: -5px;
+        bottom: 0;
         font-weight: 600;
         font-size: 15px;
         transition: .35s ease-in-out;
@@ -721,6 +721,7 @@ h1 {
 .custom-toast {
     overflow: hidden;
     gap: 50px;
+
 
     h2 {
         text-align: right;
@@ -2226,8 +2227,25 @@ select option[value=""] {
     bottom: 50px;
 }
 
+.profile_icon_loggedin-wrapper {
+    line-height: 0;
+    position: relative;
+}
 
+.profile_icon_loggedin {
+    display: inline-block;
 
+}
+
+.loggedin_elipse {
+    background: $red;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
 
 
 /************************ MEDIA QUERIES **/
