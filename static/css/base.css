@@ -251,6 +251,9 @@ h1 {
 .shop_by_cat,
 .shop_by_brand {
   margin-top: 100px; }
+  .shop_by_cat h4,
+  .shop_by_brand h4 {
+    margin-bottom: 10px; }
   .shop_by_cat a,
   .shop_by_brand a {
     text-decoration: none;
@@ -345,7 +348,8 @@ h1 {
 
 .delivery-total h6 {
   float: right;
-  font-size: 22px; }
+  font-size: 22px;
+  margin-bottom: 5px; }
 
 .basket-subtotal-wrapper {
   display: flex;
@@ -498,6 +502,9 @@ h1 {
       .mobile_nav_links li a:hover::after {
         right: -10px; }
 
+.tooltip {
+  z-index: 9999999999; }
+
 .support-links {
   margin-top: 50px;
   padding: 0; }
@@ -512,6 +519,13 @@ h1 {
 
 .hr-lg {
   color: #fff; }
+
+.mobile-menu-bottom-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .mobile-menu-bottom-actions i {
+    color: #EEE; }
 
 .social-icons_wrapper {
   display: flex;
@@ -543,6 +557,9 @@ h1 {
   padding: 20px;
   right: 15px;
   max-width: 550px; }
+
+.message-standard-box {
+  background: rgba(255, 255, 255, 0.5); }
 
 .custom-toast {
   overflow: hidden;
@@ -1290,6 +1307,9 @@ h1 {
     margin-bottom: 10px;
     text-decoration: underline; }
 
+.footer-links-section ul a:hover {
+  color: #D72323; }
+
 .newsletter-form {
   position: relative; }
   .newsletter-form button {
@@ -1312,6 +1332,10 @@ h1 {
       font-weight: 100; }
     .newsletter-form button:hover {
       background: #3A4750; }
+  .newsletter-form input {
+    border: none; }
+    .newsletter-form input::placeholder {
+      font-size: 15px; }
 
 .footer-social {
   text-align: right;
@@ -1380,6 +1404,21 @@ h1 {
     color: #303841; }
   .back-to-shopping-cta::before {
     content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    padding-right: 3px; }
+
+.profile-logout-cta {
+  color: #EEE;
+  text-decoration: none;
+  font-size: 20px;
+  background: #303841;
+  padding: 6px 25px; }
+  .profile-logout-cta:hover {
+    color: #EEE; }
+  .profile-logout-cta::before {
+    content: '\f2f5';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 20px;
@@ -1659,6 +1698,78 @@ select option[value=""] {
   bottom: 5px;
   right: 5px; }
 
+/************************ PROFILE PAGE **/
+.profile-header {
+  z-index: 100;
+  position: sticky;
+  top: 110px; }
+
+.profile-details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  width: 90%; }
+
+.profile-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.personal-details,
+.address-details {
+  width: 45%; }
+
+.personal-details h3 {
+  font-size: 22px; }
+
+.personal-details form {
+  margin-top: 35px; }
+  .personal-details form input {
+    display: block;
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent; }
+
+.address-details h3 {
+  font-size: 22px; }
+
+.address-details form {
+  margin-top: 35px; }
+  .address-details form input,
+  .address-details form select {
+    display: block;
+    width: 70%;
+    border: none;
+    outline: none; }
+    .address-details form input::placeholder,
+    .address-details form select::placeholder {
+      text-transform: lowercase; }
+
+.nflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.btn-edit-details {
+  color: #303841;
+  text-decoration: underline;
+  background: transparent;
+  font-size: 20px;
+  border: none;
+  transition: .25s ease-in-out; }
+  .btn-edit-details:hover {
+    color: #D72323;
+    transform: rotateZ(10deg); }
+  .btn-edit-details:focus {
+    box-shadow: none; }
+  .btn-edit-details i {
+    font-size: 25px; }
+
+.no-info-message {
+  text-align: center;
+  padding: 30px; }
+
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {
   .search-function input {
@@ -1691,7 +1802,7 @@ select option[value=""] {
     font-size: 25px; }
   .footer-action {
     flex-wrap: wrap;
-    margin-top: 80px; }
+    margin-top: 0; }
   .footer-links {
     width: 100%;
     flex-wrap: wrap; }
@@ -1699,6 +1810,12 @@ select option[value=""] {
     width: 100%; }
     .footer-links-section:nth-child(2) {
       text-align: right; }
+  .social-icons_wrapper {
+    position: relative;
+    bottom: -35px; }
+  .footer-social h2,
+  .footer-social hr {
+    display: none; }
   .newsletter-signup {
     margin: 35px 0; }
     .newsletter-signup h2 {

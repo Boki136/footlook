@@ -34,6 +34,19 @@
                 <a class="nav-link" href="{% url 'profile' %}">My Orders</a>
             </li>
         </ul>
+
+        <hr class='hr-lg mt2'>
+        <div class="mobile-menu-bottom-actions">
+            <a data-toggle="tooltip" data-placement="top" title="Log Out" href="{% url 'account_logout' %}"><i
+                    class="fas fa-sign-out-alt fa-2x"></i></a>
+            <div class="social-icons_wrapper">
+                <a href="https://www.facebook.com/" target='_blank'><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
+
+            </div>
+        </div>
         {% else %}
         <ul class="support-links">
             <li class="nav-item">
@@ -43,8 +56,6 @@
                 <a class="nav-link" href="{% url 'account_login' %}">Contact Us</a>
             </li>
         </ul>
-        {% endif %}
-
 
         <hr class='hr-lg mt2'>
         <div class="social-icons_wrapper">
@@ -52,8 +63,9 @@
             <a href="https://twitter.com/?lang=en" target='_blank>'></a><i class="fab fa-twitter"></i>
             </a>
             <a href="https://www.instagram.com/" target='_blank'><i class=" fab fa-instagram"></i></a>
-
         </div>
+        {% endif %}
+
     </div>
 
 </div>

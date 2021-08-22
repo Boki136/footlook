@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+
+    // Enable all tooltips 
+    $('[data-toggle="tooltip"]').tooltip()
+
+
     // Make Navigation Sticky & back to the top of the page
 
     $(window).scroll(function () {
@@ -411,7 +416,6 @@ $(document).ready(function () {
     // Remove message after 3 seconds
     $('.message-wrapper').delay(3000).fadeOut(400);
     let loggedInIconState = $('.profile_icon_loggedin').css('display');
-    console.log(loggedInIconState)
     if (loggedInIconState == 'inline-block') {
         $('.img-test').remove();
         let profileIcon = $('.profile_icon_loggedin-wrapper').detach();
@@ -421,5 +425,12 @@ $(document).ready(function () {
         $('.profile_icon_loggedin-wrapper div').addClass('loggedin_elipse')
     }
 
+    // // Remove shipping info on profile if no address provided
+    // let addressInfoProfile = $('#id_default_address_line_1').val();
+    // if (addressInfoProfile == '') {
+    //     $('#shipping-details-update').replaceWith('<p class="no-info-message"> No Shipping details saved</p>');
+    //     $('.address-details').find($('.fa-pen')).hide();
+    // }
 
+    $('#id_default_address_line_2').attr('placeholder', 'address line 2')
 });

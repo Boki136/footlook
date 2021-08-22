@@ -1,4 +1,21 @@
 <div class="custom-toast rounded-0 border-top-0" data-autohide="false">
-    <h6>{{message}}</h6>
+    {% if on_product_detail_page == True %}
+    <div class="toast-header">
+        <i class="fas fa-check fa-2x"></i>
+        <h2>Shopping Bag ({{ product_count }}) </h2>
+    </div>
+    <div class="toast-body">
+        <img src="{{product.images.0}}" alt="{{product.name}}">
+        <div class="product_info">
+            <h4>{{product.name}}</h4>
+            <h5>€{{product.price}}</h5>
+            <br>
+            <h6>Quantity: <span>{{quantity}}</span></h6>
+            <h6>Size: {{message}}</h6>
+        </div>
+    </div>
+    {% else %}
+    <h6 class='message-standard-box'>{{message}}</h6>
+    {% endif %}
 
 </div>

@@ -307,6 +307,10 @@ h1 {
 .shop_by_brand {
     margin-top: 100px;
 
+    h4 {
+        margin-bottom: 10px;
+    }
+
 
     a {
         text-decoration: none;
@@ -435,6 +439,7 @@ h1 {
     h6 {
         float: right;
         font-size: 22px;
+        margin-bottom: 5px;
     }
 }
 
@@ -658,6 +663,11 @@ h1 {
 
 }
 
+.tooltip {
+    z-index: 9999999999;
+}
+
+
 .support-links {
     margin-top: 50px;
     padding: 0;
@@ -678,6 +688,16 @@ h1 {
 
 .hr-lg {
     color: #fff;
+}
+
+.mobile-menu-bottom-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+        color: $paper-white;
+    }
 }
 
 .social-icons_wrapper {
@@ -716,6 +736,10 @@ h1 {
     padding: 20px;
     right: 15px;
     max-width: 550px;
+}
+
+.message-standard-box {
+    background: rgba(255, 255, 255, .5);
 }
 
 .custom-toast {
@@ -1751,6 +1775,10 @@ h1 {
     }
 }
 
+.footer-links-section ul a:hover {
+    color: $red;
+}
+
 .newsletter-form {
     position: relative;
 
@@ -1777,6 +1805,14 @@ h1 {
 
         &:hover {
             background: $secondary-black;
+        }
+    }
+
+    input {
+        border: none;
+
+        &::placeholder {
+            font-size: 15px;
         }
     }
 
@@ -1872,6 +1908,26 @@ h1 {
 
     &::before {
         content: '\f104';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 20px;
+        padding-right: 3px;
+    }
+}
+
+.profile-logout-cta {
+    color: $paper-white;
+    text-decoration: none;
+    font-size: 20px;
+    background: $primary-black;
+    padding: 6px 25px;
+
+    &:hover {
+        color: $paper-white;
+    }
+
+    &::before {
+        content: '\f2f5';
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         font-size: 20px;
@@ -2261,6 +2317,105 @@ select option[value=""] {
     right: 5px;
 }
 
+/************************ PROFILE PAGE **/
+.profile-header {
+    z-index: 100;
+    position: sticky;
+    top: 110px;
+}
+
+.profile-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    width: 90%;
+}
+
+.profile-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-details,
+.address-details {
+    width: 45%;
+}
+
+.personal-details {
+
+    h3 {
+        font-size: 22px;
+    }
+
+    form {
+        margin-top: 35px;
+
+        input {
+            display: block;
+            width: 70%;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+}
+
+.address-details {
+    h3 {
+        font-size: 22px;
+    }
+
+    form {
+        margin-top: 35px;
+
+
+        input,
+        select {
+            display: block;
+            width: 70%;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+.nflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-edit-details {
+    color: $primary-black;
+    text-decoration: underline;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    transition: .25s ease-in-out;
+
+    &:hover {
+        color: $red;
+        transform: rotateZ(10deg)
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    i {
+        font-size: 25px;
+    }
+}
+
+.no-info-message {
+    text-align: center;
+    padding: 30px;
+}
 
 /************************ MEDIA QUERIES **/
 
@@ -2314,7 +2469,7 @@ select option[value=""] {
 
     .footer-action {
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .footer-links {
@@ -2327,6 +2482,19 @@ select option[value=""] {
 
         &:nth-child(2) {
             text-align: right;
+        }
+    }
+
+    .social-icons_wrapper {
+        position: relative;
+        bottom: -35px;
+    }
+
+    .footer-social {
+
+        h2,
+        hr {
+            display: none
         }
     }
 
@@ -2399,6 +2567,7 @@ select option[value=""] {
 
 
 
+
 @media only screen and (max-width: 990px) {
 
     .hero-content-wrapper {
@@ -2457,6 +2626,7 @@ select option[value=""] {
             }
         }
     }
+
 
     .bag_wrapper {
         width: 100%;
