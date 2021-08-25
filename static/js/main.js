@@ -96,18 +96,7 @@ $(document).ready(function () {
         $('.bag_wrapper').animate({
             width: 'toggle'
         }, 150);
-
         $('.body-overlay').fadeOut();
-
-        let product_count = $('.product-box');
-
-        for (let i = 0; i <= product_count.length - 1; i++) {
-            let item_q_original = $('.item_quantity_original:eq(' + parseInt(i) + ')').html();
-            let item_p_original = $('.product-price:eq(' + parseInt(i) + ')').html();
-            $('.qty_input_bag:eq(' + parseInt(i) + ')').val(item_q_original);
-            $('.product-total:eq(' + parseInt(i) + ')').text(parseFloat(item_p_original * 0.011).toFixed(2) * item_q_original);
-        }
-
     });
 
     // Show Learn more button on product hover
@@ -427,8 +416,15 @@ $(document).ready(function () {
 
     // Remove shipping info on profile if no address provided
     let addressInfoProfile = $('#id_default_address_line_1').val();
+
     if (addressInfoProfile == '') {
-        $('#shipping-details-update').replaceWith('<p class="no-info-message"> No Shipping details saved</p>');
+        $('#shipping-details-update').hide();
+        $('.address-details').append(`
+        <div class='add_address'>
+        <i class="fas fa-plus"></i>
+        <p>Add a new shipping address</p>
+        </div>
+        `)
         $('.address-details').find($('.fa-pen')).hide();
     }
 
@@ -439,6 +435,7 @@ $(document).ready(function () {
     $('#id_default_country').addClass('hide-arrow-select');
 
 
+    // Enable details editing on profile page
     $('.btn-edit-details').click(function () {
         $(this).parent().parent().find($('.cancel-edit')).show()
         $(this).parent().parent().find($('form input, form select')).removeAttr('disabled');
@@ -449,15 +446,14 @@ $(document).ready(function () {
         $('#id_default_phone_number').attr('placeholder', 'phone number');
         $('#id_default_country').removeClass('hide-arrow-select');
 
-        // Submit form on click
+        // Submit form on click to update users details
         $('.fa-save').click(function () {
-            console.log('yee')
             let formSubmitDetails = $(this).parent().parent().parent().find('form');
             formSubmitDetails.submit();
         });
     })
 
-
+    // Cancel any changes
     $('.cancel-edit').click(function () {
         $(this).parent().find(('.profile-details-header button')).html('<i class="fas fa-pen"></i>');
         $(this).parent().find(('form input'));
@@ -466,12 +462,25 @@ $(document).ready(function () {
         $(this).parent().find(('.profile-details-header button')).unbind("click", test);
     });
 
+    // Add new address 
+    $('.add_address').click(function () {
+        $('#shipping-details-update').show();
+        $('.address-details').find($('.fa-pen')).show();
+        $(this).hide();
+    })
 
+    // Open order details popup
 
+    $('.expand-order-details').click(function () {
+        $(this).parent().next().fadeIn(300)
+        $('.body-overlay').show();
+        $('body').css('overflow-y', 'hidden');
+    })
 
-
-
-
-
+    $('.close-order-popup').click(function () {
+        $(this).parent().parent().hide();
+        $('.body-overlay').hide();
+        $('body').css('overflow-y', 'scroll');
+    })
 
 });

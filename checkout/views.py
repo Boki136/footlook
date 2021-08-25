@@ -6,7 +6,10 @@ import ast
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from products.models import Product
+from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 
 import stripe
@@ -124,6 +127,30 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
     order_lines_items = OrderLineItem.objects.all().filter(order=order)
+
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        # Save order to users profile
+        order.user_profile = profile
+        order.save()
+
+        # Save users shipping details to profile
+        if save_info:
+            print('yes')
+            profile_data = {
+                'default_phone_number': order.phone_number,
+                'default_country': order.country,
+                'default_postcode': order.postcode,
+                'default_city': order.city,
+                'default_address_line_1': order.address_line_1,
+                'default_address_line_2': order.address_line_2,
+                'default_county': order.county,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            print(user_profile_form.errors)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+
     for item in order_lines_items:
         image_list = item.product.images
         image_list = ast.literal_eval(image_list)
@@ -137,6 +164,5 @@ def checkout_success(request, order_number):
         'order_lines_items': order_lines_items,
         'image_list': image_list,
     }
-    print(order.lineitems)
 
     return render(request, template, context)

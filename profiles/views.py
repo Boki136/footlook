@@ -8,16 +8,14 @@ from django.contrib.auth.models import User
 
 
 def profile(request):
-    """ Display the user's profile. """
+    """ Dispaly users personal & shipping details
+        Handle updating the details, and all the errors
+     """
     profile = get_object_or_404(UserProfile, user=request.user)
-    
     if request.method == 'POST':
         user = request.user
         form = UserProfileForm(request.POST, instance=profile)
-        print(form.errors)
 
-        
-  
         if 'username' in request.POST:
             if user.username == request.POST['username']:
                 messages.warning(request, 'You have used the same username')
@@ -25,10 +23,10 @@ def profile(request):
             username = request.POST['username']
             user.username = request.POST['username']
             if User.objects.filter(username=username).exists():
-                    messages.error(request,
-                                    "Username already exists, please user another one"
-                                    )
-                    return redirect('profile')
+                messages.error(request,
+                                "Username already exists, please user another one"
+                                )
+                return redirect('profile')
             else:
                 if len(user.username) == 0:
                     messages.error(request, "Username cannot be empty")

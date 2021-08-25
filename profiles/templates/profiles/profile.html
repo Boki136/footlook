@@ -76,4 +76,70 @@
     </div>
 </section>
 
+<section class="order-history_wrapper">
+    <div class="orders-history_header">
+        <img src="{{ MEDIA_URL }}all-orders-icon.png" alt="all orders icon">
+        <h2>ALL ORDERS <span>({{orders|length}})</span></h2>
+    </div>
+    <hr>
+    {% for order in orders %}
+    <div class="order-details-box">
+        <div class="order-details_content">
+            <h4>Order Number: {{order.order_number}}</h4>
+            <h5>Order Date: {{order.date}}</h5>
+            <h5>Order Total: €{{order.grand_total}}</h5>
+        </div>
+        <div class="order-details_expand">
+            <button class='expand-order-details'>More Info</button>
+        </div>
+        <div class="order-details-popup">
+            <div class="order-details-popup_header">
+                <div class="order-details-header-main">
+                    <h3 data-toggle="tooltip" data-placement="top" title="{{order.order_number}}" class='mb-4'>My Order -
+                        {{order.order_number|truncatechars:10}}</h3>
+                    <h5>Order Date: {{order.date}}</h5>
+                </div>
+                <i class="fas fa-times fa-2x close-order-popup" aria-hidden="true"></i>
+            </div>
+            <hr class='mb-5'>
+            {% for item in order.lineitems.all %}
+            <div class="order-details-product_box">
+                <div class="product-main-details">
+                    <h6 class='mb-2'>{{item.quantity}} x {{item.product.name}}</h6>
+                    <h6>Sku: {{item.product.sku}}</h6>
+                </div>
+                <h5>Total: €{{item.lineitem_total}}</h5>
+            </div>
+            <hr>
+            {% endfor %}
+            <div class="order-details-shipping-info">
+                <h5 class='mb-3'>Delivery Address</h5>
+                <p>Name: {{order.full_name}}</p>
+                {% if order.phone_number == None %}
+                {% else %}
+                <p>Phone number: {{order.phone_number}}</p>
+                {% endif %}
+                <p>{{order.address_line_1}},
+                    {% if order.address_line_2 == None %}
+                    {% else %} {{order.address_line_2}},
+                    {% endif %}
+                    {{order.city}},
+                    {{order.county}},
+                    {{order.postcode}},
+                    {{order.country}}
+                </p>
+            </div>
+            <hr>
+            <div class="order-details-popup-total">
+                <p>Subtotal:</p><span><strong>€{{order.order_total}}</strong></span>
+                <p>Delivery Charge:</p><span><strong>€{{order.delivery_cost}}</strong></span>
+                <p>Total:</p><span><strong>€{{order.grand_total}}</strong></span>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    {% endfor %}
+</section>
+
 {% endblock %}
