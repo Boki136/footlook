@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Enable all tooltips 
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
 
 
     // Make Navigation Sticky & back to the top of the page
@@ -22,11 +22,11 @@ $(document).ready(function () {
         }
 
         if ($(this).scrollTop() > 600) {
-            $('.arrow-to-top').fadeIn(200)
+            $('.arrow-to-top').fadeIn(200);
         }
 
         if ($(this).scrollTop() < 600) {
-            $('.arrow-to-top').fadeOut(200)
+            $('.arrow-to-top').fadeOut(200);
         }
 
     });
@@ -39,7 +39,7 @@ $(document).ready(function () {
     $(".navbar-toggler").click(function () {
         $('.mobile_nav').fadeIn(200);
         $('.nav-content-wrapper').css('display', 'none');
-        $('.navbar').css('height', '0')
+        $('.navbar').css('height', '0');
     })
 
     // Close Mobile Menu
@@ -57,10 +57,10 @@ $(document).ready(function () {
 
     $('.social-sidebar').mouseover(function () {
         $('.social-sidebar').removeClass('rotate_back');
-        $('.rotate-selector i').css('transform', 'rotateZ(0deg)')
+        $('.rotate-selector i').css('transform', 'rotateZ(0deg)');
     }).mouseleave(function () {
-        $('.social-sidebar').addClass('rotate_back');
-        $('.rotate-selector i').css('transform', 'rotateZ(90deg)')
+        $('.social-sidebar').addClass('rotate_back');;
+        $('.rotate-selector i').css('transform', 'rotateZ(90deg)');
     });
 
     // Show log-in modal when hovering profile icon
@@ -85,8 +85,8 @@ $(document).ready(function () {
             width: 'toggle'
         }, 350);
 
-        $('body').css('overflow', 'hidden')
-        $('.body-overlay').fadeIn()
+        $('body').css('overflow', 'hidden');
+        $('.body-overlay').fadeIn();
 
     })
 
@@ -97,14 +97,14 @@ $(document).ready(function () {
             width: 'toggle'
         }, 150);
 
-        $('.body-overlay').fadeOut()
+        $('.body-overlay').fadeOut();
 
         let product_count = $('.product-box');
 
         for (let i = 0; i <= product_count.length - 1; i++) {
-            let item_q_original = $('.item_quantity_original:eq(' + parseInt(i) + ')').html()
-            let item_p_original = $('.product-price:eq(' + parseInt(i) + ')').html()
-            $('.qty_input_bag:eq(' + parseInt(i) + ')').val(item_q_original)
+            let item_q_original = $('.item_quantity_original:eq(' + parseInt(i) + ')').html();
+            let item_p_original = $('.product-price:eq(' + parseInt(i) + ')').html();
+            $('.qty_input_bag:eq(' + parseInt(i) + ')').val(item_q_original);
             $('.product-total:eq(' + parseInt(i) + ')').text(parseFloat(item_p_original * 0.011).toFixed(2) * item_q_original);
         }
 
@@ -120,7 +120,7 @@ $(document).ready(function () {
         })
 
         $('.product-card').mouseover(function () {
-            var second_image = $(this).find('.additional_img_hover').attr('src')
+            var second_image = $(this).find('.additional_img_hover').attr('src');
             $(this).find('.primary_img').attr('src', second_image);
 
         }).mouseleave(function () {
@@ -132,11 +132,11 @@ $(document).ready(function () {
 
     // Detach product page results message on screen < 990px
     if ($(window).width() < 990) {
-        let result_message = $('.product-result-message').detach()
-        result_message.insertAfter($('.product-tools-wrapper'))
-        result_message.addClass('product-result-message_mobile')
+        let result_message = $('.product-result-message').detach();
+        result_message.insertAfter($('.product-tools-wrapper'));
+        result_message.addClass('product-result-message_mobile');
 
-        $('.sort-filter').html('Filters ')
+        $('.sort-filter').html('Filters ');
 
         // Move basket subtotal to top of the basket sidebar
 
@@ -147,15 +147,15 @@ $(document).ready(function () {
     if ($(window).width() > 990) {
 
         $('.sort-filter').mouseover(function () {
-            $('.filter-box').fadeIn(200)
+            $('.filter-box').fadeIn(200);
         })
 
         $('.product-tools-wrapper').mouseleave(function () {
-            $('.filter-box').fadeOut(200)
+            $('.filter-box').fadeOut(200);
         })
 
         $('.product-listing-wrapper, .brand-box-wrapper').mouseover(function () {
-            $('.filter-box').fadeOut(200)
+            $('.filter-box').fadeOut(200);
         })
 
     }
@@ -163,14 +163,14 @@ $(document).ready(function () {
     // prepend social footer icons on screen < 1200px
 
     if ($(window).width() < 1200) {
-        $('.footer-social').insertAfter($('.footer-seperator'))
-        $('.footer-social').css('margin-right', '0')
+        $('.footer-social').insertAfter($('.footer-seperator'));
+        $('.footer-social').css('margin-right', '0');
     }
 
     // Show additional image on click
     $('.product-images-additional img').click(function () {
-        let image_url = $(this).attr('src');
-        $('.product-images img:eq(0)').attr('src', `${image_url}`)
+        let image_url = $(this).attr('src');;
+        $('.product-images img:eq(0)').attr('src', `${image_url}`);
     })
 
     // Transition for next button on homepage slider
@@ -241,11 +241,11 @@ $(document).ready(function () {
             left: '55%',
         })
     }).mouseleave(function () {
-        $(this).find('a').hide()
+        $(this).find('a').hide();
         $(this).find('a').animate({
             left: '50%',
         })
-        $(this).find(".background-overlay").removeClass('category-opacity')
+        $(this).find(".background-overlay").removeClass('category-opacity');
 
     })
 
@@ -254,19 +254,19 @@ $(document).ready(function () {
     let product_count = $('.product-box');
 
     for (let i = 0; i <= product_count.length - 1; i++) {
-        let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val()
-        let product_price = $('.product-price:eq(' + parseInt(i) + ')').text()
+        let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val();
+        let product_price = $('.product-price:eq(' + parseInt(i) + ')').text();
         let sum = parseFloat(quantity_value * (product_price * 0.011)).toFixed(2);
-        $('.product-total:eq(' + parseInt(i) + ')').text(sum)
+        $('.product-total:eq(' + parseInt(i) + ')').text(sum);
     }
 
     function update_price() {
         let product_count = $('.product-box');
         for (let i = 0; i <= product_count.length - 1; i++) {
-            let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val()
-            let product_price = $('.product-price:eq(' + parseInt(i) + ')').text()
-            let sum = parseFloat(quantity_value * (product_price * 0.011)).toFixed(2)
-            $('.product-total:eq(' + parseInt(i) + ')').text(sum)
+            let quantity_value = $('.qty_input_bag:eq(' + parseInt(i) + ')').val();
+            let product_price = $('.product-price:eq(' + parseInt(i) + ')').text();
+            let sum = parseFloat(quantity_value * (product_price * 0.011)).toFixed(2);
+            $('.product-total:eq(' + parseInt(i) + ')').text(sum);
         }
     }
 
@@ -293,7 +293,7 @@ $(document).ready(function () {
 
     $('.qty_input_bag').change(function () {
 
-        let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'))
+        let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'));
         item_quantity_in_bag = item_quantity_in_bag.html();
 
         update_price();
@@ -307,25 +307,25 @@ $(document).ready(function () {
         let product_total = $('.product-total')
         let all_total_array = [];
         for (i = 0; i < product_total.length; i++) {
-            all_total_array.push(parseFloat($('.product-total:eq(' + parseInt(i) + ')').text()))
+            all_total_array.push(parseFloat($('.product-total:eq(' + parseInt(i) + ')').text()));
         }
 
         let basket_total = 0;
         for (var i = 0; i < all_total_array.length; i++) {
-            basket_total += all_total_array[i]
+            basket_total += all_total_array[i];
         }
 
         if (basket_total < 75) {
-            basket_total = basket_total + 6.99
+            basket_total = basket_total + 6.99;
             $('.delivery_treshold').show();
             $('.delivery_treshold span').html(parseFloat((75 - basket_total) + 6.99).toFixed(2))
         } else if (basket_total >= 75) {
-            basket_total = basket_total
-            $('.delivery_amount').html("FREE")
+            basket_total = basket_total;
+            $('.delivery_amount').html("FREE");
             $('.delivery_treshold').hide();
         }
 
-        $('.basket-total').html(parseFloat(basket_total).toFixed(2))
+        $('.basket-total').html(parseFloat(basket_total).toFixed(2));
     }
 
     calculate_basket_total();
@@ -336,43 +336,43 @@ $(document).ready(function () {
         let items_total = $('.qty_input_bag')
         let all_items_total_qty = [];
         for (i = 0; i < items_total.length; i++) {
-            all_items_total_qty.push(parseFloat($('.qty_input_bag:eq(' + parseInt(i) + ')').val()))
+            all_items_total_qty.push(parseFloat($('.qty_input_bag:eq(' + parseInt(i) + ')').val()));
         }
 
         let all_total_test = 0;
         for (var i = 0; i < all_items_total_qty.length; i++) {
-            all_total_test += all_items_total_qty[i]
+            all_total_test += all_items_total_qty[i];
         }
 
-        $('.total_items_in_bag span').html(all_total_test)
-        $('.shopping-bag-wrapper span').html(all_total_test)
+        $('.total_items_in_bag span').html(all_total_test);
+        $('.shopping-bag-wrapper span').html(all_total_test);
     }
 
     calculate_items_in_basket();
 
-    $('.qty_input_bag').change(calculate_items_in_basket)
+    $('.qty_input_bag').change(calculate_items_in_basket);
 
     // Shoe size selection
 
     $('.size_selector').click(function () {
         let size_selected = $(this).html()
-        $('.size_selector').removeClass('selected_box')
-        $(this).addClass('selected_box')
-        $('.product_size').val(size_selected)
-        $('.product_size').attr('data-product_size', size_selected)
+        $('.size_selector').removeClass('selected_box');
+        $(this).addClass('selected_box');
+        $('.product_size').val(size_selected);
+        $('.product_size').attr('data-product_size', size_selected);
     })
 
     // Make product size selection required
 
     $('#add_to_bag').click(function (e) {
         $('.warning_message').remove();
-        let size_button = $('.size_selector').hasClass('selected_box')
+        let size_button = $('.size_selector').hasClass('selected_box');
         if (size_button == false) {
             e.preventDefault();
             $('.product-action').append(`<h5 class='warning_message'>Please select the size</h5>`)
             $('.warning_message').fadeOut(4000);
         } else if (size_button == true) {
-            $('#add_to_bag').submit()
+            $('#add_to_bag').submit();
         }
     });
 
@@ -381,10 +381,10 @@ $(document).ready(function () {
         setTimeout(function () {
             calculate_items_in_basket();
             calculate_basket_total();
-            let basket_count = $('.total_items_in_bag span').html()
+            let basket_count = $('.total_items_in_bag span').html();
             if (basket_count == 0) {
-                $('.bottom-menu-actions-wrapper, .products-wrapper').hide()
-                $('.shopping-bag-wrapper span').hide()
+                $('.bottom-menu-actions-wrapper, .products-wrapper').hide();
+                $('.shopping-bag-wrapper span').hide();
                 $('.basket_contents_and_action').append(` 
                 <div class="shop_options">
                 <h4 class='no_products_in_basket'>
@@ -414,23 +414,64 @@ $(document).ready(function () {
     })
 
     // Remove message after 3 seconds
-    $('.message-wrapper').delay(3000).fadeOut(400);
+    $('.message-wrapper').delay(2000).fadeOut(400);
     let loggedInIconState = $('.profile_icon_loggedin').css('display');
     if (loggedInIconState == 'inline-block') {
         $('.img-test').remove();
         let profileIcon = $('.profile_icon_loggedin-wrapper').detach();
-        $('.nav-icons').append(profileIcon)
+        $('.nav-icons').append(profileIcon);
         $(profileIcon).css('position', 'relative');
         $('.profile_icon_loggedin').css('visibility', 'visible');
-        $('.profile_icon_loggedin-wrapper div').addClass('loggedin_elipse')
+        $('.profile_icon_loggedin-wrapper div').addClass('loggedin_elipse');
     }
 
-    // // Remove shipping info on profile if no address provided
-    // let addressInfoProfile = $('#id_default_address_line_1').val();
-    // if (addressInfoProfile == '') {
-    //     $('#shipping-details-update').replaceWith('<p class="no-info-message"> No Shipping details saved</p>');
-    //     $('.address-details').find($('.fa-pen')).hide();
-    // }
+    // Remove shipping info on profile if no address provided
+    let addressInfoProfile = $('#id_default_address_line_1').val();
+    if (addressInfoProfile == '') {
+        $('#shipping-details-update').replaceWith('<p class="no-info-message"> No Shipping details saved</p>');
+        $('.address-details').find($('.fa-pen')).hide();
+    }
 
-    $('#id_default_address_line_2').attr('placeholder', 'address line 2')
+    // Disable all inputs by default 
+    $('.profile-details-wrapper').find($('input, select')).attr('disabled', 'true');
+
+    // Enable profile fileds on button click
+    $('#id_default_country').addClass('hide-arrow-select');
+
+
+    $('.btn-edit-details').click(function () {
+        $(this).parent().parent().find($('.cancel-edit')).show()
+        $(this).parent().parent().find($('form input, form select')).removeAttr('disabled');
+        $(this).html(('<i class="fas fa-save"></i>'));
+        $(this).addClass('edit-details-btn');
+        $('.tooltip').hide();
+        $('#id_default_address_line_2').attr('placeholder', 'address line 2');
+        $('#id_default_phone_number').attr('placeholder', 'phone number');
+        $('#id_default_country').removeClass('hide-arrow-select');
+
+        // Submit form on click
+        $('.fa-save').click(function () {
+            console.log('yee')
+            let formSubmitDetails = $(this).parent().parent().parent().find('form');
+            formSubmitDetails.submit();
+        });
+    })
+
+
+    $('.cancel-edit').click(function () {
+        $(this).parent().find(('.profile-details-header button')).html('<i class="fas fa-pen"></i>');
+        $(this).parent().find(('form input'));
+        $(this).hide();
+        $('#id_default_country').addClass('hide-arrow-select');
+        $(this).parent().find(('.profile-details-header button')).unbind("click", test);
+    });
+
+
+
+
+
+
+
+
+
 });

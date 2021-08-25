@@ -7,7 +7,7 @@
 
 <div class="checkout-heading-wrapper profile-header">
     <div class="checkout-heading_content">
-        <h2 class='checkout-heading'>My Profile</h2>
+        <h2 class='checkout-heading'>Hi, {{user.username}}!</h2>
         <a class='profile-logout-cta' href="{% url 'account_logout' %}"> Log Out</a>
     </div>
 </div>
@@ -16,27 +16,27 @@
     <div class="personal-details">
         <div class="profile-details-header">
             <h3>PERSONAL DETAILS</h3>
-            <button class='btn-edit-details'><i class="fas fa-pen"></i></button>
+            <button data-toggle="tooltip" data-placement="top" title="Edit Personal Details" class='btn-edit-details'><i
+                    class="fas fa-pen"></i></button>
         </div>
         <hr>
         <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
+
             {% csrf_token %}
             <div class="nflex mb-2">
-                <label for="user-email">Email</label>
-                <input disabled type="text" name='user-email' id='user-email' value='{{user.email}}'>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" value="{{user.username}}" minlength="5" maxlength="15" required>
             </div>
-            <div class="nflex mb-2">
-                <label for="user-username">Username</label>
-                <input disabled type="text" name='user-username' id='user-username' value='{{user.username}}'>
-            </div>
-            <button class='edit-profile-info' type='submit'>Submit</button>
+            <button data-toggle="tooltip" data-placement="top" title="Save details" class='edit-profile-info' type='submit'></button>
         </form>
+        <button class='cancel-edit'>Cancel</button>
     </div>
 
     <div class="address-details">
         <div class="profile-details-header">
             <h3>Shipping Details</h3>
-            <button class='btn-edit-details'><i class="fas fa-pen"></i></button>
+            <button data-toggle="tooltip" data-placement="top" title="Edit Shipping Details" class='btn-edit-details'><i
+                    class="fas fa-pen"></i></button>
         </div>
         <hr>
         <form action="{% url 'profile' %}" method="POST" id="shipping-details-update">
@@ -48,6 +48,10 @@
             <div class="nflex mb-2">
                 <label for="default_address_line_2">Address Line 2</label>
                 {{ form.default_address_line_2}}
+            </div>
+            <div class="nflex mb-2">
+                <label for="default_address_line_2">Phone Number</label>
+                {{ form.default_phone_number}}
             </div>
             <div class="nflex mb-2">
                 <label for="default_address_line_2">City</label>
@@ -65,8 +69,10 @@
                 <label for="default_address_line_2">Country</label>
                 {{ form.default_country}}
             </div>
-            <button class='edit-profile-info' type='submit'>Submit</button>
+            <button data-toggle="tooltip" data-placement="top" title="Save details" class='edit-profile-info' type='submit'>
+            </button>
         </form>
+        <button class='cancel-edit'>Cancel</button>
     </div>
 </section>
 
