@@ -3,19 +3,25 @@ from django.contrib import messages
 from django.http import HttpResponse
 
 from .models import UserProfile
-from .forms import UserProfileForm
+from .forms import UserProfileForm, UserDeleteForm
 from django.contrib.auth.models import User
 
 
 def profile(request):
-    """ Dispaly users personal & shipping details
+    """ Display users personal & shipping details
         Handle updating the details, and all the errors
      """
     profile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
         user = request.user
         form = UserProfileForm(request.POST, instance=profile)
-
+        delete_form = UserDeleteForm(request.POST, instance=request.user)
+        if delete_form.is_valid() and 'delete_profile' in request.POST:
+            print('yes')
+            user.delete()
+            messages.success(request, 'Profile successfully deleted')
+            return redirect('home')
+       
         if 'username' in request.POST:
             if user.username == request.POST['username']:
                 messages.warning(request, 'You have used the same username')
@@ -25,7 +31,7 @@ def profile(request):
             if User.objects.filter(username=username).exists():
                 messages.error(request,
                                 "Username already exists, please user another one"
-                                )
+                               )
                 return redirect('profile')
             else:
                 if len(user.username) == 0:
@@ -48,13 +54,15 @@ def profile(request):
             else:
                 messages.error(request, "Please fill in all required fields")
                 return redirect('profile')
-
+      
     form = UserProfileForm(instance=profile)
+    delete_form = UserDeleteForm(instance=request.user)
     orders = profile.orders.all()
 
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
+        'delete_form': delete_form,
     }
     return render(request, template, context)

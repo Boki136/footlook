@@ -1522,10 +1522,6 @@ h1 {
 #payment-form label[for="id-save-info"] {
   vertical-align: middle; }
 
-select,
-select option {
-  color: #000000; }
-
 select:invalid,
 select option[value=""] {
   color: #757575 !important; }
@@ -1828,7 +1824,8 @@ select option[value=""] {
   background: transparent;
   font-size: 20px;
   border: none;
-  transition: .25s ease-in-out; }
+  transition: .25s ease-in-out;
+  padding: 10px; }
   .btn-edit-details:hover {
     color: #D72323;
     transform: rotateZ(10deg); }
@@ -1869,19 +1866,28 @@ select option[value=""] {
 
 .add_address {
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  cursor: pointer; }
   .add_address p {
     display: inline-block; }
   .add_address i {
     color: green;
     padding-right: 3px; }
 
+.order-history_wrapper::-webkit-scrollbar {
+  width: 4px; }
+
+.order-history_wrapper::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  outline: 1px solid slategrey; }
+
 .order-history_wrapper {
   width: 90%;
   margin: 0 auto 150px auto;
   max-height: 500px;
   overflow-y: scroll;
-  position: relative; }
+  position: relative;
+  padding-right: 25px; }
   .order-history_wrapper hr {
     height: 1px;
     background-color: #a0a0a0;
@@ -1970,6 +1976,46 @@ select option[value=""] {
 
 .order-details-header-main h3 {
   font-size: 25px; }
+
+.delete-account {
+  width: 90%;
+  margin: 0 auto; }
+
+.delete-profile-btn {
+  background: #D72323;
+  padding: 10px 45px;
+  color: #EEE;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: 500; }
+
+.jconfirm-box-container {
+  width: 70%; }
+
+.jconfirm-box {
+  padding: 30px 20px 10px 20px !important; }
+
+.jconfirm-buttons button {
+  background: #303841 !important;
+  color: #EEE !important; }
+
+.jconfirm-closeIcon i {
+  position: relative;
+  left: -10px;
+  bottom: -5px;
+  font-size: 20px; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; }
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

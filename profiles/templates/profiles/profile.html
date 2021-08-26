@@ -76,6 +76,8 @@
     </div>
 </section>
 
+{% if orders|length != 0 %}
+
 <section class="order-history_wrapper">
     <div class="orders-history_header">
         <img src="{{ MEDIA_URL }}all-orders-icon.png" alt="all orders icon">
@@ -85,7 +87,7 @@
     {% for order in orders %}
     <div class="order-details-box">
         <div class="order-details_content">
-            <h4>Order Number: {{order.order_number}}</h4>
+            <h4>Order Number: <span>{{order.order_number}}</span></h4>
             <h5>Order Date: {{order.date}}</h5>
             <h5>Order Total: €{{order.grand_total}}</h5>
         </div>
@@ -141,5 +143,15 @@
 
     {% endfor %}
 </section>
+{% endif %}
+
+<div class="delete-account">
+    <form action="{% url 'profile' %}" method="POST" id='delete-user-profile'>
+        {% csrf_token %}
+        <input type="submit" value='Delete profile' name='delete_profile' id='delete_profile' class='delete-profile-btn'>
+        {{delete_form}}
+    </form>
+
+</div>
 
 {% endblock %}

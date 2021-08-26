@@ -2130,10 +2130,6 @@ h1 {
 
 }
 
-select,
-select option {
-    color: #000000;
-}
 
 select:invalid,
 select option[value=""] {
@@ -2557,6 +2553,7 @@ select option[value=""] {
     font-size: 20px;
     border: none;
     transition: .25s ease-in-out;
+    padding: 10px;
 
     &:hover {
         color: $red;
@@ -2613,6 +2610,7 @@ select option[value=""] {
 .add_address {
     text-align: center;
     margin-top: 30px;
+    cursor: pointer;
 
     p {
         display: inline-block;
@@ -2624,12 +2622,22 @@ select option[value=""] {
     }
 }
 
+.order-history_wrapper::-webkit-scrollbar {
+    width: 4px;
+}
+
+.order-history_wrapper::-webkit-scrollbar-thumb {
+    background-color: #cdcdcd;
+    outline: 1px solid slategrey;
+}
+
 .order-history_wrapper {
     width: 90%;
     margin: 0 auto 150px auto;
     max-height: 500px;
     overflow-y: scroll;
     position: relative;
+    padding-right: 25px;
 
     hr {
         height: 1px;
@@ -2751,7 +2759,54 @@ select option[value=""] {
     font-size: 25px;
 }
 
+.delete-account {
+    width: 90%;
+    margin: 0 auto;
 
+}
+
+.delete-profile-btn {
+    background: $red;
+    padding: 10px 45px;
+    color: $paper-white;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.jconfirm-box-container {
+    width: 70%;
+}
+
+.jconfirm-box {
+    padding: 30px 20px 10px 20px !important;
+}
+
+.jconfirm-buttons button {
+    background: $primary-black !important;
+    color: $paper-white !important;
+}
+
+.jconfirm-closeIcon i {
+    position: relative;
+    left: -10px;
+    bottom: -5px;
+    font-size: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 
 /************************ MEDIA QUERIES **/
 

@@ -456,7 +456,7 @@ $(document).ready(function () {
     // Cancel any changes
     $('.cancel-edit').click(function () {
         $(this).parent().find(('.profile-details-header button')).html('<i class="fas fa-pen"></i>');
-        $(this).parent().find(('form input'));
+        $(this).parent().find(('form input, form select')).attr('disabled', 'true');
         $(this).hide();
         $('#id_default_country').addClass('hide-arrow-select');
         $(this).parent().find(('.profile-details-header button')).unbind("click", test);
@@ -483,4 +483,21 @@ $(document).ready(function () {
         $('body').css('overflow-y', 'scroll');
     })
 
+    // Prompt to ask the user if the want to delete the profile
+
+    $('.delete-profile-btn').click(function (e) {
+        e.preventDefault();
+        $.confirm({
+            closeIcon: true,
+            closeIconClass: 'fa fa-close',
+            title: 'Are you sure you want to delete your profile?',
+            content: 'All your previous orders and details will be deleted!',
+            buttons: {
+                confirm: function () {
+                    $('.delete-profile-btn').unbind();
+                    $('.delete-profile-btn').click();
+                }
+            }
+        });
+    })
 });
