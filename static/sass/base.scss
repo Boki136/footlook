@@ -2149,7 +2149,8 @@ select option[value=""] {
 }
 
 .stripe-style-input,
-.allauth-form-inner-content input {
+.allauth-form-inner-content input,
+.add-product-form-input {
     display: block;
     width: 95%;
     border-radius: 0;
@@ -2806,6 +2807,86 @@ select:-webkit-autofill:focus,
 select:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
+
+/************************ ADD PRODUCT PAGE **/
+
+.add_products_wrapper {
+    background: url('/media/allauth_form-background.png') no-repeat center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    padding: 100px 50px;
+}
+
+.add-product_content {
+    width: 80%;
+    padding: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: rgba(58, 71, 80, 0.5);
+
+    h2 {
+        color: $paper-white;
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
+
+.add-product_form {
+    label {
+        color: $paper-white;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+}
+
+.add-product-form-input {
+    background: transparent;
+    border: 1px solid #EEE;
+    border-width: thin;
+    color: white;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.form_buttons-products {
+    margin-top: 30px;
+
+    button {
+        padding: 10px 45px;
+        text-decoration: none;
+        background: #EEE;
+        color: #303841;
+        margin: 25px 0 0 0;
+        outline: none;
+        border: none;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            color: $paper-white;
+            background: $secondary-black;
+        }
+
+    }
+
+    a {
+
+        color: $paper-white;
+        padding-right: 15px;
+        text-decoration: none;
+
+        &::before {
+            content: '\f104';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            padding-right: 8px;
+            font-size: 18px;
+
+        }
+    }
+}
+
 
 /************************ MEDIA QUERIES **/
 

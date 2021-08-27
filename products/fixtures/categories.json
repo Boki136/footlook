@@ -13,21 +13,6 @@
             "name": "men",
             "friendly_name": "Men"
         }
-    },
-    {
-        "pk": 3,
-        "model": "products.category",
-        "fields": {
-            "name": "brands",
-            "friendly_name": "Brands"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
-            "name": "sale",
-            "friendly_name": "Sale"
-        }
     }
+
 ]

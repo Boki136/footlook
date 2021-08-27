@@ -1535,7 +1535,8 @@ select option[value=""] {
   height: 55vh; }
 
 .stripe-style-input,
-.allauth-form-inner-content input {
+.allauth-form-inner-content input,
+.add-product-form-input {
   display: block;
   width: 95%;
   border-radius: 0;
@@ -1544,10 +1545,12 @@ select option[value=""] {
   border: 0;
   border-bottom: 1.5px solid #EEE; }
   .stripe-style-input::placeholder,
-  .allauth-form-inner-content input::placeholder {
+  .allauth-form-inner-content input::placeholder,
+  .add-product-form-input::placeholder {
     font-size: 15px; }
   .stripe-style-input:focus,
-  .allauth-form-inner-content input:focus {
+  .allauth-form-inner-content input:focus,
+  .add-product-form-input:focus {
     outline: none; }
 
 .item_price_and_qty {
@@ -2015,6 +2018,63 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus,
 select:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important; }
+
+/************************ ADD PRODUCT PAGE **/
+.add_products_wrapper {
+  background: url("/media/allauth_form-background.png") no-repeat center;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  padding: 100px 50px; }
+
+.add-product_content {
+  width: 80%;
+  padding: 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: rgba(58, 71, 80, 0.5); }
+  .add-product_content h2 {
+    color: #EEE;
+    font-weight: 600;
+    font-size: 40px; }
+
+.add-product_form label {
+  color: #EEE;
+  padding: 10px 0;
+  font-weight: 500; }
+
+.add-product-form-input {
+  background: transparent;
+  border: 1px solid #EEE;
+  border-width: thin;
+  color: white;
+  font-weight: 500;
+  vertical-align: middle; }
+
+.form_buttons-products {
+  margin-top: 30px; }
+  .form_buttons-products button {
+    padding: 10px 45px;
+    text-decoration: none;
+    background: #EEE;
+    color: #303841;
+    margin: 25px 0 0 0;
+    outline: none;
+    border: none;
+    transition: .2s ease-in-out; }
+    .form_buttons-products button:hover {
+      color: #EEE;
+      background: #3A4750; }
+  .form_buttons-products a {
+    color: #EEE;
+    padding-right: 15px;
+    text-decoration: none; }
+    .form_buttons-products a::before {
+      content: '\f104';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      padding-right: 8px;
+      font-size: 18px; }
 
 /************************ MEDIA QUERIES **/
 @media only screen and (min-width: 1600px) {

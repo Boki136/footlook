@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title_extend %} | Add a Product{% endblock %}
+
+{% block content %}
+<section class="add_products_wrapper">
+    <div class="add-product_content">
+        <h2 class='mb-5'>ADD A PRODUCT</h2>
+
+        <div class="add-product_form">
+            <form action="{% url 'add_product' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form.as_p}}
+                <div class="form_buttons-products">
+                    <a href="{% url 'products' %}">Cancel</a>
+                    <button type='submit'>Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
