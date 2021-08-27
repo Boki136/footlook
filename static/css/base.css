@@ -136,14 +136,14 @@ h1 {
 
 /*************************** LOADING SPINNER CSS **/
 #custom-overlay {
-  height: 1000%;
-  position: absolute;
-  top: 0;
+  height: 100vh;
+  position: fixed;
   width: 100%;
   z-index: 1000000;
   background-color: #000;
   opacity: 0.7;
-  display: none; }
+  display: none;
+  top: 0; }
 
 /* http://projects.lukehaas.me/css-loaders/ by @lukehaas */
 .loading-spinner {
@@ -1058,7 +1058,7 @@ h1 {
   position: absolute;
   right: 0;
   z-index: 1000;
-  top: 48px;
+  top: 40px;
   display: none; }
   .filter-box ul {
     list-style: none;
@@ -1824,8 +1824,7 @@ select option[value=""] {
   background: transparent;
   font-size: 20px;
   border: none;
-  transition: .25s ease-in-out;
-  padding: 10px; }
+  transition: .25s ease-in-out; }
   .btn-edit-details:hover {
     color: #D72323;
     transform: rotateZ(10deg); }
@@ -2098,7 +2097,9 @@ select:-webkit-autofill:active {
     display: none; }
   .address-details form input,
   .address-details form select {
-    width: 50%; } }
+    width: 50%; }
+  .loading-spinner {
+    margin: 60% auto; } }
 
 @media only screen and (max-width: 990px) {
   .hero-content-wrapper {
