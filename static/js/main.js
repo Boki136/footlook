@@ -105,7 +105,7 @@ $(document).ready(function () {
         $('.product-card,.product-slider_item').mouseover(function () {
             $(this).find('.learn-more-wrapper').children().fadeIn(100);
         }).mouseleave(function () {
-            $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price').fadeOut(100);
+            $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price, .product-rrp_main').fadeOut(100);
         })
 
         $('.product-card').mouseover(function () {

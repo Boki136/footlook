@@ -1236,10 +1236,17 @@ h1 {
     font-size: 15px; }
 
 .product-action {
-  margin-top: 35px;
+  margin-top: 40px;
   position: relative; }
   .product-action p {
     font-size: 30px; }
+
+.product-rrp_main {
+  display: none;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0; }
 
 .rating-score {
   margin-bottom: 0;
@@ -1281,6 +1288,21 @@ h1 {
 
 .update_bag_form label {
   margin-bottom: 10px; }
+
+.product-rrp_price {
+  font-size: 20px;
+  color: #D72323;
+  text-decoration: line-through;
+  padding-bottom: 5px;
+  display: inline-block; }
+
+.sad {
+  content: 'RRP';
+  text-decoration: none;
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
+  left: 5px; }
 
 .quantity_selector {
   width: 50%; }
@@ -2223,6 +2245,10 @@ label[for="id_images"]::after {
   .product-price_wrapper {
     width: 80%;
     margin: 0 0 0 auto; }
+  .product-rrp_main {
+    bottom: 25px; }
+  .learn-more-wrapper h1 {
+    bottom: 13px; }
   .social-sidebar,
   .hr-align {
     display: none; }

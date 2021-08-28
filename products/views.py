@@ -66,6 +66,8 @@ def products_view(request):
         product.images = image_list
         product_calculation = int(product.price) * 0.011
         product.price = "{:.2f}".format(product_calculation)
+        rrp_calculation = int(product.rrp) * 0.011
+        product.rrp = "{:.2f}".format(rrp_calculation)
         
     current_sort = f'{sort}_{direction}'
 
@@ -87,9 +89,12 @@ def product_detail(request, product_id):
    
     image_list = product.images
     image_list = ast.literal_eval(image_list)
+    product.images = image_list
     product_calculation = int(product.price) * 0.011
     product.price = "{:.2f}".format(product_calculation)
-    product.images = image_list
+    rrp_calculation = int(product.rrp) * 0.011
+    product.rrp = "{:.2f}".format(rrp_calculation)
+    
 
     context = {
         'product': product,
@@ -104,17 +109,25 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)
         if form.is_valid():
-            test_test = form.save(commit=False)
-            image_test = form.cleaned_data['images']
-            test_test.images = f"['{image_test}']"
-            test_test.save()
-            form.save()
-            messages.success(request, 'Successfully added product!')
+            form_submit = form.save(commit=False)
+            image_validation = form.cleaned_data['images']
+            price_validation = form.cleaned_data['price']
+            rrp_validation = form.cleaned_data['rrp']
+            form_submit.price = "{:.2f}".format(int(price_validation) / 0.011)
+            form_submit.rrp = "{:.2f}".format(int(rrp_validation) / 0.011)
+            form_submit.images = f"['{image_validation}']"
+            if Product.objects.filter(sku=request.POST['sku']).exists():
+                messages.error(request, 'Product with that SKU already exists')
+            else:
+                form_submit.save()
+                form.save()
+                messages.success(request, 'Successfully added product!')
             return redirect(reverse('add_product'))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,

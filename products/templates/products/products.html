@@ -93,6 +93,10 @@ All Products
             <div class="background-overlay"></div>
             <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
             <img class="primary_img" src="{{product.images|first}}" alt="{{product.name}}">
+            <div class="product-rrp_main">
+                <span class='sad'>RRP</span>
+                <h6 class='product-rrp_price'>€{{product.rrp}}</h6>
+            </div>
             <h1 class='product-price'><span>€</span>{{product.price}}</h1>
         </div>
         <div class="product-card-detail">
