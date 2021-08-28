@@ -812,7 +812,7 @@ h1 {
 }
 
 .tooltip {
-    z-index: 9999999999;
+    z-index: 999999999999;
 }
 
 
@@ -1711,6 +1711,7 @@ h1 {
 
     p {
         padding-right: 10px;
+        text-transform: uppercase;
     }
 
     img {
@@ -2895,6 +2896,17 @@ select:-webkit-autofill:active {
     }
 }
 
+label[for="id_discount"],
+label[for="id_images"] {
+    &::after {
+        content: '\f05a';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        padding-left: 5px;
+        font-size: 15px;
+    }
+}
+
 
 /************************ MEDIA QUERIES **/
 
@@ -3416,6 +3428,17 @@ select:-webkit-autofill:active {
     .product-main-details {
         width: 70%;
     }
+
+    .add_products_wrapper {
+        padding: 50px 0;
+        ;
+    }
+
+    .add-product_content {
+        width: 95%;
+        padding: 50px;
+    }
+
 
 }
 

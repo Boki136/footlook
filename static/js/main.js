@@ -476,7 +476,7 @@ $(document).ready(function () {
     // Open order details popup
 
     $('.expand-order-details').click(function () {
-        $(this).parent().next().fadeIn(300)
+        $(this).parent().next().fadeIn(300);
         $('.body-overlay').show();
         $('body').css('overflow-y', 'hidden');
     })
@@ -507,7 +507,25 @@ $(document).ready(function () {
 
     // Append message for image field on product upload
 
-    $('label[for="id_images"]').append("<h6 class='mt-2 mb-2'>(Please use image URL to upload the image)</h6>")
+    $('#id_images').prev().attr({
+        "data-toggle": "tooltip",
+        "data-placement": "top",
+        "title": "Please use URL for upload"
+    });
 
+    $('#id_discount').prev().attr({
+        "data-toggle": "tooltip",
+        "data-placement": "top",
+        "title": "Please enter 0 if no discount"
+    });
+
+    $('#id_rating').attr({
+        'max': 5,
+        'min': 1
+    })
+
+    $('#add-product_form'), submit(function () {
+        $(this).validate();
+    })
 
 });
