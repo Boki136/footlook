@@ -1,12 +1,13 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
 from .forms import UserProfileForm, UserDeleteForm
 from django.contrib.auth.models import User
 
 
+@login_required
 def profile(request):
     """ Display users personal & shipping details
         Handle updating the details, and all the errors

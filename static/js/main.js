@@ -534,8 +534,28 @@ $(document).ready(function () {
         'min': 1
     })
 
-    $('#add-product_form'), submit(function () {
+    $('#add-product_form').submit(function () {
         $(this).validate();
     })
+
+    // Prompt User to ask if they want to delete the product
+
+    $('.remove_product').click(function (e) {
+        e.preventDefault();
+        href = $(this).attr('href')
+        $.confirm({
+            closeIcon: true,
+            closeIconClass: 'fa fa-close',
+            title: 'Are you sure you want to delete this product?',
+            content: "By deleting this product, your customers won't have the visiblity anymore",
+            buttons: {
+                confirm: function () {
+                    $('.remove_product').unbind();
+                    window.location = href
+                }
+            }
+        });
+    })
+
 
 });

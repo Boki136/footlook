@@ -88,7 +88,18 @@
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
         </form>
+        {% if request.user.is_superuser %}
+        <hr>
+        <div class="product-management-wrapper">
+            <h5>Product Management</h5>
+            <div class="product-management-actions">
+                <a class='product-manage_cta' data-tilt href="{% url 'edit_product' product.id %}">Edit Product</a>
+                <a class='product-manage_cta remove_product' data-tilt href="{% url 'delete_product' product.id %}">Remove Product</a>
+            </div>
+        </div>
+        {% endif %}
     </div>
+
 </div>
 
 {% endblock %}

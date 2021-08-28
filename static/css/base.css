@@ -1302,7 +1302,23 @@ h1 {
   font-size: 13px;
   position: relative;
   bottom: 10px;
-  left: 5px; }
+  left: 5px;
+  font-weight: 600; }
+
+.product-management-wrapper {
+  margin-top: 40px;
+  background: #303841;
+  color: #EEE;
+  padding: 30px; }
+  .product-management-wrapper h5 {
+    margin-bottom: 30px; }
+
+.product-management-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .product-management-actions a {
+    color: #EEE; }
 
 .quantity_selector {
   width: 50%; }

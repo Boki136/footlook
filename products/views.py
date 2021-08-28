@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -94,7 +95,6 @@ def product_detail(request, product_id):
     product.price = "{:.2f}".format(product_calculation)
     rrp_calculation = int(product.rrp) * 0.011
     product.rrp = "{:.2f}".format(rrp_calculation)
-    
 
     context = {
         'product': product,
@@ -104,8 +104,13 @@ def product_detail(request, product_id):
     return render(request, "products/product_detail.html", context)
 
 
+@login_required
 def add_product(request):
     """ Admin add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners have premission to do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST)
         if form.is_valid():
@@ -136,9 +141,14 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
-    """ Edit a product in the current store """
+    """ Edit a product in the current store """ 
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners have premission to do that.')
+        return redirect(reverse('home'))
     product = get_object_or_404(Product, pk=product_id)
+
     if request.method == 'POST':
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
@@ -153,7 +163,7 @@ def edit_product(request, product_id):
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
-        
+       
     template = 'products/edit_product.html'
     context = {
         'form': form,
@@ -161,3 +171,16 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_product(request, product_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners have premission to do that.')
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('products'))

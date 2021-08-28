@@ -1811,6 +1811,28 @@ h1 {
     position: relative;
     bottom: 10px;
     left: 5px;
+    font-weight: 600;
+}
+
+.product-management-wrapper {
+    margin-top: 40px;
+    background: $primary-black;
+    color: $paper-white;
+    padding: 30px;
+
+    h5 {
+        margin-bottom: 30px;
+    }
+}
+
+.product-management-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+        color: $paper-white;
+    }
 }
 
 .quantity_selector {
