@@ -8,7 +8,12 @@
 <div class="checkout-heading-wrapper profile-header">
     <div class="checkout-heading_content">
         <h2 class='checkout-heading'>Hi, {{user.username}}!</h2>
-        <a class='profile-logout-cta' href="{% url 'account_logout' %}"> Sign Out</a>
+        <div class="profile_actions">
+            {% if request.user.is_superuser %}
+            <a class='product-manage_cta' href="{% url 'add_product' %}">Product Management</a>
+            {% endif %}
+            <a class='profile-logout-cta' href="{% url 'account_logout' %}"> Sign Out</a>
+        </div>
     </div>
 </div>
 

@@ -5,6 +5,16 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
 
+    // Replace brand with dropdown
+
+    $('#id_brand').replaceWith(`
+    <select name="brand" class="add-product-form-input" id="id_brand">
+    <option value="ORIGINALS">Originals</option>
+    <option value="CORE / NEO">CORE / NEO</option>
+    <option value="SPORT PERFORMANCE">Sport Performance</option>
+    </select>
+    `)
+
     // Make Navigation Sticky & back to the top of the page
 
     $(window).scroll(function () {

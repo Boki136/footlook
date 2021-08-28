@@ -1270,7 +1270,7 @@ h1 {
   color: #EEE; }
 
 .warning_message {
-  margin: 15px 0;
+  margin: 30px 0;
   font-size: 18px;
   position: absolute;
   top: 45px; }
@@ -1346,7 +1346,9 @@ h1 {
   margin: 0 auto; }
 
 .footer-seperator {
-  color: #EEE; }
+  color: #EEE;
+  margin: 0;
+  visibility: hidden; }
 
 .footer-action {
   margin-top: 110px;
@@ -1515,6 +1517,20 @@ h1 {
     font-weight: 900;
     font-size: 20px;
     padding-right: 3px; }
+
+.product-manage_cta {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #303841;
+  font-weight: 500; }
+  .product-manage_cta::before {
+    content: '\f085';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 8px;
+    font-size: 18px; }
+  .product-manage_cta:hover {
+    color: #D72323; }
 
 .checkout-form {
   width: 60%; }
@@ -1769,8 +1785,7 @@ select option[value=""] {
 .errorlist li {
   color: #D72323;
   font-weight: 600;
-  margin: 10px 0;
-  bottom: 50px; }
+  margin: 10px 0; }
 
 .profile_icon_loggedin-wrapper {
   line-height: 0;

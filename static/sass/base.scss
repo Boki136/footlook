@@ -1771,7 +1771,7 @@ h1 {
 }
 
 .warning_message {
-    margin: 15px 0;
+    margin: 30px 0;
     font-size: 18px;
     position: absolute;
     top: 45px;
@@ -1879,6 +1879,8 @@ h1 {
 
 .footer-seperator {
     color: $paper-white;
+    margin: 0;
+    visibility: hidden;
 }
 
 .footer-action {
@@ -2115,6 +2117,29 @@ h1 {
         padding-right: 3px;
     }
 }
+
+.product-manage_cta {
+    margin-right: 50px;
+    text-decoration: none;
+    color: $primary-black;
+    font-weight: 500;
+
+
+    &::before {
+        content: '\f085';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        padding-right: 8px;
+        font-size: 18px;
+
+    }
+
+    &:hover {
+        color: $red;
+    }
+}
+
+
 
 .checkout-form {
     width: 60%;
@@ -2468,11 +2493,9 @@ select option[value=""] {
 }
 
 .errorlist li {
-
     color: $red;
     font-weight: 600;
     margin: 10px 0;
-    bottom: 50px;
 }
 
 .profile_icon_loggedin-wrapper {
