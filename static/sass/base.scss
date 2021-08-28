@@ -2545,6 +2545,7 @@ select option[value=""] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .btn-edit-details {
@@ -2604,7 +2605,14 @@ select option[value=""] {
     padding: 5px 30px;
     background: $red;
     color: $paper-white;
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+label.error {
+    position: absolute;
+    bottom: -35px;
+    font-size: 15px;
+    color: grey;
 }
 
 .add_address {

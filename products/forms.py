@@ -16,3 +16,5 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'add-product-form-input'
+        for field in self.fields:
+            self.fields[field].required = True

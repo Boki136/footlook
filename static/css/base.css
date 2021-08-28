@@ -1819,7 +1819,8 @@ select option[value=""] {
 .nflex {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .btn-edit-details {
   color: #3A4750;
@@ -1864,7 +1865,13 @@ select option[value=""] {
   padding: 5px 30px;
   background: #D72323;
   color: #EEE;
-  margin-top: 25px; }
+  margin-top: 50px; }
+
+label.error {
+  position: absolute;
+  bottom: -35px;
+  font-size: 15px;
+  color: grey; }
 
 .add_address {
   text-align: center;

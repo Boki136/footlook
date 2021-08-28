@@ -102,7 +102,11 @@ All Products
             {% include 'includes/rating_product_page.html' %}
         </div>
         <h4 class='primary-img_link'>{{product.images|first}}</h4>
+        {% if product.images|length == 1 %}
+        <img class='additional_img_hover' src="{{product.images.0}}" alt="{{product.name}}">
+        {% else %}
         <img class='additional_img_hover' src="{{product.images.2}}" alt="{{product.name}}">
+        {% endif %}
     </div>
     {% endfor %}
 </section>

@@ -435,6 +435,8 @@ $(document).ready(function () {
     $('#id_default_country').addClass('hide-arrow-select');
 
 
+
+
     // Enable details editing on profile page
     $('.btn-edit-details').click(function () {
         $(this).parent().parent().find($('.cancel-edit')).show()
@@ -449,7 +451,9 @@ $(document).ready(function () {
         // Submit form on click to update users details
         $('.fa-save').click(function () {
             let formSubmitDetails = $(this).parent().parent().parent().find('form');
+            formSubmitDetails.validate();
             formSubmitDetails.submit();
+            $('#username-error').slideOut()
         });
     })
 
@@ -500,4 +504,10 @@ $(document).ready(function () {
             }
         });
     })
+
+    // Append message for image field on product upload
+
+    $('label[for="id_images"]').append("<h6 class='mt-2 mb-2'>(Please use image URL to upload the image)</h6>")
+
+
 });

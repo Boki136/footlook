@@ -19,6 +19,7 @@ def products_view(request):
     sort = None
     direction = None
     brand_name = None
+    image_list = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -55,7 +56,6 @@ def products_view(request):
             if not query:
                 messages.error(request, "You didn't enter any search terms, try again.")
                 return redirect(reverse('products'))
-
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)
             products = products.filter(queries)
@@ -63,10 +63,10 @@ def products_view(request):
     for product in products:
         image_list = product.images
         image_list = ast.literal_eval(image_list)
+        product.images = image_list
         product_calculation = int(product.price) * 0.011
         product.price = "{:.2f}".format(product_calculation)
-        product.images = image_list
-
+        
     current_sort = f'{sort}_{direction}'
 
     context = {
@@ -83,9 +83,8 @@ def products_view(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product information """
-
     product = get_object_or_404(Product, pk=product_id)
-
+   
     image_list = product.images
     image_list = ast.literal_eval(image_list)
     product_calculation = int(product.price) * 0.011
@@ -102,7 +101,20 @@ def product_detail(request, product_id):
 
 def add_product(request):
     """ Admin add a product to the store """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            test_test = form.save(commit=False)
+            image_test = form.cleaned_data['images']
+            test_test.images = f"['{image_test}']"
+            test_test.save()
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
     template = 'products/add_product.html'
     context = {
         'form': form,

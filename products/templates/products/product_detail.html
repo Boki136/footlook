@@ -8,13 +8,18 @@
 
 <div class="product-detail-wrapper">
     <div class="product-images">
+        {% if product.images|length > 15 %}
+        <img src="{{product.images}}" alt="{{product.name}}">
+        <hr>
+        {% else %}
         <img src="{{product.images|first}}" alt="{{product.name}}">
         <hr>
         <div class="product-images-additional">
             {% for image in product.images %}
-            <img src='{{image}}' alt="">
+            <img src='{{image}}' alt="{{product.name}}">
             {% endfor %}
         </div>
+        {% endif %}
     </div>
 
     <div class="product-details">
