@@ -26,23 +26,21 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, size)
+                messages.success(request,quantity)
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, size)
+                messages.success(request,quantity)
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, size)
+            messages.success(request,quantity)
 
     context = {
         'product': product,
         'image_list': image_list,
-        'quantity': quantity,
     }
 
     request.session['bag'] = bag
     return redirect(redirect_url, context)
-
 
 
 def update_bag(request, item_id):

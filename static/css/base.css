@@ -1624,6 +1624,24 @@ select option[value=""] {
   width: 90%;
   margin: 0 auto; }
 
+.why-sign-up {
+  margin: 30px 0 45px 0; }
+  .why-sign-up h2,
+  .why-sign-up ul {
+    color: #EEE; }
+  .why-sign-up ul {
+    margin-top: 15px;
+    padding: 10px 10px 15px 25px; }
+
+.why-sign-up-reason {
+  font-size: 20px; }
+  .why-sign-up-reason::before {
+    content: '\f14a';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 8px;
+    font-size: 20px;
+    color: #D72323; }
+
 /*************** CHECKOUT SUCCESS **/
 .body-overlay-checkout-success {
   background: #EEE; }
@@ -2417,7 +2435,8 @@ label[for="id_images"]::after {
   .delivery_amount {
     font-size: 18px !important; }
   .allauth-form-inner-content {
-    width: 90%; }
+    width: 90%;
+    padding: 50px 25px; }
   .personal-details,
   .address-details {
     width: 100%; }
