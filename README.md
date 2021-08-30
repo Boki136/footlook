@@ -132,9 +132,10 @@ Back in your settings.py, implement if/else to show correct database based on cu
 Navigate to you gitpod command and log in to heroku using heroku login. After logging in disable static file collecting
 heroku config:set DISABLE_COLLECTSTATIC=1 --app yourappname
 
-Lastyl, add allowed hosts to settings.py 
+Lastyl, add allowed hosts to settings.py & deploy app
 
 ALLOWED_HOSTS = ['yourappname.herokuapp.com', 'localhost']
+To deploy app, commit and push all your files and the input git push heroku master
 
 
 - Setup automatic deployment from your GitHub repository:
@@ -144,9 +145,7 @@ Navigate to the Deploy tab within Heroku, select GitHub as deployment method.
 
 Ensure your GitHub profile is displayed and search for the desired repository. If the wanted repo is visible in the list, select "Connect".
 
-
-
-Click on the ‘Settings' tab:
+Click on the ‘Settings' tab, navigate to web and search for django secret key generator, after taking one paste it in your COnfig Vars back in Heroku under name "SECRET_KEY"
 
 Then select ‘Reveal Config Vars’
 
