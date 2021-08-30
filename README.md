@@ -94,15 +94,17 @@ All wireframes were created in InVision Studio, and all of them were created as 
 
 ## **Deployment**
 
+
 ### <ins>Deployment to Heroku</ins>
 
-- Setup files that Heroku needs to connect correctly:
+
+### 1. Setup files that Heroku needs to connect correctly:
 
 requirements.txt: this files list all the dependencies you have installed on the project
 
 Procfile: Heroku looks to know which file runs the app (delete the blank line at the bottom of Procfile as it may cause problems when running on Heroku).
 
-- Setup Process
+### 2. Setup Process
 
 Go to Heroku, once logged into your dashboard, under New select ‘Create new app’:
 
@@ -116,7 +118,9 @@ Choose the closest region to you & create the app.
 Navigate to resources tab and select Heroku Postgres under "Add-ons". 
 
 Return back to your gitpod console and install dj_database_url & psycopg2-binary
+
 pip3 install dj_database_url 
+
 pip3 install psycopg2-binary  (remember to freeze the requirements pip3 freeze > requirements.txt)
 
 Afterwards, navigate to settings.py. Import dj_database_url & comment out default databse settings, replacing them with postgres database.
@@ -132,34 +136,85 @@ Back in your settings.py, implement if/else to show correct database based on cu
 Navigate to you gitpod command and log in to heroku using heroku login. After logging in disable static file collecting
 heroku config:set DISABLE_COLLECTSTATIC=1 --app yourappname
 
-Lastyl, add allowed hosts to settings.py & deploy app
+Lastly, add allowed hosts to settings.py & deploy app
+
 
 ALLOWED_HOSTS = ['yourappname.herokuapp.com', 'localhost']
+
+
+
 To deploy app, commit and push all your files and the input git push heroku master
 
 
-- Setup automatic deployment from your GitHub repository:
+
+### 3. Setup automatic deployment from your GitHub repository:
 
 Navigate to the Deploy tab within Heroku, select GitHub as deployment method.
 
 
-Ensure your GitHub profile is displayed and search for the desired repository. If the wanted repo is visible in the list, select "Connect".
+Ensure your GitHub profile is displayed and search for the desired repository. If the wanted repo is visible in the list, select "Connect". The select enable automatic deployment
 
-Click on the ‘Settings' tab, navigate to web and search for django secret key generator, after taking one paste it in your COnfig Vars back in Heroku under name "SECRET_KEY"
-
-Then select ‘Reveal Config Vars’
+Click on the ‘Settings' tab, navigate to web and search for django secret key generator, after taking one paste it in your Config Vars back in Heroku under name "SECRET_KEY"
 
 
+### <ins>Static file hosting with AWS</ins>
 
-Enter the variables (from the env.py) file to tell Heroku which variables are required securely:
 
-- IP
-- PORT
-- MONGO_DBNAME
-- MONGO_URI
-- SECRET_KEY
+### 1. Creating account & setup
 
-Back in your Gitpod bash, commit two new files (requirements.txt and Profile) and push to GitHub.
+Navigate to aws.amazon.com & create an account
 
-Back in Heroku, under the Deployment tab, you can now safely 'Enable Automatic Deployment', then 'Deploy Branch'.
-The process should take a minute or two. After it's done, you will get the confirmation "your app is successfully deployed."
+![](media/readme-documentation/deploy-4.png)
+
+After creating an account, navigate to AWS Management Console and under Services tab search for S3
+
+![](media/readme-documentation/deploy-5.png)
+
+Create a new bucket, with all relevant details, ensure you uncheck "Block all public access" & select create bucket at the end of the page.
+
+Afterwards, click into your newly created bucket and under properties tab search for Static website hosting end enable it with filling index.html & error.html to it's respective fields.
+
+![](media/readme-documentation/deploy-6.png)
+
+Next, navigate to premission > Cross-origin resource sharing and copy-paste the below code to the empty block: (note, this can be different in future so please ensure you are using the correct properties)
+
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1630364124616",
+    "Statement": [
+        {
+            "Sid": "Stmt1630364121330",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::footlook/*"
+        }
+    ]
+}
+
+Afterwards, go to Bucket policy, select edit > policy generator, ensuring you fill in all the fields like below & generate policy (you can find your ARN inside bucket policy):
+
+![](media/readme-documentation/deploy-7.png)
+
+Ensure you add slash key onto the end of the resource key.
+
+Lastly navigate to Premission > Access control list and tick list under Everyone (public access)
+
+![](media/readme-documentation/deploy-8.png)
+
+
+### 2. Adding a user
+
+Navigate back to the dashboard > services > IAM
+
+Create a group for users
+
+![](media/readme-documentation/deploy-9.png)
+
+Afterwards, navigate to Policies > Create Policy > JSON tab > import managed policy (search for S3 and import S3 full access policy).
+
+Grab bucket ARN from bucket policy in S3 service and paste to "Resource" back in JSON tab. Preview the policy by filling in name and description & create policy at the end.
+
+Navigate back to Groups > your-group > attach policy & select created one and attach it to the premission policies.
+
+Lastly, naviagte to users tab > create user > fill in name and choose Programmatic access under Access type, and put them to the relevant group. Download csv file containing users access and secret keys. (Make sure yo usave the file securely as it WON'T be possible to download it again after completing the process)
