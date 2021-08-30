@@ -90,3 +90,67 @@ Colour Pallet was determined while re-searching for usual brand colours and dark
 ## **Wireframes**
 
 All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed here [here](media/wireframes).
+
+
+## **Deployment**
+
+### <ins>Deployment to Heroku</ins>
+
+- Setup files that Heroku needs to connect correctly:
+
+requirements.txt: this files list all the dependencies you have installed on the project
+
+Procfile: Heroku looks to know which file runs the app (delete the blank line at the bottom of Procfile as it may cause problems when running on Heroku).
+
+- Setup Process
+
+Go to Heroku, once logged into your dashboard, under New select ‘Create new app’:
+
+![](media/readme-documentation/deploy-3.png)
+
+Create app name (name must be unique, I would recommend using minus symbol instead of spaces.
+Choose the closest region to you & create the app.
+
+![](media/readme-documentation/deploy-1.png)
+
+Navigate to resources tab and select Heroku Postgres under "Add-ons". 
+
+Return back to your gitpod console and install dj_database_url & psycopg2-binary
+pip3 install dj_database_url 
+pip3 install psycopg2-binary  (remember to freeze the requirements pip3 freeze > requirements.txt)
+
+Afterwards, navigate to settings.py. Import dj_database_url & comment out default databse settings, replacing them with below.
+You can grab database URL from heroku app under "settings" > reveal config vars > DATABASE_URL
+
+![](media/readme-documentation/deploy-2.png)
+
+Afterwards,  run migrations with gitpod command line. Load fixtures & create a superuser.
+
+
+- Setup automatic deployment from your GitHub repository:
+
+Navigate to the Deploy tab within Heroku, select GitHub as deployment method.
+
+
+Ensure your GitHub profile is displayed and search for the desired repository. If the wanted repo is visible in the list, select "Connect".
+
+
+
+Click on the ‘Settings' tab:
+
+Then select ‘Reveal Config Vars’
+
+
+
+Enter the variables (from the env.py) file to tell Heroku which variables are required securely:
+
+- IP
+- PORT
+- MONGO_DBNAME
+- MONGO_URI
+- SECRET_KEY
+
+Back in your Gitpod bash, commit two new files (requirements.txt and Profile) and push to GitHub.
+
+Back in Heroku, under the Deployment tab, you can now safely 'Enable Automatic Deployment', then 'Deploy Branch'.
+The process should take a minute or two. After it's done, you will get the confirmation "your app is successfully deployed."

@@ -29,7 +29,7 @@ class Product(models.Model):
     rrp = models.DecimalField(max_digits=8, decimal_places=2)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    images = models.CharField( max_length=254, null=True, blank=True)
+    images = models.CharField(max_length=754, null=True, blank=True)
     brand = models.CharField(max_length=254, null=True)
     discount = models.DecimalField(max_digits=8, decimal_places=2, null=True)
 
