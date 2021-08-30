@@ -119,12 +119,22 @@ Return back to your gitpod console and install dj_database_url & psycopg2-binary
 pip3 install dj_database_url 
 pip3 install psycopg2-binary  (remember to freeze the requirements pip3 freeze > requirements.txt)
 
-Afterwards, navigate to settings.py. Import dj_database_url & comment out default databse settings, replacing them with below.
+Afterwards, navigate to settings.py. Import dj_database_url & comment out default databse settings, replacing them with postgres database.
 You can grab database URL from heroku app under "settings" > reveal config vars > DATABASE_URL
+
+
+Afterwards,  run migrations with gitpod command line. Load fixtures & create a superuser.
+
+Back in your settings.py, implement if/else to show correct database based on current hosting & install gunicorn with pip command
 
 ![](media/readme-documentation/deploy-2.png)
 
-Afterwards,  run migrations with gitpod command line. Load fixtures & create a superuser.
+Navigate to you gitpod command and log in to heroku using heroku login. After logging in disable static file collecting
+heroku config:set DISABLE_COLLECTSTATIC=1 --app yourappname
+
+Lastyl, add allowed hosts to settings.py 
+
+ALLOWED_HOSTS = ['yourappname.herokuapp.com', 'localhost']
 
 
 - Setup automatic deployment from your GitHub repository:
