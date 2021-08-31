@@ -261,3 +261,5 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
+
+Navigate to S3 bucket > Objects tab > Create folder and add media folder, ensure all the files are uploaded. Under Access control list (ACL) select Grant public-read access and then upload.
