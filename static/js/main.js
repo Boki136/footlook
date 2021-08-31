@@ -1,11 +1,9 @@
 $(document).ready(function () {
 
-
     // Enable all tooltips 
     $('[data-toggle="tooltip"]').tooltip();
 
-
-    // Replace brand with dropdown
+    // Replace brand with dropdown on add product form
 
     $('#id_brand').replaceWith(`
     <select name="brand" class="add-product-form-input" id="id_brand">
@@ -89,7 +87,7 @@ $(document).ready(function () {
     })
 
 
-    // Show basket on icon click
+    // Show basket on icon click & close handler
     $('.shopping-bag-wrapper').click(function () {
         $('.bag_wrapper').animate({
             width: 'toggle'
@@ -144,7 +142,6 @@ $(document).ready(function () {
 
     // Show sort by filter on hover only screens > 1200
     if ($(window).width() > 990) {
-
         $('.sort-filter').mouseover(function () {
             $('.filter-box').fadeIn(200);
         })
@@ -156,11 +153,9 @@ $(document).ready(function () {
         $('.product-listing-wrapper, .brand-box-wrapper').mouseover(function () {
             $('.filter-box').fadeOut(200);
         })
-
     }
 
     // prepend social footer icons on screen < 1200px
-
     if ($(window).width() < 1200) {
         $('.footer-social').insertAfter($('.footer-seperator'));
         $('.footer-social').css('margin-right', '0');
@@ -219,26 +214,24 @@ $(document).ready(function () {
     $('.person-info-card:eq(0)').mouseover(function () {
         $('.review_one').show();
         $('.review_two, .review_three').hide();
-    })
+    });
 
     $('.person-info-card:eq(1)').mouseover(function () {
         $('.review_two').show();
         $('.review_one, .review_three').hide();
-
-    })
+    });
 
     $('.person-info-card:eq(2)').mouseover(function () {
         $('.review_three').show();
         $('.review_one, .review_two').hide();
-
-    })
+    });
 
     // Show shop now button when hovering over category
     $('.category-box').mouseover(function () {
         $(this).find(".background-overlay").addClass('category-opacity')
         $(this).find('a').show().animate({
             left: '55%',
-        })
+        });
     }).mouseleave(function () {
         $(this).find('a').hide();
         $(this).find('a').animate({
@@ -246,8 +239,7 @@ $(document).ready(function () {
         })
         $(this).find(".background-overlay").removeClass('category-opacity');
 
-    })
-
+    });
 
     // Update Price On quantity changes
     let product_count = $('.product-box');
@@ -270,7 +262,6 @@ $(document).ready(function () {
     }
 
     // Prevent keyboard input to basket qty field & paste function
-
     function preventNumberInput(e) {
         var keyCode = (e.keyCode ? e.keyCode : e.which);
         if (keyCode > 47 && keyCode < 58 || keyCode > 95 && keyCode < 107) {
@@ -291,19 +282,16 @@ $(document).ready(function () {
     // Update / calculate totals on product qty change
 
     $('.qty_input_bag').change(function () {
-
         let item_quantity_in_bag = $(this).parent().parent().parent().parent().find($('.item_quantity_original'));
         item_quantity_in_bag = item_quantity_in_bag.html();
-
         update_price();
-        calculate_basket_total()
-    })
+        calculate_basket_total();
+    });
 
     // Calculate basket total
 
     function calculate_basket_total() {
-
-        let product_total = $('.product-total')
+        let product_total = $('.product-total');
         let all_total_array = [];
         for (i = 0; i < product_total.length; i++) {
             all_total_array.push(parseFloat($('.product-total:eq(' + parseInt(i) + ')').text()));
@@ -323,7 +311,6 @@ $(document).ready(function () {
             $('.delivery_amount').html("FREE");
             $('.delivery_treshold').hide();
         }
-
         $('.basket-total').html(parseFloat(basket_total).toFixed(2));
     }
 
@@ -332,7 +319,7 @@ $(document).ready(function () {
     // Calculate amount of items in the bag
 
     function calculate_items_in_basket() {
-        let items_total = $('.qty_input_bag')
+        let items_total = $('.qty_input_bag');
         let all_items_total_qty = [];
         for (i = 0; i < items_total.length; i++) {
             all_items_total_qty.push(parseFloat($('.qty_input_bag:eq(' + parseInt(i) + ')').val()));
@@ -352,17 +339,15 @@ $(document).ready(function () {
     $('.qty_input_bag').change(calculate_items_in_basket);
 
     // Shoe size selection
-
     $('.size_selector').click(function () {
         let size_selected = $(this).html()
         $('.size_selector').removeClass('selected_box');
         $(this).addClass('selected_box');
         $('.product_size').val(size_selected);
         $('.product_size').attr('data-product_size', size_selected);
-    })
+    });
 
     // Make product size selection required
-
     $('#add_to_bag').click(function (e) {
         $('.warning_message').remove();
         let size_button = $('.size_selector').hasClass('selected_box');
@@ -399,7 +384,6 @@ $(document).ready(function () {
     
     
                 <div class="shop_by_brand">
-    
                     <h4>Shop by Brand:</h4>
                     <a href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
                     <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
@@ -408,7 +392,6 @@ $(document).ready(function () {
             </div>`)
             }
         }, 1);
-
         $(this).closest($('.product-box')).remove();
     })
 
@@ -463,7 +446,7 @@ $(document).ready(function () {
             let formSubmitDetails = $(this).parent().parent().parent().find('form');
             formSubmitDetails.validate();
             formSubmitDetails.submit();
-            $('#username-error').slideOut()
+            $('#username-error').slideOut();
         });
     })
 
@@ -522,24 +505,20 @@ $(document).ready(function () {
         "data-placement": "top",
         "title": "Please use URL for upload"
     });
-
     $('#id_discount').prev().attr({
         "data-toggle": "tooltip",
         "data-placement": "top",
         "title": "Please enter 0 if no discount"
     });
-
     $('#id_rating').attr({
         'max': 5,
         'min': 1
-    })
-
+    });
     $('#add-product_form').submit(function () {
         $(this).validate();
-    })
+    });
 
     // Prompt User to ask if they want to delete the product
-
     $('.remove_product').click(function (e) {
         e.preventDefault();
         href = $(this).attr('href')

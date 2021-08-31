@@ -7,7 +7,31 @@ We offer all our users ability to preview their orders and securely checkout out
 
 
 
-### **The live site can be viewed [here](https://jobbing-hiring-app.herokuapp.com/)**.
+### **The live site can be viewed [here](https://footlook.herokuapp.com/)**.
+
+
+
+## **Login credentials for the website:**
+
+
+### _Admin_
+
+username: admin
+
+Password: Delta2021!
+
+email: someemail@email.com
+
+### _Basic User_
+
+username: basicuser
+
+password: Delta2021!
+
+email: otheremail@email.com
+
+
+
      
 
 # **Table Of Contents:**
@@ -34,7 +58,7 @@ We offer all our users ability to preview their orders and securely checkout out
     - Post a job page
     - Edit a job page
 
-  - **Acknowledgements**
+
 
 - **Technologies & Resources Used**
 
@@ -52,6 +76,8 @@ We offer all our users ability to preview their orders and securely checkout out
   - Bugs
   - Deployment
 
+- **Acknowledgements**
+
 # **UX**
 
 The website is designed with simplicity & effectiveness in mind, allowing users to quickly preview desired products and checkout within minutes. All product content is clearley structured and very thorough. Design is very clear and consistent which helps the user to navigate through the website with ease. Upon each user action, system either informs them or asks for the premission (deleting product off the basket/checkout. Adding to basket etc.)
@@ -68,7 +94,7 @@ For this project, I wanted to build an e-commerce website, but I was unsure at t
 - Allow users to log-in using social media accounts.
 - Creating tracking system within the profile page
 - Implementing auto-address plug in to help the users to quickly fill in their details
-- Adding more products and batter filtering system (shoe color, size etc.)
+- Adding more products and better filtering system (shoe color, size etc.)
 - Real life inventory 
 
 ### **User Stories**
@@ -90,6 +116,107 @@ Colour Pallet was determined while re-searching for usual brand colours and dark
 ## **Wireframes**
 
 All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed here [here](media/wireframes).
+
+
+# **Features & Pages**
+
+The website consists of 8 unique pages:
+
+- Homepage
+- Category Page
+- Product Detail Page
+- Profile Page
+- Contact Us Page
+- Checkout
+- Checkout Success Page
+- Allauth templates (signup, log-in, sign-out etc.)
+- Add & Edit product page (storeowner only)
+
+
+<ins>_Navigation_</ins>
+
+The navigation bar consists of logo, category links (men, women & brands), search bar, basket & profile icons.
+
+Profile icon shows login & register on hover if user is logged-out. Otherwise, it displays red circle to signal user is logged in and on click it redirects to the profile page.
+
+Mobile version navigation has a company logo and hamburger menu with the same structure as large navigation. Additionaly it shows social icons & logout icon at the bottom left corner.
+
+<ins>_Footer_</ins>
+
+Footer consists of quick links & shop links (categories & brands). It also has newsletter signup, social icons, copyright bar and accepted cards icons.
+
+
+<ins>_Homepage_</ins>
+
+The homepage is divided into four sections:
+
+- _Hero Section_: This consists of the background image, title, subtitle, call to action (shop now) and social icons.
+- _New Arrivalse_: This section showcases a carousel with 10 new arrivals where users can click into a desired product.
+- _Testimonials_: This consists of three top testimonials and it servers great as a trust builder.
+- _Shop By Category_: This section emphasizes shopping accross different categories.
+
+
+<ins>_Category Page_</ins>
+
+Brands are display at the top of the page enabling users to shop for a specific brand.
+Underneath, users can find total product found statement and filtering system from which they can sort products by rating, price (low-high) & vice versa.
+
+Below the two, users can find a list of products which changes based of the way users shop.
+
+
+<ins>_Product Detail Page_</ins>
+
+
+This page consist of all product details.
+Primary and additional images. Brand logo, title, rating, sku, available sizes, description, rrp & current price. Add to bag CTA & product management (only for storeowners)
+
+Product management enables storeowners to edit a product or remove it. By selecting remove button. Confirmation module is launched to double-check if users are sure to proceed and prevent accidental click.
+
+<ins>_Profile Page_</ins>
+
+Top bar shows users username, signout button & product management CTA (only for storeowners, this button leads to 'add a product' form).
+Below, user can preview & edit their Personal & Shipping details. 
+
+At the form submission for personal details,
+below checks are made:
+
+1. if the username exists already (Django returns the error meassage).
+2. if the same username used (Django returns warning message).
+3. if empty string is posted (Javascript validation not allowing users to submit empty form, in case that fails Django will return error message).
+
+At the form submission for shipping details, below checks are made:
+
+1. If any of the feilds except address line 2 and phone number are submitted (Django returns an error message).
+2. If default contry text is submitted (Django returns an error message).
+
+Underneath user details, user can preview order history and by clicking more info, they can see detailed information in the pop-up.
+
+Lastly, users have the option to delete their account by selecting delete button. Confirmation module is launched to double-check if users are sure to proceed and prevent accidental click.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## **Deployment**
