@@ -217,4 +217,39 @@ Grab bucket ARN from bucket policy in S3 service and paste to "Resource" back in
 
 Navigate back to Groups > your-group > attach policy & select created one and attach it to the premission policies.
 
-Lastly, naviagte to users tab > create user > fill in name and choose Programmatic access under Access type, and put them to the relevant group. Download csv file containing users access and secret keys. (Make sure yo usave the file securely as it WON'T be possible to download it again after completing the process)
+Lastly, navigate to users tab > create user > fill in name and choose Programmatic access under Access type, and put them to the relevant group. Download csv file containing users access and secret keys. (Make sure you save the file securely as it WON'T be possible to download it again after completing the process).
+
+### <ins>Connecting S3 bucket to django</ins>
+
+Install boto3 & djnago storages with pip command, and add 'storages' to the list of installed apps in settings.py
+
+Add bucket config to settings.py, and add AWS_ACCESS_KEY_ID & AWS_SECRET_ACCESS_KEY from downloaded file to heroku config vars.
+Also add USE_AWS and set it to True
+
+|**Key**|**Value**|
+|:-----|:-----|
+|AWS_STORAGE_BUCKET_NAME|`variable goes here`|
+|AWS_S3_REGION_NAME|`variable goes here`|
+|AWS_ACCESS_KEY_ID|`added by Heroku when Postgres installed`|
+|AWS_SECRET_ACCESS_KEY|`variable goes here`|
+|AWS_S3_CUSTOM_DOMAIN|`variable goes here`|
+
+Create seperate python file and add 2 custom clases (media & static ) for storage location
+Add Below to settings.py
+
+|**Key**|**Value**|
+|:-----|:-----|
+|STATICFILES_STORAGE|`file.className`|
+|STATICFILES_LOCATION|`folder name`|
+|DEFAULT_FILE_STORAGE|`file.className`|
+|MEDIAFILES_LOCATION|`folder name`|
+
+Lastly, override current STATIC & MEDIA URL
+
+|**Key**|**Value**|
+|:-----|:-----|
+|STATIC_URL|`f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'`|
+|MEDIA_URL|`f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'`|
+
+
+
