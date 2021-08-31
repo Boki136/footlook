@@ -31,9 +31,6 @@ password: Delta2021!
 email: otheremail@email.com
 
 
-
-     
-
 # **Table Of Contents:**
 
 - **UX**
@@ -58,16 +55,13 @@ email: otheremail@email.com
     - Post a job page
     - Edit a job page
 
-
-
 - **Technologies & Resources Used**
 
   - Languages Used
-  - Frameworks & Processors
+  - Libraries and Frameworks
   - Workspace, version control and Repository storage
-  - Integrations
-  - Resources & Media
-
+  - Tools
+  
 - **Testing & Deployment**
   - Validation & API testing
   - Testing Users Stories
@@ -117,6 +111,7 @@ Colour Pallet was determined while re-searching for usual brand colours and dark
 
 All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed here [here](media/wireframes).
 
+[^ Back To Top ](#footlook)
 
 # **Features & Pages**
 
@@ -126,7 +121,6 @@ The website consists of 8 unique pages:
 - Category Page
 - Product Detail Page
 - Profile Page
-- Contact Us Page
 - Checkout
 - Checkout Success Page
 - Allauth templates (signup, log-in, sign-out etc.)
@@ -166,7 +160,6 @@ Below the two, users can find a list of products which changes based of the way 
 
 <ins>_Product Detail Page_</ins>
 
-
 This page consist of all product details.
 Primary and additional images. Brand logo, title, rating, sku, available sizes, description, rrp & current price. Add to bag CTA & product management (only for storeowners)
 
@@ -191,32 +184,98 @@ At the form submission for shipping details, below checks are made:
 
 Underneath user details, user can preview order history and by clicking more info, they can see detailed information in the pop-up.
 
+Also, if users have shipping details saved they will be pre-filled in the checkout form allowing faster checkout.
+
 Lastly, users have the option to delete their account by selecting delete button. Confirmation module is launched to double-check if users are sure to proceed and prevent accidental click.
 
 
+<ins>_Basket sidebar_</ins>
+
+Basket sidebar is available across the store. If there are products in the basket, it cotains of total product count, added products and their details, delivery charge, basket subtotal and checkout CTA. If there are no products in the basket, message 'no products in the basket' is displaying togeather with shop by category and brand links.
+
+Basket is created in a way to allow users to edit quantities & remove products without refreshing the page which is all submitted with Ajax and available instantly.
 
 
+<ins>_Checkout page_</ins>
+
+This page consist of header with Secure checkout title & back to shopping CTA.
+
+Two sections:
+
+- User shipping details form, payment box.
+- Order brakedown with subtotal, delivery charge & order total.
+
+Users also have the option to save the delivery details to their profile (if logged-in) or create account / sign-in if logged-out.
+
+Upon placing order, users are presented with loading animation to inform them that order is processing. In case order form fails or users close their browser or refresh webooks are handling the order creation and ensuring everything still works.
+
+<ins>_Checkout success_</ins>
+
+This page consists of order confirmation message, order details, products ordered details & customer details. 
 
 
+<ins>_Allauth User Autentication pages_</ins>
+
+All the pages are populated with allauth package. Bespoke styling has been added to all templates to match with the current store theme.
 
 
+<ins>_Add/Edit pages_</ins>
+
+Both pages consist of the same form, but the difference is in the logic. Add a product form is empty and it's allowing the storeowner to add new products to the store.
+
+Edit a product form is prepopulated with the selected product (accessing through product detail page) allowing users to change current product.
+
+[^ Back To Top ](#footlook)
 
 
+# Technologies Used
+
+## Languages
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python](https://www.python.org/)
+
+## Libraries and Frameworks 
+
+### Front-End Technologies
+- [jQuery](https://jquery.com/) 
+- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com/)   
+- [Font Awesome](https://fontawesome.com/)
+- [Jquery loading.js](https://carlosbonetti.github.io/jquery-loading/)
+- [AOS.js](https://michalsnik.github.io/aos/)
+- [Jquery validate.js](https://jqueryvalidation.org/)
+- [Jquery confirm.js](https://craftpip.github.io/jquery-confirm/)
+
+ 
+### Back-End Technologies
+- [Django](https://www.djangoproject.com/)
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) 
+- [Pillow](https://pypi.org/project/Pillow/) 
+- [Gunicorn](https://gunicorn.org/) 
+- [Stripe](https://stripe.com/en-nl)
+
+## Workspace, version control, repository storage & database
+
+- [GitHub](https://github.com/)
+- [GitPod](https://gitpod.io/)
+- [Heroku](https://www.heroku.com)
+- [Heroku PostgreSQL](https://elements.heroku.com/addons/heroku-postgresql)
+- [AWS S3 Basket](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3.html)
 
 
+## Tools
+- [Autoprefixer](https://autoprefixer.github.io/) 
+- [InVision Studio](https://figma.com) 
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)  
+- [W3C Markup Validation Service](https://validator.w3.org/)  
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)  
+- [Am I Responsive?](http://ami.responsivedesign.is/) 
+- [Canva](https://www.canva.com/)
 
 
-
-
-
-
-
-
-
-
-
-
-
+[^ Back To Top ](#footlook)
 
 
 ## **Deployment**
@@ -392,3 +451,5 @@ if 'USE_AWS' in os.environ:
 Navigate to S3 bucket > Objects tab > Create folder and add media folder, ensure all the files are uploaded. Under Access control list (ACL) select Grant public-read access and then upload.
 
 As a last step, grab keys from STRIPE and add them to Heroku config vars
+
+[^ Back To Top ](#footlook)
