@@ -263,3 +263,5 @@ if 'USE_AWS' in os.environ:
     }
 
 Navigate to S3 bucket > Objects tab > Create folder and add media folder, ensure all the files are uploaded. Under Access control list (ACL) select Grant public-read access and then upload.
+
+As a last step, grab keys from STRIPE and add them to Heroku config vars
