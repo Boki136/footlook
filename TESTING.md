@@ -2,7 +2,7 @@
  
 ## **Table Of Contents:**
 1. [Responsive Testing](#responsive-testing) 
-2. [Automated Testing](#automated-testing) 
+2. [Validation Testing](#automated-testing) 
 3. [Manual Testing](#manual-testing) 
 4. [Bugs](#bugs) 
  
@@ -69,3 +69,26 @@ Small changes around product details section. Product info placed under image.
     - Moved product management to it's own line
     - Reduced font size of form labels
     - Changed order info popup to position absolute and set height to 100% to remove bug with visibility
+
+
+### **Validation Testing**
+
+#### **HTML Validation**
+
+
+- Homepage Validation_
+
+Homepage returned a lot of errors mainly around spaces in href attribute and some typos
+
+![](media/readme-documentation/html-v-1.png)
+
+All the errors are resloved
+
+- _Category Page Validation_
+
+
+Category page returned a couple of errors regarding space in href atrributes & a tag not allowed to be child of ul tag
+
+![](media/readme-documentation/html-v-2.png)
+
+All the errors are resloved

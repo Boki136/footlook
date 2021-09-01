@@ -1554,7 +1554,7 @@ h1 {
 
     div,
     a,
-    h1 {
+    h2 {
         display: none
     }
 
@@ -1562,11 +1562,12 @@ h1 {
         text-decoration: none;
     }
 
-    h1 {
+    h2 {
         position: absolute;
         bottom: 0;
         right: 20px;
         font-size: 50px;
+        font-family: 'Bebas Neue', cursive;
 
         span {
             font-size: 35px;
@@ -1951,9 +1952,10 @@ h1 {
     width: 50%;
 
 
-    h1 {
+    h2 {
         color: $paper-white;
         font-size: 3em;
+        font-family: 'Bebas Neue', cursive;
     }
 
     hr {
@@ -3187,7 +3189,7 @@ label[for="id_images"] {
 
         div,
         a,
-        h1 {
+        h2 {
             display: block;
         }
     }
@@ -3276,7 +3278,7 @@ label[for="id_images"] {
         height: 0;
     }
 
-    .learn-more-wrapper h1 {
+    .learn-more-wrapper h2 {
         bottom: 10px;
     }
 
@@ -3667,7 +3669,7 @@ label[for="id_images"] {
         }
     }
 
-    .learn-more-wrapper h1 {
+    .learn-more-wrapper h2 {
         bottom: 14px;
     }
 
@@ -3827,7 +3829,7 @@ label[for="id_images"] {
         width: 100%;
     }
 
-    .learn-more-wrapper h1 {
+    .learn-more-wrapper h2 {
         font-size: 40px;
 
         span {

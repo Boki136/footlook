@@ -2,8 +2,7 @@
     <nav class="navbar navbar-expand-xl d-flex">
         <div class="container-fluid nav-content-wrapper">
             <a href="{% url 'home' %}"><img class="navbar-brand" src="{{ MEDIA_URL }}logo.png" alt='logo-img' /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
             </button>
             <div class="collapse navbar-collapse">
@@ -21,8 +20,8 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark brand-submenu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="{% url 'products' %}?brand=ORIGINALS">Originals</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=CORE%20/%20NEO">CORE / NEO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?brand=SPORT%20PERFORMANCE">Sport Performance</a></li>
                         </ul>
                     </li>
                 </ul>

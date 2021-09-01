@@ -1115,16 +1115,17 @@ h1 {
   position: relative; }
   .learn-more-wrapper div,
   .learn-more-wrapper a,
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     display: none; }
   .learn-more-wrapper a {
     text-decoration: none; }
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     position: absolute;
     bottom: 0;
     right: 20px;
-    font-size: 50px; }
-    .learn-more-wrapper h1 span {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive; }
+    .learn-more-wrapper h2 span {
       font-size: 35px;
       position: relative;
       bottom: 10px;
@@ -1400,9 +1401,10 @@ h1 {
 
 .footer-links-section {
   width: 50%; }
-  .footer-links-section h1 {
+  .footer-links-section h2 {
     color: #EEE;
-    font-size: 3em; }
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive; }
   .footer-links-section hr {
     color: #D72323;
     height: 1px;
@@ -2261,7 +2263,7 @@ label[for="id_images"]::after {
     padding: 200px 50px 100px 50px; }
   .learn-more-wrapper div,
   .learn-more-wrapper a,
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     display: block; }
   .category-box a {
     display: block; }
@@ -2313,7 +2315,7 @@ label[for="id_images"]::after {
     left: 10px;
     right: unset;
     height: 0; }
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     bottom: 10px; }
   .social-sidebar,
   .hr-align {
@@ -2530,7 +2532,7 @@ label[for="id_images"]::after {
       width: 100%; }
   #shipping-details-update label {
     font-size: 16px; }
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     bottom: 14px; }
   .product-slider_item img {
     width: 300px; }
@@ -2609,9 +2611,9 @@ label[for="id_images"]::after {
     padding: 25px; }
   .product-box_details {
     width: 100%; }
-  .learn-more-wrapper h1 {
+  .learn-more-wrapper h2 {
     font-size: 40px; }
-    .learn-more-wrapper h1 span {
+    .learn-more-wrapper h2 span {
       font-size: 28px; }
   .learn-more-btn {
     padding: 10px 25px;

@@ -34,12 +34,12 @@ All Products
         </a>
     </div>
     <div data-tilt class="brand_box">
-        <a href="{% url 'products' %}?brand=CORE / NEO">
+        <a href="{% url 'products' %}?brand=CORE%20/%20NEO">
             <img src="{{MEDIA_URL}}brand_logo_2.png" alt="core/neo-brand-logo-img">
         </a>
     </div>
     <div data-tilt class="brand_box">
-        <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">
+        <a href="{% url 'products' %}?brand=SPORT%20PERFORMANCE">
             <img src="{{MEDIA_URL}}brand_logo_3.png" alt="sport-performance-brand-logo-img">
         </a>
     </div>
@@ -70,15 +70,23 @@ All Products
         <h4 class='sort-filter'>Sort By (all products)</h4>
         <div class="filter-box">
             <ul>
-                <a href="{% url 'products' %}?sort=price&direction=asc">
-                    <li>Price (low - high)</li>
-                </a>
-                <a href="{% url 'products' %}?sort=price&direction=dsc">
-                    <li>Price (high - low) </li>
-                </a>
-                <a href="{% url 'products' %}?sort=rating">
-                    <li>Rating</li>
-                </a>
+                <li>
+                    <a href="{% url 'products' %}?sort=price&direction=asc">
+                        Price (low - high)
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'products' %}?sort=price&direction=dsc">
+                        Price (high - low)
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'products' %}?sort=rating">
+                        Rating
+                    </a>
+                </li>
+
+
 
             </ul>
         </div>
@@ -97,7 +105,7 @@ All Products
                 <span class='sad'>RRP</span>
                 <h6 class='product-rrp_price'>€{{product.rrp}}</h6>
             </div>
-            <h1 class='product-price'><span>€</span>{{product.price}}</h1>
+            <h2 class='product-price'><span>€</span>{{product.price}}</h2>
         </div>
         <div class="product-card-detail">
             <hr class='product-seperator'>

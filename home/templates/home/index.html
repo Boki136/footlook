@@ -52,7 +52,13 @@
                 <h1 class='product-price'><span>€</span>{{product.price}}</h1>
             </div>
             <h2>{{product.name}}</h2>
+            {% if product.brand == 'CORE / NEO' %}
+            <a href="{% url 'products' %}?brand=CORE%20/%20NEO">{{product.brand}}</a>
+            {% elif product.brand == 'SPORT PERFORMANCE' %}
+            <a href="{% url 'products' %}?brand=SPORT%20/%20PERFORMANCE">{{product.brand}}</a>
+            {% else %}
             <a href="{% url 'products' %}?brand={{product.brand}}">{{product.brand}}</a>
+            {% endif %}
         </div>
         {% endfor %}
     </div>

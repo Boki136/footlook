@@ -5,7 +5,7 @@
         <div class="footer-action">
             <div class="footer-links">
                 <div class="footer-links-section">
-                    <h1>QUICK LINKS</h1>
+                    <h2>QUICK LINKS</h2>
                     <hr>
                     {% if user.is_authenticated %}
                     <ul class="support-links">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="footer-links-section">
-                    <h1>SHOP</h1>
+                    <h2>SHOP</h2>
                     <hr>
 
                     <h5>Categories:</h5>
@@ -41,25 +41,26 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'products' %}?category=women">Women</a>
                         </li>
-                        <div class='brands-footer'>
-                            <h5>Brands:</h5>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
-                            </li>
-                        </div>
+                    </ul>
+
+                    <h5 class='mt-3'>Brands:</h5>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'products' %}?brand=CORE%20/%20NEO">CORE / NEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'products' %}?brand=SPORT%20PERFORMANCE">Sport Performance</a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
             <div class="newsletter-signup">
                 <h2>sign up and get 10% off first order</h2>
-                <form class='newsletter-form' action="">
+                <form class='newsletter-form'>
                     <label class='sr-only' for="email">Email Address</label>
                     <input type="email" id='email' name='email' placeholder="email address">
                     <button type='submit'>SUBSCRIBE</button>
