@@ -278,8 +278,17 @@ Edit a product form is prepopulated with the selected product (accessing through
 [^ Back To Top ](#footlook)
 
 
-## **Deployment**
+# **Testing & Deployment**
 
+
+## **Testing**
+
+The Testing Process has been documented in [TESTING.md file](TESTING.md "TESTING.md File")
+
+
+
+
+## **Deployment**
 
 ### <ins>Deployment to Heroku</ins>
 
@@ -453,3 +462,5 @@ Navigate to S3 bucket > Objects tab > Create folder and add media folder, ensure
 As a last step, grab keys from STRIPE and add them to Heroku config vars
 
 [^ Back To Top ](#footlook)
+
+

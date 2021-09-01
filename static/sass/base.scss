@@ -1052,19 +1052,20 @@ h1 {
 }
 
 .hero-content {
-    padding: 250px 125px;
+    padding: 250px 50px;
     color: $paper-white;
     align-self: flex-start;
 
     p {
-        font-size: 30px;
-        width: 80%;
+        font-size: 25px;
+        width: 100%;
         margin-top: 20px;
     }
 }
 
 .hero-title {
-    font-size: 5em
+    font-size: 5em;
+    margin-bottom: 30px;
 }
 
 .button-element {
@@ -3078,6 +3079,7 @@ label[for="id_images"] {
     .footer-v {
         position: relative;
         bottom: -10px;
+        margin-top: 50px;
     }
 
     .footer-social {
@@ -3186,6 +3188,10 @@ label[for="id_images"] {
         }
     }
 
+    .category-box a {
+        display: block;
+    }
+
     .sort-by-container {
         display: flex;
     }
@@ -3236,6 +3242,13 @@ label[for="id_images"] {
         background: #00000040;
     }
 
+    .category-box h1 {
+        top: 50%;
+        font-size: 55px;
+        width: 100%;
+        text-align: center;
+    }
+
     .overlay-white {
         background-color: #303841;
     }
@@ -3256,7 +3269,7 @@ label[for="id_images"] {
     }
 
     .learn-more-wrapper h1 {
-        bottom: 13px;
+        bottom: 10px;
     }
 
     .social-sidebar,
@@ -3551,6 +3564,26 @@ label[for="id_images"] {
 }
 
 @media only screen and (max-width: 750px) {
+
+    .hero-title {
+        font-size: 3.5em;
+    }
+
+    .nav-icons {
+        width: 85px;
+        height: 85px;
+        top: 155px;
+    }
+
+    .product-price_bubble {
+        height: 150px;
+        width: 150px;
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+
     .copyright-bar-content {
         flex-wrap: wrap;
 
@@ -3607,11 +3640,35 @@ label[for="id_images"] {
     }
 
     .hero-content {
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
 
         p {
             width: 100%;
         }
+    }
+
+    .learn-more-wrapper h1 {
+        bottom: 14px;
+    }
+
+    .product-slider_item img {
+        width: 300px;
+    }
+
+    .slider-navigation {
+        margin-left: 50px;
+
+        h3 {
+            font-size: 22px;
+        }
+
+        img {
+            height: 60px;
+        }
+    }
+
+    .person-details-mobile img {
+        width: 70px;
     }
 
     .product-result-message_mobile {
@@ -3638,11 +3695,6 @@ label[for="id_images"] {
     .sort-filter {
         display: none;
     }
-
-    .slider-navigation {
-        margin-left: 100px;
-    }
-
 
     .filter-box {
 
@@ -3675,7 +3727,7 @@ label[for="id_images"] {
     }
 
     .learn-more-btn {
-        padding: 5px 20px;
+        padding: 10px 25px;
         left: 90px;
     }
 
