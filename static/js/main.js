@@ -20,7 +20,7 @@ $(document).ready(function () {
             position: 'sticky',
             top: 0,
             background: '#303841',
-            'z-index': 1000
+            'z-index': 100000
         })
 
         if ($(this).scrollTop() <= 0) {

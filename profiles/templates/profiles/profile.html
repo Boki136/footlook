@@ -9,12 +9,12 @@
     <div class="checkout-heading_content">
         <h2 class='checkout-heading'>Hi, {{user.username}}!</h2>
         <div class="profile_actions">
-            {% if request.user.is_superuser %}
-            <a class='product-manage_cta' href="{% url 'add_product' %}">Product Management</a>
-            {% endif %}
-            <a class='profile-logout-cta' href="{% url 'account_logout' %}"> Sign Out</a>
+            <a data-toggle="tooltip" data-placement="top" title="Sign Out" class='profile-logout-cta' href="{% url 'account_logout' %}"></a>
         </div>
     </div>
+    {% if request.user.is_superuser %}
+    <a class='product-manage_cta' href="{% url 'add_product' %}">Product Management</a>
+    {% endif %}
 </div>
 
 <section class="profile-details-wrapper">
@@ -92,7 +92,7 @@
     {% for order in orders %}
     <div class="order-details-box">
         <div class="order-details_content">
-            <h4>Order Number: <span>{{order.order_number}}</span></h4>
+            <h4>Order Number: <span>{{order.order_number|truncatechars:10}}</span></h4>
             <h5>Order Date: {{order.date}}</h5>
             <h5>Order Total: €{{order.grand_total}}</h5>
         </div>

@@ -14,7 +14,8 @@
         </div>
         <div class="order-details-wrapper">
             <h3>Order details</h3>
-            <p>Order number:</p><span>{{order.order_number}}</span>
+            <p data-toggle="tooltip" data-placement="top" title="{{order.order_number}}">Order number:</p>
+            <span>{{order.order_number|truncatechars:10}}</span>
             <p>Date:</p><span>{{order.date}}</span>
             <p>Payment method:</p><span>Credit Card</span>
             <br>

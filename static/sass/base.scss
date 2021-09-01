@@ -761,6 +761,7 @@ h1 {
     background: $secondary-black;
     display: none;
     z-index: 1000000;
+    overflow: scroll;
 }
 
 .nav-content_wrapper {
@@ -1507,7 +1508,6 @@ h1 {
 
 .sort-filter {
     font-size: 18px;
-    cursor: pointer;
 
     &::after {
         content: '\f0dd';
@@ -2079,10 +2079,7 @@ h1 {
 .checkout-heading-wrapper {
     background: $paper-white;
     height: 100px;
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 1000000;
 }
 
 .checkout-heading_content {
@@ -2131,7 +2128,6 @@ h1 {
     color: $paper-white;
     text-decoration: none;
     font-size: 20px;
-    background: $primary-black;
     padding: 6px 25px;
 
     &:hover {
@@ -2142,17 +2138,19 @@ h1 {
         content: '\f2f5';
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
-        font-size: 20px;
+        font-size: 35px;
         padding-right: 3px;
+        color: $secondary-black;
     }
 }
 
 .product-manage_cta {
-    margin-right: 50px;
+    margin: 25px auto;
     text-decoration: none;
-    color: $primary-black;
+    color: #303841;
     font-weight: 500;
-
+    width: 90%;
+    display: block;
 
     &::before {
         content: '\f085';
@@ -3275,6 +3273,7 @@ label[for="id_images"] {
         top: 25px;
         left: 10px;
         right: unset;
+        height: 0;
     }
 
     .learn-more-wrapper h1 {
@@ -3496,6 +3495,7 @@ label[for="id_images"] {
     .order-total_wrapper {
         h5 {
             font-size: 1em;
+            margin-bottom: 5px;
         }
 
         h4 {
@@ -3503,7 +3503,7 @@ label[for="id_images"] {
         }
 
         h6 {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
 
@@ -3516,7 +3516,7 @@ label[for="id_images"] {
     }
 
     .smaller_height_checkout {
-        height: 300px;
+        height: 350px;
     }
 
     .delivery_amount {
@@ -3581,7 +3581,7 @@ label[for="id_images"] {
     .nav-icons {
         width: 85px;
         height: 85px;
-        top: 155px;
+        top: 190px;
     }
 
     .product-price_bubble {
@@ -3644,6 +3644,10 @@ label[for="id_images"] {
         width: 200px;
     }
 
+    .mobile-search {
+        width: 90%;
+    }
+
     .fa-bars,
     .fa-times {
         font-size: 35px !important;
@@ -3654,6 +3658,12 @@ label[for="id_images"] {
 
         p {
             width: 100%;
+        }
+    }
+
+    #shipping-details-update {
+        label {
+            font-size: 16px;
         }
     }
 
@@ -3677,6 +3687,33 @@ label[for="id_images"] {
         }
     }
 
+    .newsletter-signup h2 {
+        font-size: 18px;
+    }
+
+    .why-sign-up {
+        ul {
+            padding: 10px 0 15px 0;
+        }
+
+        li {
+            font-size: 18px;
+        }
+    }
+
+    .allauth-form-wrapper {
+        height: auto;
+    }
+
+    .allauth-form-inner-content {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
     .person-details-mobile img {
         width: 70px;
     }
@@ -3696,6 +3733,14 @@ label[for="id_images"] {
             display: none;
         }
 
+    }
+
+    .order-details-popup {
+        position: absolute;
+        width: 100%;
+        padding: 40px 25px 0 25px;
+        overflow: scroll;
+        height: 100%;
     }
 
     .delivery-total h2 {
@@ -3724,7 +3769,7 @@ label[for="id_images"] {
 
         ul {
             li {
-                font-size: 15px;
+                font-size: 14px;
             }
         }
     }
@@ -3751,13 +3796,22 @@ label[for="id_images"] {
     }
 
     .product-box_details {
+
+        h4 {
+            margin-top: 15px !important;
+        }
+
         h3 {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         h5 {
             font-size: 12px;
         }
+    }
+
+    .product-box img {
+        width: 125px;
     }
 
     .add-to-cart-actions {
@@ -3800,8 +3854,10 @@ label[for="id_images"] {
     }
 
     .checkout-heading {
-        font-size: 25px;
+        font-size: 22px;
     }
+
+
 
     .checkout-product_box {
         flex-wrap: wrap;
@@ -3825,6 +3881,14 @@ label[for="id_images"] {
             font-size: 15px;
             width: 80%;
         }
+
+        flex-wrap: wrap;
+    }
+
+    .item_total_summary,
+    .item-size_summary {
+        margin: 0;
+
     }
 
     .order-details-product_box {
