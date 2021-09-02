@@ -26,13 +26,13 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request,quantity)
+                messages.success(request, quantity)
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request,quantity)
+                messages.success(request, quantity)
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request,quantity)
+            messages.success(request, quantity)
 
     context = {
         'product': product,

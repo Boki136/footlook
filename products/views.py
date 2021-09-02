@@ -56,7 +56,8 @@ def products_view(request):
         if 'search_term' in request.GET:
             query = request.GET['search_term']
             if not query:
-                messages.error(request, "You didn't enter any search terms, try again.")
+                messages.error(request,
+                               "You didn't enter any search terms, try again.")
                 return redirect(reverse('products'))
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)
@@ -70,7 +71,7 @@ def products_view(request):
         product.price = "{:.2f}".format(product_calculation)
         rrp_calculation = int(product.rrp) * 0.011
         product.rrp = "{:.2f}".format(rrp_calculation)
-        
+
     current_sort = f'{sort}_{direction}'
 
     context = {
@@ -88,7 +89,7 @@ def products_view(request):
 def product_detail(request, product_id):
     """ A view to show individual product information """
     product = get_object_or_404(Product, pk=product_id)
-   
+
     image_list = product.images
     image_list = ast.literal_eval(image_list)
     product.images = image_list
@@ -132,7 +133,7 @@ def add_product(request):
             return redirect(reverse('add_product'))
         else:
             messages.error(request,
-                    'Failed to add product. Please ensure the form is valid.')
+                           'Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -146,9 +147,10 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the current store """ 
+    """ Edit a product in the current store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners have premission to do that.')
+        messages.error(request,
+                       'Sorry, only store owners have premission to do that.')
         return redirect(reverse('home'))
     product = get_object_or_404(Product, pk=product_id)
 
@@ -163,10 +165,10 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('profile'))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
-    
+
     template = 'products/edit_product.html'
     context = {
         'form': form,
@@ -180,7 +182,8 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners have premission to do that.')
+        messages.error(request,
+                       'Sorry, only store owners have premission to do that.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)

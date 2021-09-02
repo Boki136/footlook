@@ -11,7 +11,7 @@ $(document).ready(function () {
     <option value="CORE / NEO">CORE / NEO</option>
     <option value="SPORT PERFORMANCE">Sport Performance</option>
     </select>
-    `)
+    `);
 
     // Make Navigation Sticky & back to the top of the page
 
@@ -21,12 +21,12 @@ $(document).ready(function () {
             top: 0,
             background: '#303841',
             'z-index': 100000
-        })
+        });
 
         if ($(this).scrollTop() <= 0) {
             $('.navbar').css({
                 background: '#3A4750',
-            })
+            });
         }
 
         if ($(this).scrollTop() > 600) {
@@ -41,21 +41,21 @@ $(document).ready(function () {
 
     $('.arrow-to-top').click(function () {
         $("html").scrollTop(0);
-    })
+    });
 
     // Open Mobile Menu
     $(".navbar-toggler").click(function () {
         $('.mobile_nav').fadeIn(200);
         $('.nav-content-wrapper').css('display', 'none');
         $('.navbar').css('height', '0');
-    })
+    });
 
     // Close Mobile Menu
     $('.fa-times').click(function () {
         $('.mobile_nav').fadeOut(200);
         $('.nav-content-wrapper').show();
-        $('.navbar').css('height', '110px')
-    })
+        $('.navbar').css('height', '110px');
+    });
 
     // Insert HR after each mobile link
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
         $('.social-sidebar').removeClass('rotate_back');
         $('.rotate-selector i').css('transform', 'rotateZ(0deg)');
     }).mouseleave(function () {
-        $('.social-sidebar').addClass('rotate_back');;
+        $('.social-sidebar').addClass('rotate_back');
         $('.rotate-selector i').css('transform', 'rotateZ(90deg)');
     });
 
@@ -76,15 +76,15 @@ $(document).ready(function () {
     $('.profile-icon').mouseover(function () {
         $('.login_modal').fadeIn();
         $('.login_modal').css('position', 'fixed');
-    })
+    });
 
     $('.shopping-bag-wrapper').mouseover(function () {
         $('.login_modal').css('display', 'none');
-    })
+    });
 
     $('.login_modal').mouseleave(function () {
         $(this).fadeOut();
-    })
+    });
 
 
     // Show basket on icon click & close handler
@@ -92,15 +92,13 @@ $(document).ready(function () {
         $('.bag_wrapper').animate({
             width: 'toggle'
         }, 350);
-
         $('body').css('overflow', 'hidden');
         $('.body-overlay').fadeIn();
-
-    })
+    });
 
     $('.close-bag').click(function () {
 
-        $('body').css('overflow', 'scroll')
+        $('body').css('overflow', 'scroll');
         $('.bag_wrapper').animate({
             width: 'toggle'
         }, 150);
@@ -114,16 +112,16 @@ $(document).ready(function () {
             $(this).find('.learn-more-wrapper').children().fadeIn(100);
         }).mouseleave(function () {
             $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price, .product-rrp_main').fadeOut(100);
-        })
+        });
 
         $('.product-card').mouseover(function () {
-            var second_image = $(this).find('.additional_img_hover').attr('src');
-            $(this).find('.primary_img').attr('src', second_image);
+            var secondImage = $(this).find('.additional_img_hover').attr('src');
+            $(this).find('.primary_img').attr('src', secondImage);
 
         }).mouseleave(function () {
-            var first_img = $(this).find('.primary-img_link').html()
+            var first_img = $(this).find('.primary-img_link').html();
             $(this).find('.primary_img').attr('src', first_img);
-        })
+        });
 
     }
 
@@ -144,15 +142,15 @@ $(document).ready(function () {
     if ($(window).width() > 990) {
         $('.sort-filter').mouseover(function () {
             $('.filter-box').fadeIn(200);
-        })
+        });
 
         $('.product-tools-wrapper').mouseleave(function () {
             $('.filter-box').fadeOut(200);
-        })
+        });
 
         $('.product-listing-wrapper, .brand-box-wrapper').mouseover(function () {
             $('.filter-box').fadeOut(200);
-        })
+        });
     }
 
     // prepend social footer icons on screen < 1200px
@@ -163,9 +161,9 @@ $(document).ready(function () {
 
     // Show additional image on click
     $('.product-images-additional img').click(function () {
-        let image_url = $(this).attr('src');;
+        let image_url = $(this).attr('src');
         $('.product-images img:eq(0)').attr('src', `${image_url}`);
-    })
+    });
 
     // Transition for next button on homepage slider
 
@@ -173,13 +171,13 @@ $(document).ready(function () {
         $('.slider-navigation img').css({
             left: '15px',
             position: 'relative'
-        })
+        });
     }).mouseleave(function () {
         $('.slider-navigation img').css({
             left: '0',
             position: 'relative'
-        })
-    })
+        });
+    });
 
 
     // Homepage Category slider, move to right on click
@@ -197,7 +195,7 @@ $(document).ready(function () {
         let imgWidth = parseInt($(".product-slider-container img").css("width")) + 25;
         $(".product-slider-container").animate({
             marginLeft: moveValue - imgWidth + 'px'
-        })
+        });
         $(".slider-navigation").unbind("click");
         $(".slider-navigation").unbind("click");
         setTimeout(function () {
@@ -228,7 +226,7 @@ $(document).ready(function () {
 
     // Show shop now button when hovering over category
     $('.category-box').mouseover(function () {
-        $(this).find(".background-overlay").addClass('category-opacity')
+        $(this).find(".background-overlay").addClass('category-opacity');
         $(this).find('a').show().animate({
             left: '55%',
         });
@@ -236,7 +234,7 @@ $(document).ready(function () {
         $(this).find('a').hide();
         $(this).find('a').animate({
             left: '50%',
-        })
+        });
         $(this).find(".background-overlay").removeClass('category-opacity');
 
     });
@@ -305,7 +303,7 @@ $(document).ready(function () {
         if (basket_total < 75) {
             basket_total = basket_total + 6.99;
             $('.delivery_treshold').show();
-            $('.delivery_treshold span').html(parseFloat((75 - basket_total) + 6.99).toFixed(2))
+            $('.delivery_treshold span').html(parseFloat((75 - basket_total) + 6.99).toFixed(2));
         } else if (basket_total >= 75) {
             basket_total = basket_total;
             $('.delivery_amount').html("FREE");
@@ -340,7 +338,7 @@ $(document).ready(function () {
 
     // Shoe size selection
     $('.size_selector').click(function () {
-        let size_selected = $(this).html()
+        let size_selected = $(this).html();
         $('.size_selector').removeClass('selected_box');
         $(this).addClass('selected_box');
         $('.product_size').val(size_selected);
@@ -353,7 +351,7 @@ $(document).ready(function () {
         let size_button = $('.size_selector').hasClass('selected_box');
         if (size_button == false) {
             e.preventDefault();
-            $('.product-action').append(`<h5 class='warning_message'>Please select the size</h5>`)
+            $('.product-action').append(`<h5 class='warning_message'>Please select the size</h5>`);
             $('.warning_message').fadeOut(4000);
         } else if (size_button == true) {
             $('#add_to_bag').submit();
@@ -389,11 +387,11 @@ $(document).ready(function () {
                     <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
                     <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
                 </div>
-            </div>`)
+            </div>`);
             }
         }, 1);
         $(this).closest($('.product-box')).remove();
-    })
+    });
 
     // Remove message after 3 seconds
     $('.message-wrapper').delay(2000).fadeOut(400);
@@ -417,7 +415,7 @@ $(document).ready(function () {
         <i class="fas fa-plus"></i>
         <p>Add a new shipping address</p>
         </div>
-        `)
+        `);
         $('.address-details').find($('.fa-pen')).hide();
     }
 
@@ -432,7 +430,7 @@ $(document).ready(function () {
 
     // Enable details editing on profile page
     $('.btn-edit-details').click(function () {
-        $(this).parent().parent().find($('.cancel-edit')).show()
+        $(this).parent().parent().find($('.cancel-edit')).show();
         $(this).parent().parent().find($('form input, form select')).removeAttr('disabled');
         $(this).html(('<i class="fas fa-save"></i>'));
         $(this).addClass('edit-details-btn');
@@ -448,7 +446,7 @@ $(document).ready(function () {
             formSubmitDetails.submit();
             $('#username-error').slideOut();
         });
-    })
+    });
 
     // Cancel any changes
     $('.cancel-edit').click(function () {
@@ -464,7 +462,7 @@ $(document).ready(function () {
         $('#shipping-details-update').show();
         $('.address-details').find($('.fa-pen')).show();
         $(this).hide();
-    })
+    });
 
     // Open order details popup
 
@@ -472,13 +470,13 @@ $(document).ready(function () {
         $(this).parent().next().fadeIn(300);
         $('.body-overlay').show();
         $('body').css('overflow-y', 'hidden');
-    })
+    });
 
     $('.close-order-popup').click(function () {
         $(this).parent().parent().hide();
         $('.body-overlay').hide();
         $('body').css('overflow-y', 'scroll');
-    })
+    });
 
     // Prompt to ask the user if the want to delete the profile
 
@@ -496,7 +494,7 @@ $(document).ready(function () {
                 }
             }
         });
-    })
+    });
 
     // Append message for image field on product upload
 
@@ -521,7 +519,7 @@ $(document).ready(function () {
     // Prompt User to ask if they want to delete the product
     $('.remove_product').click(function (e) {
         e.preventDefault();
-        href = $(this).attr('href')
+        href = $(this).attr('href');
         $.confirm({
             closeIcon: true,
             closeIconClass: 'fa fa-close',
@@ -530,10 +528,10 @@ $(document).ready(function () {
             buttons: {
                 confirm: function () {
                     $('.remove_product').unbind();
-                    window.location = href
+                    window.location = href;
                 }
             }
         });
-    })
+    });
 
 });

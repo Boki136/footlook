@@ -22,7 +22,7 @@ def profile(request):
             user.delete()
             messages.success(request, 'Profile successfully deleted')
             return redirect('home')
-       
+
         if 'username' in request.POST:
             if user.username == request.POST['username']:
                 messages.warning(request, 'You have used the same username')
@@ -31,7 +31,7 @@ def profile(request):
             user.username = request.POST['username']
             if User.objects.filter(username=username).exists():
                 messages.error(request,
-                                "Username already exists, please use another one"
+                               "Username already exists, please use another one"
                                )
                 return redirect('profile')
             else:
@@ -55,8 +55,7 @@ def profile(request):
             else:
                 messages.error(request, "Please fill in all required fields")
                 return redirect('profile')
-    
-      
+
     form = UserProfileForm(instance=profile)
     delete_form = UserDeleteForm(instance=request.user)
     orders = profile.orders.all()

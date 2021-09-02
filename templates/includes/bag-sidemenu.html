@@ -25,7 +25,7 @@
                                     {% csrf_token %}
                                     <label for="quantity">Quantity</label>
                                     <input class="form-control qty_input_bag" type="number" name="quantity" value="{{item.quantity}}" min="1" max="99"
-                                        max-length='99' data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id}}">
+                                        data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id}}">
                                     <input type="hidden" name="redirect_url_bag" value="{{ request.path }}">
                                     <input class='product_size' name='product_size' type="hidden" data-product_size='{{item.size}}'
                                         value='{{item.size}}'>

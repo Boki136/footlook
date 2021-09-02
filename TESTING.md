@@ -2,8 +2,8 @@
  
 ## **Table Of Contents:**
 1. [Responsive Testing](#responsive-testing) 
-2. [Validation Testing](#automated-testing) 
-3. [Manual Testing](#manual-testing) 
+2. [Validation Testing](#validation-testing) 
+3. [Features Testing](#features-testing) 
 4. [Bugs](#bugs) 
  
 
@@ -75,6 +75,7 @@ Small changes around product details section. Product info placed under image.
 
 #### **HTML Validation**
 
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to check the HTML of all URLs
 
 - Homepage Validation_
 
@@ -82,7 +83,7 @@ Homepage returned a lot of errors mainly around spaces in href attribute and som
 
 ![](media/readme-documentation/html-v-1.png)
 
-All the errors are resloved
+I managed to resolve all the errors.
 
 - _Category Page Validation_
 
@@ -92,3 +93,43 @@ Category page returned a couple of errors regarding space in href atrributes & a
 ![](media/readme-documentation/html-v-2.png)
 
 All the errors are resloved
+
+
+- _Product Detail Page Validation_
+
+No errors found on product details page
+
+- _Checkout Page Validation_
+
+No errors found on checkout page
+
+- _Checkout Success Page Validation_
+
+No errors found on checkout sucess page
+
+- _Profile Page Validation_
+
+No errors found on profile page
+
+- Add/Edit Product Page Validation_
+
+No errors found on both pages
+
+
+#### **CSS Validation**
+
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check the CSS validity, the code passed the validator with no errors.
+
+![](media/readme-documentation/css-validation.png)
+
+#### **JS Validation**
+
+I used [JS Hint Validator](https://jshint.com/) to check the script files. No errors were highlighted, just warnings stating missing semicolons and warnings of template literal syntax being available in ES6.
+
+![](media/readme-documentation/js-validation.png)
+
+#### **PYTHON Validation**
+
+I have used Problems tab in command line to go through each file and check if Python is PEP8 compliant. In most files erros were 'line to long', 'line containing trialing space', 'no new line at the end of the file'. I managed to resolve most of the warnings and issues.
+
+### **Features Testing**
