@@ -49,7 +49,7 @@
                 <div class="background-overlay"></div>
                 <a class='learn-more-btn' href="{% url 'product_detail' product.id %}">Learn More</a>
                 <img src="{{product.images|first}}" alt="{{product.name}}">
-                <h1 class='product-price'><span>€</span>{{product.price}}</h1>
+                <h2 class='product-price'><span>€</span>{{product.price}}</h2>
             </div>
             <h2>{{product.name}}</h2>
             {% if product.brand == 'CORE / NEO' %}

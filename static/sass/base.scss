@@ -2452,7 +2452,7 @@ select option[value=""] {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    padding: 100px;
+    padding: 20px 100px;
     margin: 0 auto;
     border-radius: 20px;
     background: rgba(58, 71, 80, .5);
@@ -2914,6 +2914,8 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+
 }
 
 select:-webkit-autofill,
@@ -2921,6 +2923,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus,
 select:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
 }
 
 
