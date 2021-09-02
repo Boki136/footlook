@@ -6,7 +6,6 @@ Footlook is an e-commerce website selling footware for both Men & Women. Our sho
 We offer all our users ability to preview their orders and securely checkout out with their preferred shoes. 
 
 
-
 ### **The live site can be viewed [here](https://footlook.herokuapp.com/)**.
 
 
@@ -38,15 +37,15 @@ email: otheremail@email.com
   - Research and Analysis Phase
     - Brainstorming Ideas & User Stories
   - Design Phase
-
     - Sitemap
     - Colour pallet & Typography
     - Wireframes
 
 - **Features & Pages**
 
-- **Technologies & Resources Used**
+- **Information Architecture**
 
+- **Technologies & Resources Used**
   - Languages Used
   - Libraries and Frameworks
   - Workspace, version control, repository storage & database
@@ -213,6 +212,100 @@ All the pages are populated with allauth package. Bespoke styling has been added
 Both pages consist of the same form, but the difference is in the logic. Add a product form is empty and it's allowing the storeowner to add new products to the store.
 
 Edit a product form is prepopulated with the selected product (accessing through product detail page) allowing users to change current product.
+
+[^ Back To Top ](#footlook)
+
+# Information Architecture
+
+## Database Choice
+
+I chose to work with Django's default database **SQLite3** in the development of this project. During deployment phase, I switched to the Heroku add-on database, **PostgreSQL**.
+
+## Database Schema
+
+I used Django Allauth user authentication and its default `django.contrib.auth.models` for the **User model** in the profile app. All the templates and logic are imported to my project.
+
+### Checkout App
+
+
+#### _Order Model_
+
+
+| Name                     | Database Key    | Field Type           | Validation                                                                          |
+| ------------------------ | --------------- | -------------------- | ----------------------------------------------------------------------------------- |
+| Order Number             | order_number    | models.CharField     | max_length=32, null=False, editable=False                                           |
+| User Profile             | user_profile    | models.ForeignKey    | UserProfile, on_delete=models.SET_NULL, null=True, blank=True,related_name='orders' |
+| Full Name                | full_name       | models.CharField     | max_length=50, null=False, blank=False                                              |
+| Email                    | email           | models.EmailField    | max_length=254, null=False, blank=False                                             |
+| Phone Number             | phone_number    | models.CharField     | max_length=20, null=False, blank=False                                              |
+| Country                  | country         | CountryField         | blank_label='Country *', null=False, blank=False                            |
+| Postcode                 | postcode        | models.CharField     | max_length=20, null=True, blank=True                                               |
+| City           | city   | models.CharField     | max_length=40, null=False, blank=False                                              |
+| Address Line 1         | address_line_1 | models.CharField     | max_length=80, null=False, blank=False                                              |
+| Address Line 2         | address_line_2 | models.CharField     | max_length=80, null=True, blank=True                                              |
+| County                   | county          | models.CharField     | max_length=80, null=True, blank=True                                               |
+| Date                     | date            | models.DateTimeField | auto_now_add=True                                                                   |
+| Delivery Cost            | delivery_cost   | models.DecimalField  | max_digits=6, decimal_places=2, null=False, default=0                               |
+| Order Total              | order_total     | models.DecimalField  | max_digits=10, decimal_places=2, null=False, default=0                              |
+| Grand Total              | grand_total     | models.DecimalField  | max_digits=10, decimal_places=2, null=False, default=0                              |
+| Original Bag             | original_bag    | models.TextField     | null=False, blank=False, default=''                                                 |
+| Stripe Payment Intent ID | stripe_pid      | models.CharField     | max_length=254, null=False, blank=False, default=''                                 |
+
+
+#### _Order Line Item Model_
+
+| Name            | Database Key   | Field Type          | Validation                                                                         |
+| --------------- | -------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| Order           | order          | models.ForeignKey   | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' |
+| Product         | product        | models.ForeignKey   | Product, null=False, blank=False, on_delete=models.CASCADE                         |
+| Quantity        | quantity       | models.IntegerField | null=False, blank=False, default=0                                                 |
+| Line Item Total | lineitem_total | models.DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False            |
+
+
+### Products App
+
+
+#### _Category Model_
+
+
+| Name          | Database Key  | Field Type | Validation                             |
+| ------------- | ------------- | ---------- | -------------------------------------- |
+| Name          | name          | CharField  | max_length=254                         |
+| Friendly Name | friendly_name | CharField  | max_length=254, null=True, blank=True |
+
+
+#### _Product Model_
+
+
+| Name        | Database Key | Field Type          | Validation                                                    |
+| ----------- | ------------ | ------------------- | ------------------------------------------------------------- |
+| Category    | category     | models.ForeignKey   | 'Category', null=True, blank=True, on_delete=models.SET_NULL |
+| Sku         | sku          | models.CharField    | max_length=254, null=True, blank=True                        |
+| Name        | name         | models.CharField    | max_length=254                                                |
+| Price       | price        | models.DecimalField | max_digits=6, decimal_places=2                                |                         |
+| Description | description  | models.TextField    
+| Rating      | rating       | models.DecimalField | max_digits=6, decimal_places=2, null=True, blank=True         |
+| Image       | image        | models.URLField   | max_length=754, null=True, blank=True                                        |
+| Brand   | brand    | models.CharField    | max_length=254, null=True  |
+| Discount   | discount    | models.DecimalField   | max_digits=8, decimal_places=2, null=True  |
+
+
+### Profile App
+
+#### _User Profile Model_
+
+
+| Name             | Database Key         | Field Type           | Validation                                          |
+| ---------------- | -------------------- | -------------------- | --------------------------------------------------- |
+| User             | user                 | OneToOneField 'User' | on_delete=models.CASCADE                            |
+| Phone Number     | default_phone_number | models.CharField     | max_length=20, null=True, blank=True                |
+| Address Line 1   | address_line_1       | models.CharField     | max_length=80, null=True, blank=True                |
+| Address Line 2   | address_line_2       | models.CharField     | max_length=80, null=True, blank=True                |
+| City             | city                 | models.CharField     | max_length=40, null=True, blank=True                |
+| County           | default_county       | models.CharField     | max_length=80, null=True, blank=True                |
+| Postcode         | default_postcode     | models.CharField     | max_length=20, null=True, blank=True.               |
+| Country          | default_country      | CountryField.        | blank_label='Country *', null=True, blank=True |
+
 
 [^ Back To Top ](#footlook)
 
