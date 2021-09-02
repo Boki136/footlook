@@ -267,10 +267,6 @@ $(document).ready(function () {
         }
     }
 
-    $('.qty_input_bag, .qty_input').keypress(function (e) {
-        preventNumberInput(e);
-    });
-
     $(function () {
         $(document).on("cut copy paste", ".qty_input_bag, .qty_input", function (e) {
             e.preventDefault();
@@ -376,16 +372,16 @@ $(document).ready(function () {
                 <hr>
                 <div class="shop_by_cat">
                     <h4>Shop by Category:</h4>
-                    <a aria-current="page" href="{% url 'products' %}?category=men">Men</a>
-                    <a aria-current="page" href="{% url 'products' %}?category=women">Women</a>
+                    <a aria-current="page" href="/products/?category=men">Men</a>
+                    <a aria-current="page" href="/products/?category=women">Women</a>
                 </div>
     
     
                 <div class="shop_by_brand">
                     <h4>Shop by Brand:</h4>
-                    <a href="{% url 'products' %}?brand=ORIGINALS">Originals</a>
-                    <a href="{% url 'products' %}?brand=CORE / NEO">CORE / NEO</a>
-                    <a href="{% url 'products' %}?brand=SPORT PERFORMANCE">Sport Performance</a>
+                    <a href="/products/?brand=ORIGINALS">Originals</a>
+                    <a href="/products/?brand=CORE%20/%20NEO">CORE / NEO</a>
+                    <a href="/products/?brand=SPORT%20PERFORMANCE">Sport Performance</a>
                 </div>
             </div>`);
             }

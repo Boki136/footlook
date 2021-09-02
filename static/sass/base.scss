@@ -3514,6 +3514,7 @@ label[for="id_images"] {
 
     .products-wrapper {
         margin-bottom: 30px;
+        max-height: 75%;
     }
 
     #payment-form fieldset {
@@ -3614,7 +3615,7 @@ label[for="id_images"] {
     }
 
     .basket_contents_and_action {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 350px);
         width: 95%;
     }
 
@@ -3638,6 +3639,10 @@ label[for="id_images"] {
         width: 130px;
         background: $primary-black;
         color: $paper-white;
+    }
+
+    .tooltip {
+        display: none;
     }
 
 }
@@ -3704,6 +3709,10 @@ label[for="id_images"] {
         li {
             font-size: 18px;
         }
+    }
+
+    .message-wrapper {
+        right: unset;
     }
 
     .allauth-form-wrapper {
@@ -3817,6 +3826,10 @@ label[for="id_images"] {
 
     .product-box img {
         width: 125px;
+    }
+
+    .product-box-img {
+        height: 125px;
     }
 
     .add-to-cart-actions {

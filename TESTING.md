@@ -112,7 +112,7 @@ No errors found on checkout sucess page
 
 No errors found on profile page
 
-- Add/Edit Product Page Validation_
+- _Add/Edit Product Page Validation_
 
 No errors found on both pages
 
@@ -188,3 +188,19 @@ FEATURE CATEGORY | FEATURE | OUTCOME | STATUS |
 | Add Product | Adding a product | This page is only available to storeowners, if other loggedin users try to access it via url they will be redirected back to the product page and message will display to them saying only storeowners are allowed to do that. There is additional logic applied to ensure all the product fileds are supplied in the correct format. Starting with the SKU field, if the product with the same SKU exists form will return an error. All numeric fields are only excepting numbers and two decimal places (rrp, price & discount). Rating is only accepting numbers from 1 - 5.  | Approved | 
 | Edit Product | Editing a product | This form has the same logic applied as add a product form. The only difference is that the form is pre-populated with selected product information.  | Approved | 
 
+
+### **Bugs**
+
+1. Mobile users weren't able to increase and decrease the quantity inside of product details page due to js rule which was preventing default keypress changes. I removed the rule and ensured that product quantities submitted are not decimals number and zeros. Also, users are able to add maximum of 99 of the same product and minimum of 1.
+
+![](media/readme-documentation/bug-fix-1.png)
+
+2. When changing quantity of items in basket on mobile device, Ajax post handler wasn't working correctly due to the click event which was triggering the action. This is now triggered on change event which is handling the action correctly. 
+
+3. When users remove all the items from the basket and without refresh try to select category or brand they receive an error (page unreachable)
+
+![](media/readme-documentation/bug-fix-2.png)
+
+This error occured because Django template url was populated in the Javascript file. To fix this I changed URL's to reflect correct format which resloved the error.
+
+![](media/readme-documentation/bug-fix-3.png)

@@ -2449,7 +2449,8 @@ label[for="id_images"]::after {
   .order-total_wrapper h6 {
     font-size: 14px; }
   .products-wrapper {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    max-height: 75%; }
   #payment-form fieldset {
     width: 100%; }
   .smaller_height_checkout {
@@ -2504,7 +2505,7 @@ label[for="id_images"]::after {
     text-align: center;
     margin: 5px 0 10px 0; }
   .basket_contents_and_action {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 350px);
     width: 95%; }
   .products-wrapper {
     max-height: 100%; }
@@ -2518,7 +2519,9 @@ label[for="id_images"]::after {
     height: 40px;
     width: 130px;
     background: #303841;
-    color: #EEE; } }
+    color: #EEE; }
+  .tooltip {
+    display: none; } }
 
 @media only screen and (max-width: 550px) {
   .navbar-brand {
@@ -2550,6 +2553,8 @@ label[for="id_images"]::after {
     padding: 10px 0 15px 0; }
   .why-sign-up li {
     font-size: 18px; }
+  .message-wrapper {
+    right: unset; }
   .allauth-form-wrapper {
     height: auto; }
   .allauth-form-inner-content {
@@ -2606,6 +2611,8 @@ label[for="id_images"]::after {
     font-size: 12px; }
   .product-box img {
     width: 125px; }
+  .product-box-img {
+    height: 125px; }
   .add-to-cart-actions {
     margin-top: 20px; }
   .product-box {
