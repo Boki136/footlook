@@ -36,39 +36,28 @@ email: otheremail@email.com
 - **UX**
 
   - Research and Analysis Phase
-    - Business decision, long-term goals
-    - User Stories
+    - Brainstorming Ideas & User Stories
   - Design Phase
 
     - Sitemap
     - Colour pallet & Typography
     - Wireframes
 
-  - **Features & Layout**
-
-    - Homepage
-    - Contact Us
-    - Find a Job page
-    - Login page
-    - Register page
-    - Profile page
-    - Post a job page
-    - Edit a job page
+- **Features & Pages**
 
 - **Technologies & Resources Used**
 
   - Languages Used
   - Libraries and Frameworks
-  - Workspace, version control and Repository storage
+  - Workspace, version control, repository storage & database
   - Tools
   
 - **Testing & Deployment**
-  - Validation & API testing
-  - Testing Users Stories
-  - Database Accessing Test
-  - Testing Responsiveness
-  - Bugs
-  - Deployment
+  - [TESTING.md file](TESTING.md "TESTING.md File")
+  - Local Deployment
+  - Heroku Deployment
+  - Static File Hosting with AWS
+  - Connecting S3 bucket to django
 
 - **Acknowledgements**
 
@@ -271,7 +260,8 @@ Edit a product form is prepopulated with the selected product (accessing through
 - [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)  
 - [W3C Markup Validation Service](https://validator.w3.org/)  
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)  
-- [Am I Responsive?](http://ami.responsivedesign.is/) 
+- [Am I Responsive?](http://ami.responsivedesign.is/)
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)  
 - [Canva](https://www.canva.com/)
 
 
@@ -286,9 +276,65 @@ Edit a product form is prepopulated with the selected product (accessing through
 The Testing Process has been documented in [TESTING.md file](TESTING.md "TESTING.md File")
 
 
-
-
 ## **Deployment**
+
+## Local Deployment
+
+### How to clone Footlook:
+![Local Deployment](media/readme-documentation/deploy-10.png)
+1. Log in to GitHub and go to [footlook repository](https://github.com/Boki136/footlook).
+2. At the top of the repository, select **Code** and copy the **Clone URL**.
+3. In the IDE, open a Terminal window and change to the directory where you want the cloned directory to be made and type `git clone` and paste in `https://github.com/Boki136/footlook.git`.
+4. Click return and the project will be created and cloned locally on your machine.
+
+### Working with the local copy:
+1. Create a file called `env.py` to hold the application environment variables, which should contain the following:
+```console
+import os
+
+os.environ.setdefault("SECRET_KEY", "**Secret key goes here**")
+os.environ.setdefault("DEVELOPMENT", "TRUE")
+os.environ.setdefault('STRIPE_PUBLIC_KEY',"**Stripe generated key goes here**")
+os.environ.setdefault('STRIPE_SECRET_KEY', "**Stripe generated key goes here**")
+os.environ.setdefault('STRIPE_WH_SECRET', "**Stripe generated key for individual webhook endpoint goes here**")
+```
+To find Stripe keys, login to Stripe and then under the 'Developers' tab to locate both keys.
+
+The webhook secret key can be found under 'Webhooks', an endpoint should then be set to receive all events and match the below url structure:
+```
+<siteurl>/checkout/wh/
+```
+Different endpoints are required for the local and deployed projects. Ensure the `STRIPE_WH_SECRET` is updated accordingly in `env.py`.
+
+2. Create a `.gitignore` file in the root directory of the project and add the `env.py`along with the below to prevent it from being made public:
+```
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.pyc
+node_modules/
+db.json
+```
+3. Install all the project dependencies from the terminal window of the IDE by typing:
+```
+pip3 install -r requirements.txt
+```
+4. Apply database migrations using:
+```
+python manage.py migrate
+```
+5. Create a new superuser with:
+```
+python manage.py createsuperuser
+```
+6. Type the below into the terminal to run the app locally. 
+```
+python manage.py runserver
+```
 
 ### <ins>Deployment to Heroku</ins>
 
@@ -464,3 +510,9 @@ As a last step, grab keys from STRIPE and add them to Heroku config vars
 [^ Back To Top ](#footlook)
 
 
+# **Acknowledgements**
+
+- Inspiration and guidance while building the app was taken from Code Institue Boutique Ado Project.
+- Huge thanks to Narender Singh for the support and guidance I received during my time in Code Institute
+- Thanks to the community on Slack and excellent tutor support so far. They were very helpful and efficent.
+- Thanks to Code Insitute for brilliant & well-organised content. I truly enjoyed my time here and am looking forward to new adventures that are yet to come.
