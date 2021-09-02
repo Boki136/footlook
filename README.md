@@ -2,6 +2,8 @@
 
 ## Project Overview
 
+![colour pallet and fonts](media/readme-documentation/responsive-img.png)
+
 Footlook is an e-commerce website selling footware for both Men & Women. Our shoe selection consists of Adidas shoes only and spans over three sub-brands. Our primary goal is to offer a user seemles buying journey with rich content & simple to use online platform.
 We offer all our users ability to preview their orders and securely checkout out with their preferred shoes. 
 
@@ -62,7 +64,7 @@ email: otheremail@email.com
 
 # **UX**
 
-The website is designed with simplicity & effectiveness in mind, allowing users to quickly preview desired products and checkout within minutes. All product content is clearley structured and very thorough. Design is very clear and consistent which helps the user to navigate through the website with ease. Upon each user action, system either informs them or asks for the premission (deleting product off the basket/checkout. Adding to basket etc.)
+The website is designed with simplicity & effectiveness in mind, allowing users to quickly preview desired products and checkout within minutes. All product content is clearley structured and very thorough. Design is very clear and consistent which helps the user to navigate through the website with ease. Upon each user action, system either informs them or asks for the premission (deleting product from the basket/checkout. Adding to basket etc.)
 
 
 # **Research and Analysis Phase**
@@ -97,7 +99,7 @@ Colour Pallet was determined while re-searching for usual brand colours and dark
 
 ## **Wireframes**
 
-All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed here [here](media/wireframes).
+All wireframes were created in InVision Studio, and all of them were created as deatailed as possible to allow development/implementation phase to focus on code specifically. They can all be previewed [here](media/wireframes).
 
 [^ Back To Top ](#footlook)
 
@@ -133,7 +135,7 @@ Footer consists of quick links & shop links (categories & brands). It also has n
 The homepage is divided into four sections:
 
 - _Hero Section_: This consists of the background image, title, subtitle, call to action (shop now) and social icons.
-- _New Arrivalse_: This section showcases a carousel with 10 new arrivals where users can click into a desired product.
+- _New Arrivals_: This section showcases a carousel with 10 new arrivals where users can click into a desired product.
 - _Testimonials_: This consists of three top testimonials and it servers great as a trust builder.
 - _Shop By Category_: This section emphasizes shopping accross different categories.
 
@@ -605,7 +607,15 @@ As a last step, grab keys from STRIPE and add them to Heroku config vars
 
 # **Acknowledgements**
 
+## Credits
+
+Product data was taken from data.world and it's free to use. The file can be previewed [here](https://data.world/data-hut/product-data-from-adidas/workspace/file?filename=Adidas+final.csv)
+
+All the imagery was taken from [Canva](https://www.canva.com/)
+
 - Inspiration and guidance while building the app was taken from Code Institue Boutique Ado Project.
 - Huge thanks to Narender Singh for the support and guidance I received during my time in Code Institute
 - Thanks to the community on Slack and excellent tutor support so far. They were very helpful and efficent.
 - Thanks to Code Insitute for brilliant & well-organised content. I truly enjoyed my time here and am looking forward to new adventures that are yet to come.
+
+[^ Back To Top ](#footlook)
