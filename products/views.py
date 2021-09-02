@@ -47,7 +47,6 @@ def products_view(request):
     if request.GET:
         if 'brand' in request.GET:
             brand = request.GET['brand'].split(',')
-            print(brand)
             products = products.filter(brand__in=brand)
             brand = Product.objects.filter(brand__in=brand)
             brand_name = request.GET['brand']

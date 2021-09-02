@@ -18,7 +18,6 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         delete_form = UserDeleteForm(request.POST, instance=request.user)
         if delete_form.is_valid() and 'delete_profile' in request.POST:
-            print('yes')
             user.delete()
             messages.success(request, 'Profile successfully deleted')
             return redirect('home')

@@ -3,7 +3,7 @@
 ## **Table Of Contents:**
 1. [Responsive Testing](#responsive-testing) 
 2. [Validation Testing](#validation-testing) 
-3. [Features Testing](#features-testing) 
+3. [User Stories Testing](#user-stories-testing) 
 4. [Bugs](#bugs) 
  
 
@@ -132,4 +132,19 @@ I used [JS Hint Validator](https://jshint.com/) to check the script files. No er
 
 I have used Problems tab in command line to go through each file and check if Python is PEP8 compliant. In most files erros were 'line to long', 'line containing trialing space', 'no new line at the end of the file'. I managed to resolve most of the warnings and issues.
 
-### **Features Testing**
+
+### **User Stories Testing**
+
+USER STORY TEST | OUTCOME | STATUS | 
+-------------------- | -------------------------------| ----------| 
+**Users should be able to navigate through the store using navigation & footer links.** | All the navigation & footer links are working correctly, and redirecting users to correct pages. Some links are showing depending on user log-in such as my profile and logout which are all tested and are showing correctly. | Approved | 
+ **Users should be able to navigate through products and categories.** | All product categories are filtering assigned products accordingly and informing the user in which category they are currently in. Each product has correct information populated and can be accessed from the dedicated category page. | Approved | 
+ **Users should clearly see all content and have correct colour contracts between elements**  |   Whole website was checked with [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/). I resolved all the errors regarding missing titles within button and anchor elements. There are small contrast issues which I believe are not too much of a problem as there is a clear contrast between black and white so I decided to leave the colour scheme as is.      |   Approved        |
+**Users should be able to log in / log out.**  |   Users with existing accounts are able to log in through profile icon and access their profile information. Also, they can log out through their profile page or on mobile device through log-out button in the mobile menu      |   Approved        |
+**Users should be able to register & delete their account.**  | Un-logged users are able to register through profile icon also by selecting register here CTA or through sign-up link on the sign-in page. Once they have an account set-up, to delete the account they have to select 'Delete' button at the bottom of the page. I've implemented a confirmation dialog to prevent accidental clicks and double-check their action.    |   Approved        |
+**Users should be able to search for products & view them.**  |   Users can search for product in couple of ways: Using the search bar, selecting a category, selecting a brand. From the category page, users have abilities to filter the products and preview all of them. Each product has learn more cta which leads to product detail page containing all the relevant product information.    |   Approved        |
+**Users should be able to add product to their basket.**  |   All the users are able to add a product to their basket from product page by first selecting desired shoe size and clicking on 'Add to basket' by doing so they get a confirmation message that the product was added to their basket.     |   Approved        |
+**Users should be able to view products in the basket and edit/remove them.**  |   By opening up basket side-bard users have option to change quantity of items in the basket or completely remove it. All of this is done without refreshing the page thanks to the Ajax post request handlers.   |   Approved        |
+**Users should be able to checkout and pay for the products using payment integration system.**  |   Users are able to checkout and pay for their order using their address details and credit card thanks to Stripe payments integration. All the payments are secured and webhooks are handling any type of form or user error which can prevent the order from creation and result in charging customer for the order they might not receive.    |   Approved        |
+**Admin should be able to add products. Edit, remove, & read them**  |   Users with admin access are able to add products, edit and remove them. To add a product admin has to access the product form addition through profile page. To edit or remove the product they have to navigate to the product they want to make changes to and from there select the options. I have implemented a confirmation dialog to prevent accidental clicks and double-check their action.     |   Approved        |
+**Users should be able to edit their profile details.**  |  By navigation to their profile, users can safely change their username and shipping details. I've implemented additional checks for username field preventing the user from submiting the same username, already existing username & empty field. Als, for the shipping details, users are only able to save details if all required fields are filled in.     |   Approved        |
