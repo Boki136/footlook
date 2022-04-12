@@ -124,16 +124,20 @@ $(document).ready(function () {
             $(this).find('.learn-more-wrapper').find('.background-overlay, .learn-more-btn, .product-price, .product-rrp_main').fadeOut(100);
         });
 
-        $('.product-card').mouseover(function () {
-            var secondImage = $(this).find('.additional_img_hover').attr('src');
-            $(this).find('.primary_img').attr('src', secondImage);
-
-        }).mouseleave(function () {
-            var first_img = $(this).find('.primary-img_link').html();
-            $(this).find('.primary_img').attr('src', first_img);
-        });
-
     }
+    
+    
+    // Img fallback
+    
+    $('.primary_img').each(function() {
+    if ( !this.complete
+    ||   typeof this.naturalWidth == "undefined"
+    ||   this.naturalWidth == 0                  ) {
+      // image was broken, replace with your new image
+      this.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adidas.ie%2Fsuperstar-shoes%2FFV3284.html&psig=AOvVaw2EQRYbiETzxhWpegwffqon&ust=1649884408004000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCOCEg8O4j_cCFQAAAAAdAAAAABAE';
+    }
+  });
+    
 
     // Detach product page results message on screen < 990px
     if ($(window).width() < 990) {
