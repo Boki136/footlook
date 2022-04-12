@@ -128,7 +128,16 @@ $(document).ready(function () {
     }
   });
     
-    $('.product-images-additional img').each(function() {
+    $('.product-images img').each(function() {
+    if ( !this.complete
+    ||   typeof this.naturalWidth == "undefined"
+    ||   this.naturalWidth == 0                  ) {
+      // image was broken, replace with your new image
+      this.src = 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwc2hvZXN8ZW58MHx8MHx8&w=1000&q=80';
+    }
+  });
+    
+       $('.product-images-additional img').each(function() {
     if ( !this.complete
     ||   typeof this.naturalWidth == "undefined"
     ||   this.naturalWidth == 0                  ) {
