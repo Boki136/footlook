@@ -1,15 +1,5 @@
 $(document).ready(function () {
 
-    var default_avatar = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adidas.ie%2Fsuperstar-shoes%2FFV3284.html&psig=AOvVaw2EQRYbiETzxhWpegwffqon&ust=1649884408004000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCOCEg8O4j_cCFQAAAAAdAAAAABAE';
-
-    window.addEventListener("load", event => {
-        var image = document.querySelector('primary_img');
-        var isLoaded = image.complete && image.naturalHeight !== 0;
-        if (!isLoaded) {
-            image.src = default_avatar;
-        }
-    });
-
     // Enable all tooltips 
     $('[data-toggle="tooltip"]').tooltip();
 
