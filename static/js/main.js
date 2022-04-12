@@ -124,7 +124,16 @@ $(document).ready(function () {
     ||   typeof this.naturalWidth == "undefined"
     ||   this.naturalWidth == 0                  ) {
       // image was broken, replace with your new image
-      this.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adidas.ie%2Fsuperstar-shoes%2FFV3284.html&psig=AOvVaw2EQRYbiETzxhWpegwffqon&ust=1649884408004000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCOCEg8O4j_cCFQAAAAAdAAAAABAE';
+      this.src = 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwc2hvZXN8ZW58MHx8MHx8&w=1000&q=80';
+    }
+  });
+    
+    $('.product-images-additional img').each(function() {
+    if ( !this.complete
+    ||   typeof this.naturalWidth == "undefined"
+    ||   this.naturalWidth == 0                  ) {
+      // image was broken, replace with your new image
+      this.src = 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwc2hvZXN8ZW58MHx8MHx8&w=1000&q=80';
     }
   });
     
